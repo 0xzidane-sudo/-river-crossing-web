@@ -1,0 +1,937 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "instructions": {
+        "ar": "عاد المزارع من السوق ومعه ذئب وماعز وملفوفة لكنه صادف\r\n نهراً في طريقه إلى المزرعة وكان عليه عبور النهر مع كل\r\n الأشياء التي بحوزته\n\r\nالشروط\n\r\n- 1 المزارع فقط يستطيع تحريك القارب كما أن القارب صغير\r\nلا يحمل سوى المزارع ومعه شيء واحد فقط\r\n\n- 2 الذئب سيأكل الماعز بدون وجود المزارع  لذا لا يمكنه تركهما \r\nلوحدهما\n\r\n- 3 الماعز ستأكل الملفوف بدون وجود المزارع لذا لا يمكنه \r\nتركهما لوحدهما\n\n\r\nكيف يمكنك نقل الجميع بأمان إلى الطرف الثاني من النهر؟",
+        "en": "A farmer wants to cross a river and take with him a wolf, a goat, and a cabbage.\n\nRules:\n\n1) The farmer is the only one who can steer the raft. He can only take one passenger (the wolf, the goat, or the cabbage) in addition to himself\n\n2) If the wolf and the goat are alone on the same riverbank, the wolf will eat the goat.\n\n3) If the goat and the cabbage are alone on the same bank, the goat will eat the cabbage.\n\nHow can the farmer get the wolf, the goat, and the cabbage across the river without any of them being eaten?",
+        "fr": "Un fermier en compagnie d'un loup, d'une chèvre et d'un chou, veut traverser une rivière.\n\nRègles :\n\n1) Le fermier est le seul qui peut diriger le radeau. Il ne peut prendre qu'un seul passager avec lui (le loup, la chèvre ou le chou).\n\n2) Si le loup et la chèvre restent sans surveillance sur la même berge, le loup dévore la chèvre.\n\n3) Si la chèvre et le chou restent seuls sur la même rive, la chèvre mange le chou.\n\nComment le fermier peut-il faire faire passer la rivière au loup, à la chèvre et au chou sans qu'aucun d'entre eux ne se fasse manger ?",
+        "es": "Un granjero quiere cruzar un río y llevar consigo un lobo, una cabra y una col.\n\nReglas:\n\n1- El granjero es el único que puede conducir la balsa. Sólo puede llevar un pasajero (el lobo, la cabra o la col) además de él mismo. \n\n2- Si el lobo y la cabra están solos en la misma orilla, el lobo se comerá a la cabra.\n\n3) Si la cabra y la col está solos en la misma orilla, la cabra se comerá la col. \n\n¿Cómo puede el granjero llevar al lobro, a la cabra y a la col al otro lado del río sin que se coman entre ellos?",
+        "de": "Ein Bauer möchte einen Fluss überqueren und er will einen Wolf, eine Ziege und einen Kohl mitnehmen.\r\n\r\nRegeln:\r\n\r\n1) Nur der Bauer kann das Boot fahren. Er kann nur einen Passagier (den Wolf, die Ziege oder den Kohl) mit ihm mitnehmen.\r\n\r\n2) Wenn er den Wolf mit der Ziege zusammen am Rand des Flusses verlässt, wird der Wolf die Ziege essen.\r\n\r\n3) Wenn er die Ziege mit dem Kohl zusammen am Rand des Flusses verlässt, wird die Ziege den Kohl essen.\r\n\r\nWie kannst du ihnen helfen, den Fluss sicher zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 المزارع والماعز - ذهاب\r\n - 2 المزارع لوحده - عودة\r\n - 3 المزارع والذئب - ذهاب\r\n - 4 المزارع والماعز - عودة\r\n - 5 المزارع والملفوف - ذهاب\r\n - 6 المزارع لوحده - عودة\r\n - 7 المزارع والماعز - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Farmer with the goat (cross).\r\n2- Farmer (return).\r\n3- Farmer with the wolf (cross).\r\n4- Farmer with the goat (return).\r\n5- Farmer with cabbage (cross).\r\n6- Farmer (return).\r\n7- Farmer with the goat (cross).\r\n\r\nDone.",
+        "fr": "1- Fermier avec la chèvre (aller).\r\n2- Fermier (retour).\r\n3- Fermier avec le loup (aller).\r\n4- Fermier avec la chèvre (retour).\r\n5- Fermier avec le chou (aller).\r\n6- Fermier (retour).\r\n7- Fermier avec la chèvre (aller).\r\n\r\nFini.",
+        "es": "1- Granjero con la cabra (cruzar).\r\n2- Granjero (volver).\r\n3- Granjero con el lobo (cruzar).\r\n4- Granjero con la cabra (volver).\r\n5- Granjero con col (cruzar).\r\n6- Granjero (volver).\r\n7- Granjero con la cabra (cruzar).\r\n\r\nHecho.",
+        "de": "1- Der Bauer mit der Ziege (überqueren).\r\n2- Der Bauer (zurück).\r\n3- Der Bauer mit dem Wolf (überqueren).\r\n4- Der Bauer mit der Ziege (zurück).\r\n5- Der Bauer mit dem Kohl (überqueren).\r\n6- Der Bauer (züruck).\r\n7- Der Bauer mit der Ziege (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Farmer & the wolf, goat and cabbage",
+      "actors": [
+        {
+          "name": "Farmer",
+          "icon": "👨‍🌾"
+        },
+        {
+          "name": "Wolf",
+          "icon": "🐺"
+        },
+        {
+          "name": "Goat",
+          "icon": "🐐"
+        },
+        {
+          "name": "Cabbage",
+          "icon": "🥬"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 2,
+      "instructions": {
+        "ar": "في طريقهم للمعركة وصل أربعة جنود الى ضفة النهر أحدهم \r\nشجاع وأحدهم الأخر جبان والاثنان الأخران عاديان,ويرغبون في\r\nعبور النهر الى الطرف الثاني\n\r\nالشروط:\n\r\n- 1 القارب يحمل شخصين على الأكثر, لا يمكن ارسال القارب \r\nخاليا, يجب على شخص ما قيادته\r\n\n- 2 الجندي الجبان -الخوذة ذات الريشة السوداء- يرفض البقاء\r\n وحيداً سواء على ضفة النهر او في القارب\n\r\n- 3 الجندي الشجاع -الخوذة ذات الريشة الحمراء- يصر على \r\nقيادة القارب وحيداً دون وجود شخص اخر معه\r\n\r\nكيف يمكنك نقل الجنود إلى الطرف الأخر؟",
+        "en": "Four soldiers need to cross a river. One is arrogant (wearing the red plume), one is lazy (wearing the black plume), and two are brave (wearing the blue plumes).\n\nRules:\n\n1) The raft can hold a maximum of two soldiers.\n\n2) The lazy soldier refuses to be alone either on the raft or on either bank.\n\n3) The arrogant one refuses to be accompanied on the raft.\n\nHow can they all get to the other side?",
+        "fr": "Quatre soldats doivent traverser une rivière. L'un est arrogant (avec la plume rouge), l'autre est paresseux (avec la plume noire) et les deux restants sont courageux (avec les plumes bleues).\n\nRègles :\n\n1) Le radeau supporte un maximum de deux soldats.\n\n2) Le paresseux refuse de rester seul, aussi bien sur le radeau que sur la berge.\n\n3) L'arrogant refuse d'être accompagné sur le radeau.\n\nComment peuvent-ils tous se retrouver de l'autre côté ?",
+        "es": "Cuatro soldados necesitan cruzar un río. Uno es arrogante (lleva una pluma roja), uno es vago (lleva una pluma negra), y dos son valientes (llevan las plumas azules).\n\nReglas:\n\n1) La balsa puede soportar un máximo de dos soldados.\n\n2) El soldado vago se niega a estar solo en la balsa o en la orilla.\n\n3) El arrogante se niega a estar acompañado en la balsa.\n\n¿Cómo pueden cruzar todos el río?",
+        "de": "Vier Soldaten wollen den Fluss überqueren.\r\nEiner ist arrogant (trägt den Helm mit der roten Feder).\r\nEiner ist faul (trägt den Helm mit der schwarzen Feder).\r\nZwei Soldaten sind mutig (tragen die Helme mit den blauen Federn).\r\n\r\nRegeln:\r\n\r\n1) Das Boot kann maximal zwei Soldaten zusammen tragen.\r\n\r\n2) Der faulige Soldat akzeptiert nicht, weder am Rand des Flusses noch auf dem Boot allein zu sein.\r\n\r\n3) Der arrogante Soldat erlaubt niemandem, mit ihm auf dem Boot zu sein.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الجنديان العاديان - ذهاب\r\n - 2 أحدهما - عودة\r\n - 3 الجندي الشجاع - ذهاب\r\n - 4 الجندي العادي - عودة\r\n - 5 الجندي الجبان مع جندي عادي - ذهاب\r\n - 6 الجندي العادي - عودة\r\n - 7 الجنديان العاديان - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Brave soldiers (cross).\r\n2- One of them (return).\r\n3- Arrogant soldier (cross).\r\n4- Brave soldier (return).\r\n5- Brave soldier with the lazy one (cross).\r\n6- Brave soldier (return).\r\n7- Brave soldiers (cross).\r\n\r\nDone.",
+        "fr": "1- Les soldats courageux (aller).\r\n2- L'un d'entre eux (retour).\r\n3- Le soldat arrogant (aller).\r\n4- Un soldat courageux (retour).\r\n5- Un soldat courageux avec le paresseux (aller).\r\n6- Un soldat courageux (retour).\r\n7- Les soldats courageux (aller).\r\n\r\nFini.",
+        "es": "1- Soldados valientes (cruzar).\r\n2- Uno de ellos (volver).\r\n3- Soldado arrogante (cruzar).\r\n4- Soldado valiente (volver).\r\n5- Soldado valiente con vago (cruzar).\r\n6- Soldado valiente (volver).\r\n7- Soldados valientes (cruzar).\r\n\r\nHecho.",
+        "de": "1- Die mutigen Soldaten (überqueren).\r\n2- Einer von ihnen (zurück).\r\n3- Der arrogante Soldat (überqueren).\r\n4- Der andere mutige Soldat (zurück).\r\n5- Ein mutiger Soldat mit dem fauligen Soldat (überqueren).\r\n6- Der mutige Soldat (zurück).\r\n7- Die mutigen Soldaten (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Four soldiers",
+      "actors": [
+        {
+          "name": "Arrogant soldier",
+          "icon": "🪖"
+        },
+        {
+          "name": "Lazy soldier",
+          "icon": "🪖"
+        },
+        {
+          "name": "Brave soldier 1",
+          "icon": "🪖"
+        },
+        {
+          "name": "Brave soldier 2",
+          "icon": "🪖"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 3,
+      "instructions": {
+        "ar": "في طريقهم إلى العمل في القرية المجاورة, صادف عاملان \r\nنهراًولحسن حظهم كان هناك قارب لكنه لا يستطيع حمل أكثر\r\nمن عامل واحد, استعانوا بولدين كانوا يلعبون قرب النهر و\r\nيودون العبور أيضاً للطرف الثاني\n\n\r\nالشروط:\r\n\r\n- 1 القارب لا يتسع إلا لعامل واحد فقط دون أن يرافقه ولد أو \r\nعامل آخر\n\r\n- 2 القارب يتسع لولد واحد أو الولدين معاً\n\r\n- 3 أي شخص بإمكانه تحريك القارب إلى الضفة الأخرى\n\n\r\nكيف يمكنك مساعدة العمال والأولاد في عبور النهر؟",
+        "en": "Two workers and two children want to cross a river.\r\n\r\nRules:\r\n\r\n1) The raft can hold a maximum of one worker or two children.\r\n\r\n2) Everyone can row.\r\n\r\nHow can they all get to the other side?",
+        "fr": "Deux ouvriers et deux enfants veulent traverser une rivière.\r\n\r\nRègles :\r\n\r\n1) Le radeau peut supporter un maximum deux enfants et un ouvrier.\r\n\r\n2) Tout le monde peut ramer.\r\n\nComment peuvent-ils tous se retrouver de l'autre côté ?",
+        "es": "Dos trabajadores y dos niños quieren cruzar un río.\r\n\r\nReglas:\r\n\r\n1) La balsa puede soportar un máximo de un trabajador y dos niños.\r\n\r\n2) Todos pueden remar.\r\n\r\n¿Cómo pueden llegar todos al otro lado?",
+        "de": "Zwei Männer und zwei Kinder wollen den Fluss überqueren.\r\n\r\nRegeln:\r\n\r\n1) Das Boot kann maximal nur einen Mann ohne Kinder oder ein bis zwei Kinder ohne Männer tragen.\r\n\r\n2) Jede Person kann das Boot fahren.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الولدين - ذهاب\r\n - 2 أحد الولدين - عودة\r\n - 3 أحد العمال - ذهاب\r\n - 4 الولد المتبقي - عودة\r\n - 5 الولدين - ذهاب\r\n - 6 أحد الولدين - عودة\r\n - 7 العامل الأخير - ذهاب\r\n - 8 الولد المتبقي - عودة\r\n - 9 الولدين - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Two children (cross).\r\n2- One child (return).\r\n3- A worker (cross).\r\n4- The remaining child (return).\r\n5- Tow children (cross).\r\n6- One child (return).\r\n7- A worker (cross).\r\n8- The remaining child (return).\r\n9- Two children (cross).\r\n\r\nDone.",
+        "fr": "1- Deux enfants (aller).\r\n2- Un enfant (retour).\r\n3- Un ouvrier (aller).\r\n4- L'enfant restant (retour).\r\n5- Deux enfants (aller).\r\n6- Un enfant (retour).\r\n7- Un ouvrier (aller).\r\n8- L'enfant restant (retour).\r\n9- Deux enfants (aller).\r\n\r\nFini.",
+        "es": "1- Dos niños (cruzar).\r\n2- Un niño (volver).\r\n3- Un trabajador (cruzar).\r\n4- El niño restante (volver).\r\n5- Dos niños (cruzar).\r\n6- Un niño (volver).\r\n7- Un trabajador (cruzar).\r\n8- El niño restante (volver).\r\n9- Dos niños (cruzar).\r\n\r\nHecho.",
+        "de": "1- Die zwei Kinder (überqueren).\r\n2- Ein Kind (zurück).\r\n3- Ein Mann (überqueren).\r\n4- Das andere Kind (zurück).\r\n5- Die zwei Kinder (überqueren).\r\n6- Ein Kind (zurück).\r\n7- Der andere Mann (überqueren).\r\n8- Das andere Kind (zurück).\r\n9- Die zwei Kinder (überqueren).\r\n\r\nFertig."
+      },
+      "title": "Workers and children",
+      "actors": [
+        {
+          "name": "Worker 1",
+          "icon": "👷"
+        },
+        {
+          "name": "Worker 2",
+          "icon": "👷"
+        },
+        {
+          "name": "Child 1",
+          "icon": "🧒"
+        },
+        {
+          "name": "Child 2",
+          "icon": "👧"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 4,
+      "instructions": {
+        "ar": "خمسة أشخاص اجتمعوا للمناقشة على طاولة مستديرة وبعد \r\nنهاية الإجتماع قرروا العودة بالقارب لكن المشكلة أن النقاش\r\n احتدم بينهم وصار كل شخص منهم على خلاف مع جيرانه\r\n اللذان على يمينه و يساره فأصبح الأول على خلاف مع\r\n جيرانه الثاني والخامس والثاني على خلاف مع جيرانه الأول\r\n والثالث وهكذا \r\n\r\nالشروط:\r\n\r\n- 1 القارب يحمل شخصين على الأكثر, لا يمكن ارسال القارب\r\n خاليا, يجب على شخص ما قيادته\r\n \r\n- 2 لا يمكن لشخصين على خلاف أن يتواجدا وحيدين معاً على\r\n اي ضفة ولا حتى على القارب وإلا سيتشاجران\r\n\r\nكيف يمكنك نقل الجميع الى الطرف الثاني دون مشاكل؟",
+        "en": "Five people want to get to the other side of a river, but each of them dislikes his immediate neighbors. The first person dislikes the second and the fifth; the second person dislikes the first and the third; the third person dislikes the second and the fourth; the fourth person dislikes the third and the fifth; and the fifth person dislikes the fourth and the first.\n\nRules:\n\n1) The raft can hold a maximum of two people.\n\n2) If two people dislike each other, they refuse to be either on the raft together or on the same bank together without any other person.\n\nHow can they all get to the other side?",
+        "fr": "Cinq personnes veulent aller de l'autre côté d'une rivière, mais chacun déteste son voisin le plus proche. La première personne déteste la deuxième et la cinquième; la deuxième personne déteste la première et la troisième; la troisième personne déteste la deuxième et la quatrième; la quatrième personne déteste la troisième et la cinquième; et la cinquième personne déteste la quatrième et la première.\n\nRègles :\n\n1) Le radeau peut supporter un maximum de deux personnes.\n\n2) Si deux personnes se détestent mutuellement, elles refuseront aussi bien d'être ensemble sur le radeau que seules sur la même rive.\n\nComment peuvent-elles toutes se retrouver de l'autre côté ?",
+        "es": "Cinco personas quieren llegar al otro lado del río, pero a ninguno de ellos le gusta la persona que tienen al lado. A la primera persona no le gusta ni la segunda ni la quinta; a la segunda no le gusta ni la primera ni la tercera; a la tercera ni la segunda ni la cuarta; a la cuarta ni la tercera ni la quinta; y a la quinta ni la cuarta ni la primera. Reglas:\n\n1) La balsa puede soportar un máximo de dos personas.\n\n2) Si a una persona no le gusta otra, se niegan a estar juntas en la balsa o en la misma orilla sin otra persona. \n\n¿Cómo pueden llegar todos al otro lado?",
+        "de": "Fünf Leute wollen auf die andere Seite eines Fluss überqueren. Aber jeder von ihnen mag nicht die Prson, die neben ihm steht.\r\nDie erste Person hasst die zweite und die fünfte.\r\nDie zweite Person hasst die erste und die dritte.\r\nDie dritte Person hasst die vierte und die zweite.\r\nDie vierte Person hasst die dritte und die fünfte.\r\nDie fünfte Person hasst die erste und die vierte.\r\n\r\nRegeln:\r\n\r\n1) Das Boot kann maximal zwei Personen tragen.\r\n\r\n2) Wenn zwei Leute sich gegenseitig nicht mögen, akzeptieren sie nicht, weder am Rand des Flusses noch auf dem Boot allein zusammen zu sein. Andernfalls werden sie streiten.\r\n\r\nWie kannst du ihnen helfen, den Flus zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الأول والثالث - ذهاب\r\n - 2 الأول - عودة\r\n - 3 الثاني والخامس - ذهاب\r\n - 4 الثاني - عودة\r\n - 5 الثاني والرابع - ذهاب\r\n - 6 الرابع - عودة\r\n - 7 الأول والرابع - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- First and third persons (cross).\r\n2- First person (return).\r\n3- Second and fifth persons (cross).\r\n4- Second person (return).\r\n5- Second and fourth persons (cross).\r\n6- Fourth person (return).\r\n7- First and fourth persons (cross). \r\n\r\nDone.",
+        "fr": "1- Première et troisième personne (aller).\r\n2- Première personne (retour).\r\n3- Deuxième et cinquième personne (aller).\r\n4- Deuxième personne (retour).\r\n5- Deuxième et quatrième personne (aller).\r\n6- Quatrième personne (retour).\r\n7- Première et quatrième personne (aller). \r\n\r\nFini.",
+        "es": "1- La primera y la tercera persona (cruzar).\r\n2- Primera persona (volver).\r\n3- Segunda y quinta persona (cruzar).\r\n4- Segunda persona (volver).\r\n5- Segunda y cuarta persona (cruzar).\r\n6- Cuarta persona (volver).\r\n7- La primera y la cuarta persona (cruzar). \r\n\r\nHecho.",
+        "de": "1- Die erste und dritte Personen (überqueren).\r\n2- Die erste Person (zurück).\r\n3- Die zweite und fünfte Personen (überqueren).\r\n4- Die zweite Person (zurück).\r\n5- Die zweite und vierte Personen (überqueren).\r\n6- Die vierte Person (zurück).\r\n7- Die vierte und erste Personen (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Five people",
+      "actors": [
+        {
+          "name": "Person 1",
+          "icon": "🧍"
+        },
+        {
+          "name": "Person 2",
+          "icon": "🧍"
+        },
+        {
+          "name": "Person 3",
+          "icon": "🧍"
+        },
+        {
+          "name": "Person 4",
+          "icon": "🧍"
+        },
+        {
+          "name": "Person 5",
+          "icon": "🧍"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 5,
+      "instructions": {
+        "ar": "عائلة مكونة من أب وأم وولد وبنت  عائدين من السفر ويريدون\r\n قطع النهر للوصول إلى البيت إذا علمت أن وزن الأب هو\r\n90 كغ, وزن الأم 80 كغ, وزن الابن 60 كغ ووزن الابنة\r\nهو 40 كغ ومعهم حقيبة وزنها 20 كغ.\r\n\r\nالشروط\r\n\r\n- 1  الحمولة القصوى للقارب هي 100 كغ\r\n\r\n- 2 أي شخص بإمكانه تحريك القارب\r\n\r\n\r\nهل يمكنك مساعدة هذه العائلة في عبور النهر والعودة\r\n إلى البيت؟",
+        "en": "A family needs to cross a river in a small raft. Father weighs 90 kg, Mother weighs 80 kg, Boy weighs 60 kg, Girl weighs 40 kg, and they have a 20 kg bag.\n\nRules:\n\n1) The raft cannot bear a load heavier than 100 kg.\n\nHow can they all get to the other side with their bag?",
+        "fr": "Une famille doit traverser une rivière sur un petit radeau. Le père pèse 90 kg, la mère 80, le garçon 60, la fille 40 et ils ont un sac de 20 kg.\n\nRègles :\n\n1) Le radeau ne peut pas supporter une charge supérieure à 100 kg.\n\nComment peuvent-ils tous se retrouver de l'autre côté avec leur sac ?",
+        "es": "Una familia necesita cruzar un río en una pequeña balsa. El Padre pesa 90 kg, la Madre pesa 80 kg, el Niño pesa 60 kg, la Niña pesa 40 kg, y tienen una bolsa de 20 kg.\n\nReglas:\n\n1) La balsa no puede soportar un peso superior a 100 kg.\n\n¿Cómo pueden llegar todos al otro lado del río con su bolsa?",
+        "de": "Eine Familie besteht aus einem Vater, einer Mutter, einem Jungen und einem Mädchen und sie haben mit ihnen einen Reisekoffer.\r\nDie Familie will einen Fluss überqueren.\r\nDas Gewicht des Vaters ist 90kg.\r\nDas Gewicht der Mutter ist 80kg.\r\nDas Gewicht des Jungen ist 60kg.\r\nDas Gewicht des Mädchens ist 40kg.\r\nDas Gewicht des Reisekoffers ist 20kg.\r\n\r\nRegeln:\r\n\r\n1) Das Boot kann nicht mehr als 100kg tragen.\r\n\r\n2) Jede Person kann das Boot fahren.\r\n\r\nWie kannst du ihnen mit ihrem Reisekoffer, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 البنت 40 كغ و الولد 60 كغ - ذهاب\r\n - 2 البنت 40 كغ - عودة\r\n - 3 الأب 90 كغ - ذهاب\r\n - 4 الولد 60 كغ - عودة\r\n - 5 البنت 40 كغ و الولد 60 كغ - ذهاب\r\n - 6 البنت 40 كغ - عودة\r\n - 7 الأم 80 كغ و الحقيبة 20 كغ - ذهاب\r\n - 8 الولد 60 كغ - عودة\r\n - 9 البنت 40 كغ و الولد 60 كغ - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- 40 kg + 60 kg (cross).\r\n2- 40 kg (return).\r\n3- 90 kg (cross).\r\n4- 60 kg (return).\r\n5- 40 kg + 60 kg (cross).\r\n6- 40 kg (return).\r\n7- 80 kg + 20 kg (cross).\r\n8- 60 kg (return).\r\n9- 40 kg + 60 kg (cross).\r\n\r\nDone.",
+        "fr": "1- 40 kg + 60 kg (aller).\r\n2- 40 kg (retour).\r\n3- 90 kg (aller).\r\n4- 60 kg (retour).\r\n5- 40 kg + 60 kg (aller).\r\n6- 40 kg (retour).\r\n7- 80 kg + 20 kg (aller).\r\n8- 60 kg (retour).\r\n9- 40 kg + 60 kg (aller).\r\n\r\nFini.",
+        "es": "1- 40 kg + 60 kg (cruzar).\r\n2- 40 kg (volver).\r\n3- 90 kg (cruzar).\r\n4- 60 kg (volver).\r\n5- 40 kg + 60 kg (cruzar).\r\n6- 40 kg (volver).\r\n7- 80 kg + 20 kg (cruzar).\r\n8- 60 kg (volver).\r\n9- 40 kg + 60 kg (cruzar).\r\n\r\nHecho.",
+        "de": "1- 40kg + 60kg (überqueren).\r\n2- 40kg (zurück).\r\n3- 90kg (überqueren).\r\n4- 60kg (zurück).\r\n5- 40kg + 60kg (überqueren).\r\n6- 40kg (zurück).\r\n7- 80kg + 20kg (überqueren).\r\n8- 60kg (zurück).\r\n9- 40kg + 60kg (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Family and bag",
+      "actors": [
+        {
+          "name": "Father · 90 kg",
+          "icon": "👨"
+        },
+        {
+          "name": "Mother · 80 kg",
+          "icon": "👩"
+        },
+        {
+          "name": "Boy · 60 kg",
+          "icon": "👦"
+        },
+        {
+          "name": "Girl · 40 kg",
+          "icon": "👧"
+        },
+        {
+          "name": "Bag · 20 kg",
+          "icon": "🎒"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 6,
+      "instructions": {
+        "ar": "في طريق السفر صادف ثلاثة مسافرين مع أمتعتهم نهراً\r\n يحتاجون إلى عبوره, الاول معه حقيبتين والثاني حقيبة واحدة\r\n والثالث ليس معه حقائب \r\n\r\nالشروط:\r\n\r\n- 1 القارب يحمل شخصين او شخص وحقيبة واحدة فقط,\r\n لا يمكن ارسال القارب خاليا او على متنه حقائب فقط, يجب\r\n على شخص ما قيادة القارب \r\n \r\n- 2 لا يجب ان يبقى اي من المسافرين وحيداً في اي ضفة مع\r\n حقائب ليست له\r\n\r\nكيف يمكنك نقل المسافرين مع أمتعتهم بأمان؟",
+        "en": "Three travelers need to cross a river. The first has two bags, the second has one bag, and the third does not have a bag. \n\nRules:\n\n1) The raft can hold either two travelers or one traveler with one bag.\n\n2) No traveler should be left alone with another traveler’s bag.\n\nHow can they cross the river?",
+        "fr": "Trois voyageurs doivent traverser une rivière. Le premier a deux sacs, le second a un sac et le troisième n'en a pas.\n\nRègles :\n\n1) Le radeau peut supporter deux voyageurs ou un voyageur avec un sac.\n\n2) Aucun voyageur ne devrait rester seul avec le sac d'un autre.\n\nComment les faire traverser la rivière ?",
+        "es": "Tres viajeros necesitan cruzar un río. El primero tiene dos bolsas, el segundo tiene una bolsa, y el tercero no tiene bolsa. \n\nReglas:\n\n1) La balsa puede soportar o dos viajeros o un viajero con una bolsa.\n\n2) Ningún viajero se puede quedar solo con la bolsa de otro viajero.\n\n¿Cómo pueden cruzar el río?",
+        "de": "Drei Reisende müssen einen Fluss überqueren.\r\nDie erste hat zwei Taschen, die zweite hat eine Tasche und die dritte hat keine Tasche.\r\n\r\nRegeln:\r\n\r\n1) Das Boot kann maximal entweder zwei Personen ohne Taschen oder eine Person mit einer Tasche tragen.\r\n\r\n2) Eine Person muss das Boot fahren.\r\n\r\n3) Niemend sollte auf den beiden Seiten des Flusses mit den Taschen anderer Person allein gelassen werden.\r\n\r\n4) die Taschen können auf den beiden Seiten des Flusses allein ohne Personen gelassen werden.\r\n\r\nWie kannst du ihnen helfen, den Fluss mit ihren Taschen zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 المسافر الثاني مع حقيبته - ذهاب\r\n - 2 المسافر الثاني لوحده - عودة\r\n - 3 المسافر الثالث مع الثاني - ذهاب\r\n - 4 المسافر الثالث - عودة\r\n - 5 االمسافر الثالث مع الاول - ذهاب\r\n - 6 المسافر الأول - عودة\r\n - 7 المسافر الأول مع إحدى حقائبه - ذهاب\r\n - 8 المسافر الأول - عودة\r\n - 9 المسافر الأول مع حقيبته الأخيرة - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Second traveler with his bag (cross).\r\n2- Second traveler (return).\r\n3- Third and second travelers (cross).\r\n4- Third traveler (return).\r\n5- First and third traveler (cross).\r\n6- First traveler (return).\r\n7- First traveler with one of his bags (cross).\r\n8- First traveler (return).\r\n9- First traveler with his second bag (cross).\r\n\r\nDone.",
+        "fr": "1- Deuxième voyageur avec son sac (aller).\r\n2- Deuxième voyageur (retour).\r\n3- Troisième et deuxième voyageur (aller).\r\n4- Troisième voyageur (retour).\r\n5- Premier et troisième voyageur (aller).\r\n6- Premier voyageur (retour).\r\n7- Premier voyageur avec un de ses sacs (aller).\r\n8- Premier voyageur (retour).\r\n9- Premier voyageur avec son deuxième sac (aller).\r\n\r\nFini.",
+        "es": "1- Segundo viajero con su bolsa (cruzar).\r\n2- Segundo viajero (volver).\r\n3- Tercer y segundo viajero (cruzar).\r\n4- Tercer viajero (volver).\r\n5- Primer y tercer viajero (cruzar).\r\n6- Primer viajero (volver).\r\n7- Primer viajero con una de sus bolsas (cruzar).\r\n8- Primer viajero (volver).\r\n9- Primer viajero con su segunda bolsa (cruzar).\r\n\r\nHecho.",
+        "de": "1- Die zweite Reisende mit seiner Tasche (überqueren).\r\n2- Die zweite (zurück).\r\n3- Die dritte und zweite (überqueren).\r\n4- Die dritte (zurück).\r\n5- Die erste und dritte (überqueren).\r\n6- Die erste (zurück).\r\n7- Die erste mit seiner ersten Tasche (überqueren).\r\n8- Die erste (zurück).\r\n9- Die erste mit seiner zweiten Tasche (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Three travelers and bags",
+      "actors": [
+        {
+          "name": "Traveler 1",
+          "icon": "🧳"
+        },
+        {
+          "name": "Bag 1A",
+          "icon": "🎒"
+        },
+        {
+          "name": "Bag 1B",
+          "icon": "🎒"
+        },
+        {
+          "name": "Traveler 2",
+          "icon": "🧳"
+        },
+        {
+          "name": "Bag 2",
+          "icon": "🎒"
+        },
+        {
+          "name": "Traveler 3",
+          "icon": "🧳"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 7,
+      "instructions": {
+        "ar": "تريد عائلة مكونة من أب وأم وبنت وولد اللحاق بالقطار على\r\nالضفة الأخرى للنهر, لكن المشكلة ان القطار سيغادر بعد 30\r\n دقيقة من الآن\r\n انضم إليهم صديقهم الشرطي لمساعدتهم في عبور النهر\r\n\r\nالشروط:\r\n\r\n- 1 الشرطي بإمكانه التجديف من ضفة إلى أخرى خلال دقيقة \r\nواحدة\r\n- 2 الأب بإمكانه التجديف من ضفة إلى أخرى خلال 3 دقائق\r\n- 3 الأم بإمكانها التجديف من ضفة إلى أخرى خلال 6 دقائق\r\n- 4 البنت بإمكانها التجديف من ضفة إلى أخرى خلال 8 دقائق\r\n- 5 الابن بإمكانه التجديف من ضفة إلى أخرى خلال 12 دقيقة\r\n- 6 القارب سعته القصوى شخصين والوقت اللازم للعبور في \r\nهذه الحالة يحتسب حسب سرعة الشخص الأبطأ بينهما\r\n\r\nهل يمكنك مساعدة العائلة للحاق بالقطار في الوقت \r\nالمناسب؟",
+        "en": "A family must catch a train on the other side of a river. The train is leaving in 30 minutes. They have been joined by their friend, a cop, who wants to help them cross the river.\r\n\r\nRules:\r\n\r\n1) The cop can cross the river in 1 minute.\r\n\r\n2) Father can cross in 3 minutes.\r\n\r\n3) Mother can cross in 6 minutes.\r\n\r\n4) Daughter can cross in 8 minutes.\r\n\r\n5) Son can cross in 12 minutes.\r\n\r\n6) If two people are on the raft, they will cross the river in the time that it would take for the slower person to cross alone.\r\n\r\nCan you help the family catch their train?",
+        "fr": "Une famille doit prendre un train de l'autre côté de la rivière. Le train part dans 30 minutes. Ils sont rejoints par leur ami, un policier, qui veut les aider à traverser la rivière.\r\n\r\nRègles :\r\n\r\n1) Le policier peut traverser la rivière en 1 minute.\r\n\r\n2) Le père peut traverser en 3 minutes.\r\n\r\n3) La mère peut traverser en 6 minutes.\r\n\r\n4) La fille peut traverser en 8 minutes.\r\n\r\n5) Le fils peut traverser en 12 minutes.\r\n\r\n6) Si deux personnes sont sur le radeau, elles traverseront la rivière au rythme de la personne la plus lente.\r\n\r\nPouvez-vous aider la famille à avoir son train ?",
+        "es": "Una familia debe coger un tren en el otro lado del río. El tren sale en 30 minutos. Se han unido con su amigo, un policía, que quiere ayudarlos a cruzar el río.\r\n\r\nReglas:\r\n\r\n1) El policía puede cruzar el río en 1 minuto.\r\n\r\n2) El Padre puede cruzar en 3 minutos.\r\n\r\n3) La Madre puede cruzar en 6 minutos.\r\n\r\n4) La Hija puede cruzar en 8 minutos.\r\n\r\n5) El Hijo puede cruzar en 12 minutos.\r\n\r\n6) Si dos personas están en la balsa, cruzarán el río en el mismo tiempo que lo haría la persona más lenta si cruzara sola.\r\n\r\n¿Puedes ayudar a la familia a coger su tren?",
+        "de": "Eine Familie besteht aus einem Vater, einer Mutter, einem Jungen und einem Mädchen und sie möchten einen Fluss überqueren.Es gibt auf der anderen Seite des Flusses einen Zug und sie wollen mit diesem Zug fahren. Aber sie haben nur 30 Minuten den Fluss zu überqueren, weil der Zug in 30 Minuten abfährt. Ein Polizist steht auf der gleichen Seite und möchte ihnen helfen.\r\nRegeln:\r\n1) Der Polizist kann mit dem Boot in 1 Minute den Fluss überqueren.\r\n2) Der Vater braucht 3 Minuten zu überqueren.\r\n3) Die Mutter braucht 6 Minuten zu überqueren.\r\n4) Das Mädchen braucht 8 Minuten zu überqueren.\r\n5) Das Junge braucht 12 Minuten zu überqueren.\r\n6) Das Boot kann maximal zwei Personen tragen.\r\n7) wenn das Boot zwei Personen trägt, dann hängt die Zeit zu überqueren von der Person, die langsamer ist.\r\nKannst du der Familie und dem Polizist helfen, den Fluss zu überqueren und den Zug zu fangen?"
+      },
+      "solutions": {
+        "ar": "- 1 الشرطي 1 دقيقة والأب 3 دقيقة - ذهاب - باقي 27 دقيقة\r\n - 2 الشرطي 1 دقيقة - عودة - باقي 26 دقيقة\r\n - 3 الشرطي 1 دقيقة والأم 6 دقيقة - ذهاب - باقي 20 دقيقة\r\n - 4 الشرطي 1 دقيقة - عودة - باقي 19 دقيقة\r\n - 5 البنت 12 دقيقة و الولد 8 دقيقة - ذهاب - باقي 7 دقائق\r\n - 6 الأب 3 دقيقة - عودة - باقي 4 دقائق\r\n - 7 الشرطي 1 دقيقة و الأب 3 دقيقة - ذهاب - باقي دقيقة\r\n\r\n انتهى الحل",
+        "en": "1- Cop with father (cross - 27 mins Remaining).\r\n2- Cop (return - 26 mins Remaining)\r\n3- Cop with mother (cross - 20 mins Remaining).\r\n4- Cop (return - 19 mins Remaining).\r\n5- Boy with girl (cross - 7 mins Remaining).\r\n6- Father (return - 4 mins Remaining).\r\n7- Cop with father (cross - 1 Remaining).\r\n\r\nDone.",
+        "fr": "1- Le policier avec le père (aller - 27 min restantes).\r\n2- Le policier (retour - 26 min restantes)\r\n3- Le policier avec la mère (aller - 20 min restantes).\r\n4- Le policier (retour - 19 min restantes).\r\n5- Le fils avec la fille (aller - 7 min restantes).\r\n6- Le père (retour - 4 min restantes).\r\n7- Le policier avec le père (aller - 1 min restante).\r\n\r\nFini.",
+        "es": "1- Policía con padre (cruzar - 27 mins Restantes).\r\n2- Policía (volver - 26 mins Restantes)\r\n3- Policía con madre (cruzar - 20 mins Restantes).\r\n4- Policía (volver - 19 mins Restantes).\r\n5- Niño con niña (cruzar - 7 mins Restantes).\r\n6- Padre (volver - 4 mins Restante).\r\n7- Policía con padre (cruzar - 1 Restante).\r\n\r\nHecho.",
+        "de": "1- Der Polizist mit dem Vater (überqueren) (noch 27 Min).\r\n2- Der Polizist (zurück) (noch 26 Min).\r\n3- Der Polizist mit der Mutter (überqueren) (noch 20 Min).\r\n4- der Polizist (zurück) (noch 19 Min).\r\n5- Das Junge mit dem Mädchen (überqueren) (noch 7 Min).\r\n6- Der Vater (zurück) (noch 4 Min).\r\n7- Der Polizist mit dem Vater (überqueren) (noch 1 Min).\r\n\r\nFertig"
+      },
+      "title": "Family catching a train",
+      "actors": [
+        {
+          "name": "Cop",
+          "icon": "👮"
+        },
+        {
+          "name": "Father",
+          "icon": "👨"
+        },
+        {
+          "name": "Mother",
+          "icon": "👩"
+        },
+        {
+          "name": "Daughter",
+          "icon": "👧"
+        },
+        {
+          "name": "Son",
+          "icon": "👦"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 8,
+      "instructions": {
+        "ar": "قبض 3 من رجال الشرطة على 3 من اللصوص وفي طريق\r\n السجن صادفوا نهراً يجب عليهم عبوره جميعاً\r\n\r\nالشروط:\r\n\r\n- 1 الشرطة تمتلك مفاتيح أغلال اللصوص فلا يمكنهم الهرب\r\n إذا تركوا لوحدهم لكن يجب أن لا يتفوق عدد اللصوص على\r\n عدد الشرطة في أي ضفة من ضفاف النهر وإلا تمكنوا من \r\nالهرب\r\n- 2 القارب يتسع لشخصين اثنين كحد أقصى كما أن أي \r\nشخص بإمكانه قيادة القارب\r\n\r\nكيف يمكنك مساعدة الشرطة في عبور النهر بسلام \r\nمع اللصوص؟",
+        "en": "Three cops and three robbers need to cross a river.\r\n\r\nRules:\r\n\r\n1) The raft can hold a maximum of two people, and everyone can row.\r\n\r\n2) There can never be more robbers than cops together on the same side.\r\n\r\nHow can all six cross the river?",
+        "fr": "Trois policiers et trois voleurs doivent traverser une rivière.\r\n\r\nRègles :\r\n\r\n1) Le radeau peut supporter un maximum de deux personnes, et tout le monde peut ramer.\r\n\r\n2) Il ne peut jamais y avoir plus de voleurs que de policiers sur une même berge.\r\n\r\nComment leur faire tous traverser la rivière ?",
+        "es": "Tres policías y tres ladroness necesitan cruzar un río.\r\n\r\nReglas:\r\n\r\n1) La balsa puede soportar un máximo de dos personas, y todos pueden remar.\r\n\r\n2) No puede haber nunca más ladrones que policías juntos en el mismo lado.\r\n\r\n¿Cómo pueden cruzar el río los seis?",
+        "de": "Drei Polizisten und drei Diebe müssen einen Fluss überqueren.\r\n\r\nRegeln:\r\n\r\n1) Die Diebe können alleine entweder auf dem Boot oder auf der Seite des Fluss gelassen werden.\r\n\r\n2) Es ist nicht möglich, Anzahl der Diebe mehr als die Polizisten auf der gleichen Seite des Flusses zu sein.\r\n\r\n3) Das Boot kann maximal zwei Personen tragen.\r\n\r\n4) Jede Person kann das Boot fahren.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 لصان - ذهاب\r\n - 2 لص - عودة\r\n - 3 لصان - ذهاب\r\n - 4 لص - عودة\r\n - 5 شرطيان - ذهاب\r\n - 6 شرطي ولص - عودة\r\n - 7 شرطيان - ذهاب\r\n - 8 لص - عودة\r\n - 9 لصان - ذهاب\r\n - 10 لص - عودة\r\n - 11 لصان - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Two robbers (cross)\r\n2- One robber (return).\r\n3- Two robbers (cross).\r\n4- One robber (return).\r\n5- Two cops (cross).\r\n6- Robber with a cop (return).\r\n7- Two cops (cross).\r\n8- One robber (return).\r\n9- Two robbers (cross).\r\n10- One robber (return).\r\n11- Two robbers (cross).\r\n\r\nDone.",
+        "fr": "1- Deux voleurs (aller)\r\n2- Un voleur (retour).\r\n3- Deux voleurs (aller).\r\n4- Un voleur (retour).\r\n5- Deux policiers (aller).\r\n6- Un voleur avec un policier (retour).\r\n7- Deux policiers (aller).\r\n8- Un voleur (retour).\r\n9- Deux voleurs (aller).\r\n10- Un voleur (retour).\r\n11- Deux voleurs (aller).\r\n\r\nFini.",
+        "es": "1- Dos ladrones (cruzar)\r\n2- Un ladrón (volver).\r\n3- Dos ladrones (cruzar).\r\n4- Un ladrón (volver).\r\n5- Dos policías (cruzar).\r\n6- Ladrón con un policía (volver).\r\n7- Dos policías (cruzar).\r\n8- Un ladrón (volver).\r\n9- Dos ladrones (cruzar).\r\n10- Un ladrón (volver).\r\n11- Dos ladrones (cruzar).\r\n\r\nHecho.",
+        "de": "1- Zwei Diebe (überqueren).\r\n2- Ein Dieb (zurück).\r\n3- Zwei Diebe (überqueren).\r\n4- Ein Dieb (zurück).\r\n5- Zwei Polizisten (überqueren).\r\n6- Ein Polizist + ein Dieb (zurück).\r\n7- Zwei Polizisten (überqueren).\r\n8- Ein Dieb (zurück).\r\n9- Zwei Diebe (überqueren).\r\n10- Ein Dieb (zurück).\r\n11- Zwei Diebe (überqueren).\r\n\r\n\r\nFertig"
+      },
+      "title": "Cops and robbers",
+      "actors": [
+        {
+          "name": "Cop 1",
+          "icon": "👮"
+        },
+        {
+          "name": "Cop 2",
+          "icon": "👮"
+        },
+        {
+          "name": "Cop 3",
+          "icon": "👮"
+        },
+        {
+          "name": "Robber 1",
+          "icon": "🥷"
+        },
+        {
+          "name": "Robber 2",
+          "icon": "🥷"
+        },
+        {
+          "name": "Robber 3",
+          "icon": "🥷"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 9,
+      "instructions": {
+        "ar": "وصل ثلاثة لصوص الى طرف النهر في الوقت نفسه وصل ثلاثة\r\nتجار الى الطرف الأخر من النهر,  يريد كل من اللصوص والتجار\r\n العبور الى الطرف المقابل لكل منهما\r\n\r\nالشروط:\r\n\r\n- 1 القارب يحمل شخصين على الأكثر, لا يمكن ارسال القارب\r\n خاليا, يجب على شخص ما قيادته \r\n- 2 لا يجب ان يتفوق عدد اللصوص على عدد التجار في اي ضفة\r\n من النهر وإلا ستحدث عملية سرقة\r\n- 3 فقط قائد التجار وقائد اللصوص يستطيعون قيادة القارب\r\n وهما أصحاب اللون الأخضر \r\n\r\nكيف يمكنك نقل التجار واللصوص إلى وجهاتهم بسلام؟",
+        "en": "Three robbers have come to the left bank of a river. At the same time, three merchants have come to the right bank of the river. Each group wants to cross to the opposite side.\n\nRules:\n\n1) There is a small raft on the left bank, which can hold only two people.\n\n2) There can never be more robbers than merchants together on the same side.\n\n3) The merchant and robber wearing green clothes are the only ones who can row.\n\nHow can they all cross the river?",
+        "fr": "Trois voleurs sont arrivés sur la rive gauche d'une rivière. Au même moment, trois marchands arrivent sur la rive droite. Chaque groupe veut passer de l'autre côté.\n\nRègles :\n\n1) Il y a un petit radeau sur la rive gauche, qui ne peut embarquer que deux personnes.\n\n2) Il ne peut jamais y avoir plus de voleurs que de marchands sur une même rive.\n\n3) Le marchant et le voleur avec les habits verts, sont les seuls à pouvoir ramer.\n\nComment peuvent-ils tous traverser la rivière ?",
+        "es": "Tres ladrones han venido a la orilla izquierda de un río. Al mismo tiempo, tres comerciantes han llegado a la orilla derecha del río. Cada grupo quiere cruzar al lado contrario. Reglas:\n\n1) Hay una balsa pequeña en la orilla izquierda, que sólo puede soportar dos personas.\n\n2) Nunca puede haber más ladrones que comerciantes juntos en el mismo lado.\n\n3) El comerciante y el ladrón que llevan ropa verde son los únicos que pueden remar.\n\n¿Cómo pueden cruzar todos el ríor?",
+        "de": "Drei Diebe stehen auf einer Seite eines Flusses und möchten den Fluss überqueren.\r\n\r\nGleichzeitig stehen drei Kaufleute auf der anderen Seite des Flusses und möchten den Fluss überqueren.\r\n\r\nRegeln:\r\n\r\n1) Es gibt ein kleines Boot an einer Seite der Diebe, das maximal zwei Personen tragen kann.\r\n\r\n2) Es ist nicht möglich, Anzahl der Diebe mehr als Anzahl der kaufleute auf der gleichen Seite des Flusses zu sein.\r\n\r\n3) Nur ein Kaufmann oder ein Dieb, der grüne Kleidung trägt, kann das Boot fahren.\r\n\r\nwie können die Diebe und die Kaufleute den Fluss überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 اللص القائد - ذهاب\r\n - 2 التاجر القائد وتاجر آخر - عودة\r\n - 3 التاجر القائد ولص - ذهاب\r\n - 4 التاجر القائد واللص القائد - عودة\r\n - 5 التاجر القائد ولص - ذهاب\r\n - 6 التاجر القائد والتاجر الأخير - عودة\r\n - 7 اللص القائد - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Green robber (cross).\r\n2- Green merchant and another merchant (return).\r\n3- Green merchant and a robber (cross).\r\n4- Green merchant and green robber (return).\r\n5- Green merchant and a robber (cross).\r\n6- Green merchant and the last merchant (return).\r\n7- Green robber (cross).\r\n\r\nDone.",
+        "fr": "1- Le voleur vert (aller).\r\n2- Le marchant vert et un autre marchant (retour).\r\n3- Le marchant vert et un voleur (aller).\r\n4- Le marchant vert et un voleur vert (retour).\r\n5- Le marchant vert et un voleur (aller).\r\n6- Le marchant vert et le dernier marchant (retour).\r\n7- Le voleur vert (aller).\r\n\r\nFini.",
+        "es": "1- Ladrón verde (cruzar).\r\n2- Comerciante verde y otro comerciante (volver).\r\n3- Comerciante verde y un ladrón (cruzar).\r\n4- Comerciante verde y ladrón verde (volver).\r\n5- Comerciante verde y un ladrón (cruzar).\r\n6- Comerciante verde y el último comerciante (volver).\r\n7- Ladrón verde (cruzar).\r\n\r\nHecho.",
+        "de": "1- Der grüne Dieb (überqueren).\r\n2- Der grüne Kaufmann + ein andere kaufmann (zurück).\r\n3- Der grüne Kaufmann + ein Dieb (überqueren).\r\n4- Der grüne Kaufmann + der grüne Dieb (zurück).\r\n5- Der grüne Kaufmann + ein Dieb (überqueren).\r\n6- Der grüne Kaufmann + der letzte Kaufmann (zurück).\r\n7- Der grüne Dieb (überqueren).\r\n\r\nfertig"
+      },
+      "title": "Robbers and merchants",
+      "actors": [
+        {
+          "name": "Robber green",
+          "icon": "🥷"
+        },
+        {
+          "name": "Robber 2",
+          "icon": "🥷"
+        },
+        {
+          "name": "Robber 3",
+          "icon": "🥷"
+        },
+        {
+          "name": "Merchant green",
+          "icon": "🧑‍🌾"
+        },
+        {
+          "name": "Merchant 2",
+          "icon": "🧑‍🌾"
+        },
+        {
+          "name": "Merchant 3",
+          "icon": "🧑‍🌾"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 10,
+      "instructions": {
+        "ar": "في طريقهم إلى المنافسة المحلية وجد ثلاثة لاعبين مع \r\nمدربيهم أنفسهم أمام نهر يجب عليهم عبوره.\r\n\r\nالشروط:\r\n\r\n- 1 لا يريد أي مدرب للاعبه أن يكون بمفرده مع أي مدرب\r\n آخر إلا إذا كان هو برفقته مخافة أن يقنعه ذلك المدرب \r\nبالانتقال إلى الفريق المنافس.\r\n- 2 يمكن للاعبين أن يكونوا مع بعضهم بمفردهم شرط عدم \r\nوجود أي مدرب معهم.\r\n- 3 القارب يتسع لشخصين على الأكثر, والكل يمكنه القيادة\r\n\r\nكيف يمكنك مساعدة المدربين واللاعبين في العبور دون \r\nمشاكل؟",
+        "en": "Three athletes and their individual coaches need to cross a river. \n\nRules:\n\n1) No coach trusts his athlete to be with any other coach unless he is also with his athlete.\n\n2) Each athlete can either be alone or with other athletes, but not alone with a different coach.\n\n3) The raft can hold a maximum of two people, and everyone can row.\n\n\nHow can all six people get across the river?",
+        "fr": "Trois athlètes et leurs entraîneurs particuliers doivent traverser une rivière.\n\nRègles :\n\n1) Aucun entraîneur n'a suffisamment confiance en son athlète pour le laisser avec un autre entraîneur, à moins que lui-même ne soit présent.\n\n2) Chaque athlète peut se retrouver seul ou avec d'autres athlètes, mais pas seul avec un autre entraîneur.\n\n3) Le radeau peut supporter un maximum de deux personnes, et tout le monde peut ramer.\n\nComment faire traverser les six ?",
+        "es": "Tres atletas y sus entrenadores personales necesitan cruzar un río. \n\nReglas:\n\n1) Ningún entrenador confía en que su atleta esté con otro entrenador a menos que él también esté con su atleta.\n\n2) Cada atleta puede o estar solo o con otros atletas, pero no sólo con otro entrenador que no es el suyo.\n\n3) La balsa puede soportar un máximo de dos personas, y todo el mundo puede remar. \n\n¿Cómo pueden cruzar las seis personas al otro lado del río?",
+        "de": "Drei Athleten und drei Trainer stehen auf einer Seite eines Flusses und möchten den Fluss überqueren.\r\nJeder Athlet hat einen Trainer.\r\n\r\nRegeln:\r\n\r\n1) Jeder Trainer vertraut nicht in seinen Athlet, mit anderen Trainer zu gehen.\r\nDeshalb kann jeder Athlet nicht mit anderen Trainer allein ohne seinen trainer entweder auf einer Seite des Flusses oder auf dem Boot sein.\r\n\r\n2) Jeder Athlet kann allein oder mit anderen Athleten ohne Trainer entweder auf einer Seite des Flusses oder auf dem Boot sein.\r\n\r\n3) Das Boot kann maximal zwei Personen tragen und jede Person kann es fahren.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 لاعب مع مدربه - ذهاب\r\n - 2 المدرب - عودة\r\n - 3 اللاعبان المتبقيان - ذهاب\r\n - 4 اللاعب الأول - عودة\r\n - 5 المدربان الآخران - ذهاب\r\n - 6 لاعب مع مدربه - عودة\r\n - 7 المدربان - ذهاب\r\n - 8 اللاعب المتبقي - عودة\r\n - 9 لاعبين - ذهاب\r\n - 10 مدرب اللاعب الأخير - عودة\r\n - 11 اللاعب الأخير مع مدربه - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- A coach with his athlete (cross).\r\n2- The coach (return).\r\n3- Remaining two athletes (cross).\r\n4- An athlete (return).\r\n5- Remaining two coaches (cross).\r\n6- A coach with his athlete (return).\r\n7- The coaches (cross).\r\n8- Remaining athlete (return).\r\n9- Two athletes (cross).\r\n10- The coach of the remaining athlete (return).\r\n11- Last coach and his athlete (cross).\r\n\r\nDone.",
+        "fr": "1- Un entraîneur avec son athlète (aller).\r\n2- L'entraîneur (retour).\r\n3- Les deux athlètes restants (aller).\r\n4- Un athlète (retour).\r\n5- Les deux entraîneurs restants (aller).\r\n6- Un entraîneur avec son athlète (retour).\r\n7- Les entraîneurs (aller).\r\n8- L'athlète restant (retour).\r\n9- Deux athlètes (aller).\r\n10- L'entraîneur de l'athlète restant (retour).\r\n11- Le dernier entraîneur et son athlète (aller).\r\n\r\nFini.",
+        "es": "1- Un entrenador con su atleta (cruzar).\r\n2- El entrenador (volver).\r\n3- Los dos atletas restantes (cruzar).\r\n4- Un atleta (volver).\r\n5- Los dos entrenadores restantes (cruzar).\r\n6- Un entrenador con su atleta (volver).\r\n7- Los entrenadores (cruzar).\r\n8- Atleta restante (volver).\r\n9- Dos atletas (cruzar).\r\n10- El entrenador del atleta restante (volver).\r\n11- Último entrenador y su atleta (cruzar).\r\n\r\nHecho.",
+        "de": "1- Der erste Trainer mit seinem Athlet (überqueren).\r\n2- Der Trainer (zurück).\r\n3- Die zweite und dritte Athleten (überqueren).\r\n4- Der erste Athlet (zurück).\r\n5- Die zweite und dritte Trainer (überqueren).\r\n6- Die zweite Trainer mit seinem Athlet (zurück).\r\n7- Die erste und zweite Trainer (überqueren).\r\n8- Der dritte Athlet (zurück).\r\n9- Die zweite und dritte Athleten (überqueren).\r\n10- Der erste Trainer (zurück).\r\n11- Der erste Trainer mit seinem Athlet (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Athletes and coaches",
+      "actors": [
+        {
+          "name": "Athlete 1",
+          "icon": "🏃"
+        },
+        {
+          "name": "Coach 1",
+          "icon": "🧑‍🏫"
+        },
+        {
+          "name": "Athlete 2",
+          "icon": "🏃"
+        },
+        {
+          "name": "Coach 2",
+          "icon": "🧑‍🏫"
+        },
+        {
+          "name": "Athlete 3",
+          "icon": "🏃"
+        },
+        {
+          "name": "Coach 3",
+          "icon": "🧑‍🏫"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 11,
+      "instructions": {
+        "ar": "ذهبت إحدى الأمهات و صديقتها مع أطفالهما إلى الحديقة \r\nوفي الطريق صادفوا نهراً عليهم عبوره\r\n\r\nالشروط:\r\n\r\n- 1 الأطفال شديدو التعلق بأمهاتهم فلا يمكن تواجد اي طفل\r\n في اي ضفة او في القارب مع الأم الأخرى دون وجود أمه\r\n وإلا سيبكي\r\n- 2 يمكن للاطفال التواجد مع بعضهم البعض سواء على \r\nالقارب او الضفة شرط عدم تواجد الامهات\r\n- 3 الأم الأولى وابنها فقط يستطيعون قيادة القارب\r\n\r\nكيف يمكنك نقل الأمهات مع أطفالهم بسلام",
+        "en": "Two mothers, each accompanied by her son and daughter, want to cross a river.\r\n\r\nRules:\r\n\r\n1) No child can be with another mother on a bank or on the raft without his or her mother.\r\n\r\n2) A child can be left alone or with other children, but not with a different mother.\r\n\r\n3) The raft can hold a maximum of two people, The mother and her son wearing red clothes are the only ones who can row.\r\n\r\nHow can they cross the river?",
+        "fr": "Deux mères, chacune accompagnée de son fils et de sa fille, veulent traverser une rivière.\r\n\r\nRègles :\r\n\r\n1) Nul enfant ne peut être avec une autre mère que la sienne, que ce soit sur le radeau ou sur la berge, s'il n'est pas accompagné par sa propre mère.\r\n\r\n2) Un enfant peut rester seul ou avec un autre enfant, mais pas avec la mère d'un autre.\r\n\r\n3) Le radeau peut supporter un maximum de deux personnes, les seuls à pouvoir ramer sont la mère et son fils habillés en rouge.\r\n\r\nComment peuvent-ils traverser la rivière ?",
+        "es": "Dos madres, cada una con su hijo y su hija, quieren cruzar un río.\r\n\r\nReglas:\r\n\r\n1) Ningún niño puede estar con otra madre en una orilla o en la balsa sin su madre.\r\n\r\n2) Un niño se puede quedar solo o con otro niño, pero no con una madre que no es la suya.\r\n\r\n3) La balsa puede soportar un máximo de dos personas, la madre y su hijo que llevan ropa roja son los únicos que pueden remar.\r\n\r\n¿Cómo pueden cruzar el río?",
+        "de": "Zwei Mütter stehen auf einer Seite eines Flusses.\r\nJede Mutter hat mit ihr einen Sohn und eine Tochter und sie möchten den Fluss überqueren.\r\n\r\nRegeln:\r\n\r\n1) Jedes Kind kann nicht mit der anderen Mutter ohne seine Mutter  entweder auf dem Boot oder auf einer Seite des Flusses sein.\r\n\r\n2) Jedes Kind kann allein oder mit anderen Kinder ohne Mütter entweder auf dem Boot oder auf einer Seite des Flusses sein.\r\n\r\n3) Das Boot kann maximal zwei Personen tragen.\r\n\r\n4) Nur die erste Mutter und ihr Sohn (der erste Sohn) (tragen die rote Kleidung) können das Boot fahren.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الولد الأول مع الولد الثاني - ذهاب\r\n - 2 الولد الأول - عودة\r\n - 3 الولد الأول مع البنت الثانية - ذهاب\r\n - 4 الولد الأول - عودة\r\n - 5 الأم الأولى مع الأم الثانية - ذهاب\r\n - 6 الأم الأولى - عودة\r\n - 7 الأم الأولى مع الولد الأول - ذهاب\r\n - 8 الولد الأول - عودة\r\n - 9 الولد الأول مع البنت الأولى - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- First boy with second boy (cross).\r\n2- First boy (return).\r\n3- First boy with second girl (cross).\r\n4- First boy (return).\r\n5- First mother with another mother (cross).\r\n6- First mother (return).\r\n7- First mother with her son (cross).\r\n8- First boy (return).\r\n9- First boy with his sister (cross).\r\n\r\nDone.",
+        "fr": "1- Le premier garçon avec le deuxième garçon (aller).\r\n2- Le premier garçon (retour).\r\n3- Le premier garçon avec la deuxième fille (aller).\r\n4- Le premier garçon (retour).\r\n5- La première mère avec l'autre mère (aller).\r\n6- La première mère (retour).\r\n7- La première mère avec son fils (aller).\r\n8- Le premier garçon (retour).\r\n9- Le premier garçon avec sa súur (aller).\r\n\r\nFini.",
+        "es": "1- Primer niño con segundo niño (cruzar).\r\n2- Primer niño (volver).\r\n3- Primer niño con segunda niña (cruzar).\r\n4- Primer niño (volver).\r\n5- Primera madre con otra madre (cruzar).\r\n6- Primera madre (volver).\r\n7- Primera madre con su hijo (cruzar).\r\n8- Primer niño (volver).\r\n9- Primer niño con su hermana (cruzar).\r\n\r\nHecho.",
+        "de": "1- Der erste Sohn + Der zweite Sohn (überqueren).\r\n2- Der erste Sohn (zurück).\r\n3- Der erste Sohn + die zweite Tochter (überqueren).\r\n4- Der erste Sohn (zurück).\r\n5- Die erste Mutter + die zweite Mutter (überqueren).\r\n6- Die erste Mutter (zurück).\r\n7- Die erste Mutter + der erste Sohn (überqueren).\r\n8- Der erste Sohn (zurück).\r\n9- Der erste Sohn + Die erste Tochter (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Mothers and children",
+      "actors": [
+        {
+          "name": "Mother 1",
+          "icon": "👩"
+        },
+        {
+          "name": "Son 1",
+          "icon": "👦"
+        },
+        {
+          "name": "Daughter 1",
+          "icon": "👧"
+        },
+        {
+          "name": "Mother 2",
+          "icon": "👩"
+        },
+        {
+          "name": "Son 2",
+          "icon": "👦"
+        },
+        {
+          "name": "Daughter 2",
+          "icon": "👧"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 12,
+      "instructions": {
+        "ar": "تريد عائلتان مكونتان من أب وأم وطفلة عبور النهر تلبية\r\nلدعوة لحضور احتفال في القرية الموجودة على الضفة\r\nالمقابلة.\r\n\r\nالشروط:\r\n\r\n- 1 الفتاتان الصغيرتان شديدات التعلق بوالديهما وستبكيان\r\nإذا تواجدتا مع أم أو أب آخر\r\n- 2 لا يمكن ترك أي فتاة صغيرة بمفردها على أي ضفة\r\n- 3 الآباء فقط يستطيعون قيادة القارب\r\n\r\nكيف يمكنك مساعدة العائلتين في عبور النهر بسلام؟",
+        "en": "Two families (each consisting of a father, a mother, and a child) want to cross a river.\r\n\r\nRules:\r\n\r\n1) The children cannot stay with any of the other parents without one of their own parents.\r\n\r\n2) No child can be left alone on either bank.\r\n\r\n3) The raft can hold a maximum of two people, Only the fathers can row.\r\n\r\nHow can they cross the river?",
+        "fr": "Deux familles (chacune composée d'un père, d'une mère et d'un enfant) veulent traverser une rivière.\r\n\r\nRègles :\r\n\r\n1) Les enfants ne peuvent pas rester avec l'un des parents de l'autre enfant, sans la présence de l'un de leurs propres parents.\r\n\r\n2) Nul enfant ne peut rester seul sur une rive.\r\n\r\n3) Le radeau supporte un maximum de deux personnes, et seuls les parents peuvent ramer.\r\n\r\nComment peuvent-ils traverser la rivière ?",
+        "es": "Dos familias (cada una formada por un padre, una madre y un niño) quieren cruzar un río.\r\n\r\nReglas:\r\n\r\n1) Los niños no pueden permanecer con ninguno de los otros padres sin uno de sus propios padres.\r\n\r\n2) Ningún niño puede quedarse solo en ninguna orilla.\r\n\r\n3) La balsa puede soportar un máximo de dos personas, sólo el padre de cada familia puede remar.\r\n\r\n¿Cómo pueden cruzar el río?",
+        "de": "Zwei Familien stehen auf einer Seite eines Flusses und wollen den Fluss überqueren.\r\nJede familie besteht aus einem Vater, einer Mutter und einem Kind.\r\n\r\nRegeln:\r\n\r\n1) Jedes Kind kann nicht allein mit anderen Eltern ohne seine Mutter oder seinen Vater gelassen werden.\r\n\r\n2) Jedes Kind kann nicht allein ohne seine Mutter oder seinen Vater auf einer Seite des Flusses gelassen werden.\r\n\r\n3) Das Boot kann maximal zwei Personen tragen und nur die Väter können das Boot fahren.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الأبوان - ذهاب\r\n - 2 أحدهما - عودة\r\n - 3 الأب وطفلته - ذهاب\r\n - 4 الأب الآخر - عودة\r\n - 5 الأب مع الأم الأخرى - ذهاب\r\n - 6 الأب نفسه - عودة\r\n - 7 الأب وطفلته - ذهاب\r\n - 8 الأب الآخر - عودة\r\n - 9 الأب مع الأم الأخرى - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Two fathers (cross).\r\n2- A father (return).\r\n3- The father with his child (cross).\r\n4- Other father (return).\r\n5- The father with another mother (cross).\r\n6- Same father (return).\r\n7- The father with his child (cross).\r\n8- Other father (return).\r\n9- The father with another mother (cross).\r\n\r\nDone.",
+        "fr": "1- Deux pères (aller).\r\n2- Un père (retour).\r\n3- Le père avec son fils (aller).\r\n4- L'autre père (retour).\r\n5- Le père avec l'autre mère (aller).\r\n6- Le même père (retour).\r\n7- Le père avec son fils (aller).\r\n8- L'autre père (retour).\r\n9- Le père avec l'autre mère (aller).\r\n\r\nFini.",
+        "es": "1- Dos padres (cruzar).\r\n2- Un padre (volver).\r\n3- El padre con su hijo (cruzar).\r\n4- Otro padre (volver).\r\n5- El padre con otra madre (cruzar).\r\n6- Mismo padre (volver).\r\n7- El padre con su hijo (cruzar).\r\n8- Otro padre (volver).\r\n9- El padre con otra madre (cruzar).\r\n\r\nHecho.",
+        "de": "1- Die erste und zweite Vater (überqueren).\r\n2- Der erste Vater (zurück).\r\n3- Der erste Vater + das erste Kind (überqueren).\r\n4- Der zweite Vater (zurück).\r\n5- Der zweite Vater + die erste Mutter (überqueren).\r\n6- Der zweite Vater (zurück).\r\n7- Der zweite Vater + das zweite Kind (überqueren).\r\n8- Der erste Vater (zurück).\r\n9- Der erste Vater + die zweite Mutter (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Two families",
+      "actors": [
+        {
+          "name": "Father 1",
+          "icon": "👨"
+        },
+        {
+          "name": "Mother 1",
+          "icon": "👩"
+        },
+        {
+          "name": "Child 1",
+          "icon": "🧒"
+        },
+        {
+          "name": "Father 2",
+          "icon": "👨"
+        },
+        {
+          "name": "Mother 2",
+          "icon": "👩"
+        },
+        {
+          "name": "Child 2",
+          "icon": "🧒"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 13,
+      "instructions": {
+        "ar": "قام المزارع بأخذ ابنه وابنته مع حيواناتهم الأليفة وكلب \r\nالحراسة في نزهة في الجوار لكنهم صادفوا نهراً يحب\r\n عليهم عبوره\r\n\r\nالشروط:\r\n\r\n- 1 الكلب شرس سيعض أي شيء في وجهه دون وجود\r\nالمزارع للسيطرة عليه\r\n- 2 الولد هو من قام بتربية الأرانب بمساعدة والده لذلك\r\nستخاف الأرانب إذا بقيت مع البنت دون وجود الولد\r\n- 3 البنت هي من قامت بالاعتناء بالسناجب مع والدها\r\nلذلك ستخاف السناجب إذا بقيت مع الولد دون وجود البنت\r\n-4 المزارع وأولاده فقط من يستطيع قيادة القارب\r\n\r\nكيف يمكنك مساعدة المزارع واولاده وحيواناتهم في عبور\r\nالنهر؟",
+        "en": "A farmer, his son and daughter, and their pets need to cross a river. The pets are a fierce dog, two squirrels, and two rabbits.\r\n\r\nRules:\r\n\r\n1) If the farmer is not around, the dog will bite everybody and everything.\r\n\r\n2) If the boy is not around, the girl will tease the rabbits.\r\n\r\n3) If the girl is not around, the boy will tease the squirrels.\r\n\r\n4) All three people can row the raft, but none of the animals can.\r\n\r\n5) The raft can hold either two persons or one person with one animal.\r\n\r\nHow can they cross the river?",
+        "fr": "Un fermier, son fils, sa fille et leurs animaux doivent traverser une rivière. Les animaux sont les suivants : un chien féroce, deux écureuils et deux lapins.\r\n\r\nRègles :\r\n\r\n1) Si le fermier n'est pas là, le chien mort tout le monde.\r\n2) Si le garçon n'est pas là, la fille tourmente les lapins.\r\n3) Si la fille n'est pas là, le garçon tourmente les écureuils.\r\n4) Les trois personnes peuvent ramer, mais pas les animaux.\r\n5) Le radeau peut emmener soit deux personnes soit une personne et un animal.\r\n\r\nComment peuvent-ils traverser la rivière ?",
+        "es": "Un granjero, su hijo y su hija, y sus mascotas necesitan cruzar un río. Las mascotas son un pero feroz, dos ardillas y dos conejos.\r\n\r\nReglas:\r\n\r\n1) Si el granjero no está cerca, el dog morderá a todo el mundo y a todas las cosas.\r\n\r\n2) Si el niño no está cerca, la niña le tomará el pelo a los conejos.\r\n\r\n3) Si la niña no está cerca, el niño le tomará el pelo a las ardillas.\r\n\r\n4) Las tres personas pueden remar en la balsa, pero los animales no.\r\n\r\n5) La balsa puede soportar o bien dos personas o una persona con un animal.\r\n\r\n¿Cómo pueden cruzar el río?",
+        "de": "Ein Bauer mit seinem Sohn und seiner Tochter stehen auf einer Seite des Flusses und sie haben Tiere mit ihnen.\r\nDie Tiere sind: ein Hund, zwei Hasen und zwei Hamster.\r\nRegeln:\r\n1) Wenn der Bauer nicht mit dem Hund ist, wird der Hund alle Leute beißen. (aber der Hund kann allein ohne Personen gelassen werden).\r\n2) Wenn der Sohn nicht mit den Hasen ist, wird die Tochter die Hasen ärgern. (aber die Hasen können alleine ohne Personen gelassen werden).\r\n3) Wenn die Tochter nicht mit den Hamster ist, wird der Sohn die Hamster ärgern. (aber die Hamster können alleine ohne Personen gelassen werden)\r\n4) Nur der Bauer, der Sohn oder die Tochter können das Boot fahren.\r\n5) Das Boot kann maximal zwei Personen oder eine Person mit ein Tier tragen.\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 المزارع والكلب - ذهاب\r\n - 2 المزارع - عودة\r\n - 3 االمزارع وأحد الأرانب - ذهاب\r\n - 4 المزارع والكلب - عودة\r\n - 5 الولد و الأرنب المتبقي - ذهاب\r\n - 6 الولد - عودة\r\n - 7 الولد والبنت - ذهاب\r\n - 8 البنت - عودة\r\n - 9 المزارع والكلب - ذهاب\r\n - 10 الولد - عودة\r\n - 11 الولد والبنت - ذهاب\r\n - 12 البنت - عودة\r\n - 13 البنت مع أحد السناجب - ذهاب\r\n - 14 المزارع والكلب - عودة\r\n - 15 المزارع مع السنجاب المتبقي - ذهاب\r\n - 16 المزارع  - عودة\r\n - 17 المزارع والكلب - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Farmer and the dog (cross).\r\n2- Farmer (return).\r\n3- Farmer and a rabbit (cross).\r\n4- Farmer and the dog (return).\r\n5- Boy and the remaining rabbit (cross).\r\n6- Boy (return).\r\n7- Girl and boy (cross).\r\n8- Girl (return).\r\n9- Farmer and the dog (cross).\r\n10- Boy (return).\r\n11- Girl and boy (cross).\r\n12- Girl (return).\r\n13- Girl and a squirrel (cross).\r\n14- Farmer and the dog (return).\r\n15- Farmer and the remaining squirrel (cross).\r\n16- Farmer (return).\r\n17- Farmer and the dog (cross).\r\n\r\nDone.",
+        "fr": "1- Le fermier et le chien (aller).\r\n2- Le fermier (retour).\r\n3- Le fermier et un lapin (aller).\r\n4- Le fermier et le chien (retour).\r\n5- Le garçon et le lapin restant (aller).\r\n6- Le garçon (retour).\r\n7- La fille et le garçon (aller).\r\n8- La fille (retour).\r\n9- Le fermier et le chien (aller).\r\n10- Le garçon (retour).\r\n11- La fille et le garçon (aller).\r\n12- La fille (retour).\r\n13- La fille et un écureuil (aller).\r\n14- Le fermier et le chien (retour).\r\n15- Le fermier et l'écureuil restant (aller).\r\n16- Le fermier (retour).\r\n17- Le fermier et le chien (aller).\r\n\r\nFini.",
+        "es": "1- El granjero y el perro (cruzar).\r\n2- El granjero (volver).\r\n3- El granjero y un conejo (cruzar).\r\n4- El granjero y el perro (volver).\r\n5- El niño y el conejo restante (cruzar).\r\n6- Niño (volver).\r\n7- Niña y niño (cruzar).\r\n8- Niña (volver).\r\n9- El granjero y el perro (cruzar).\r\n10- Niño (volver).\r\n11- Niña y niño (cruzar).\r\n12- Niña (volver).\r\n13- Niña y una ardilla (cruzar).\r\n14- El granjero y el perro (volver).\r\n15- El granjero y la ardilla restante (cruzar).\r\n16- Granjero (volver).\r\n17- El granjero y el perro (cruzar).\r\n\r\nHecho.",
+        "de": "1- Der Bauer mit dem Hund (überqueren).\r\n2- der Bauer (zurück).\r\n3- Der Bauer mit einem Hase (überqueren).\r\n4- Der Bauer mit dem Hund (zurück).\r\n5- Der Sohn mit dem anderen Hase (überqueren).\r\n6- Der Sohn (zurück). \r\n7- Der Sohn mit der Tochter (überqueren).\r\n8- Die Tochter (zurück).\r\n9- Der Bauer mit Dem Hund (überqueren).\r\n10- Der Sohn (zurück).\r\n11- Der Sohn mit der Tochter (überqueren).\r\n12- Die Tochter (zurück).\r\n13- Die Tochter mit einem Hamster (überqueren).\r\n14- Der Bauer mit dem Hund (zurück).\r\n15- Der Bauer mit dem anderen Hamster (überqueren).\r\n16- Der Bauer (zurück).\r\n17- Der Bauer mit dem Hund (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Farmer and pets",
+      "actors": [
+        {
+          "name": "Farmer",
+          "icon": "👨‍🌾"
+        },
+        {
+          "name": "Boy",
+          "icon": "👦"
+        },
+        {
+          "name": "Girl",
+          "icon": "👧"
+        },
+        {
+          "name": "Dog",
+          "icon": "🐕"
+        },
+        {
+          "name": "Rabbit 1",
+          "icon": "🐇"
+        },
+        {
+          "name": "Rabbit 2",
+          "icon": "🐇"
+        },
+        {
+          "name": "Squirrel 1",
+          "icon": "🐿️"
+        },
+        {
+          "name": "Squirrel 2",
+          "icon": "🐿️"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 14,
+      "instructions": {
+        "ar": "قام ثلاثة لصوص بسرقة أحد البنوك, وفي طريق هربهم وجدوا\r\n نهراً يحتاجون عبوره قبل وصول الشرطة إليهم\r\nإذا علمنا أن  اللص الاول سرق 3000 دولار والثاني 5000 \r\nدولار والثالث 8000 دولاراً\r\n\r\nالشروط:\r\n\r\n- 1 لا يمكن لأي لص البقاء في أي ضفة لوحده مع قيمة نقود\r\n أكبر من التي سرقها\r\n- 2 لا يمكن للصوص البقاء في أي ضفة مع قيمة نقود أكبر\r\n من التي سرقوها مجتمعين\r\n- 3 أي لص بإمكانه تحريك القارب الذي يتسع لشخصين\r\n اثنين او شخص مع كيس نقود\r\n\r\nكيف يمكن لهؤلاء اللصوص عبور النهر مع مسروقاتهم بنجاح؟",
+        "en": "Three robbers have just robbed a bank. To escape, they need to cross a river. The first robber stole $3,000, the second stole $5,000, and the third stole $8,000.\r\n\r\nRules:\r\n\r\n1) The raft can hold either two robbers or one robber and one bag.\r\n\r\n2) No robber can be left alone with a bag worth more than the amount he stole.\r\n\r\n3) Two robbers cannot be left alone with bags that are together worth more than the sum of what both originally stole.\r\n\r\nHow can they cross the river?",
+        "fr": "Trois voleurs viennent de voler une banque. Pour s'échapper, ils doivent traverser une rivière. Le premier a volé 3 000 $, le deuxième 5 000 $, et le troisième 8 000 $.\r\n\r\nRègles :\r\n\r\n1) Le radeau supporte soit deux voleurs, soit un voleur et un sac.\r\n\r\n2) Nul voleur ne peut rester seul avec un sac valant plus que le sien.\r\n\r\n3) Deux voleurs ne peuvent rester seuls avec des sacs dont la somme dépasse ce qu'ils ont eux-même volé au départ.\r\n\r\nComment peuvent-ils traverser la rivière ?",
+        "es": "Tres ladrones acaban de robar un banco. Para escapar, necesitan cruzar un río. El primer ladrón robó $3,000, el segundo robó $5,000, y el tercero robó $8,000.\r\n\r\nReglas:\r\n\r\n1) La balsa puede soportar o bien dos ladrones o un ladrón y una bolsa.\r\n\r\n2) Ningún ladrón se puede quedar solo con una bolsa que tenga más dinero del que él robó.\r\n\r\n3) Dos ladrones no se pueden quedar solos con bolsas que suman más dinero de lo que ambos robaron originariamente.\r\n\r\n¿Cómo pueden cruzar el río?",
+        "de": "Drei Diebe haben gerade eine Bank geraubt und brauchen einen Fluss zu überqueren.\r\nDer erste Dieb stahl 3000$ und steckte das Geld in einer Tasche.\r\nDer zweite Dieb stahl 5000$ und steckte das Geld in einer anderen Tasche.\r\nDer dritte Dieb stahl 8000$ und steckte das Geld in einer anderen Tasche.\r\n\r\nRegeln:\r\n1) Das Boot kann entweder zwei Personen ohne Taschen oder eine Person mit einer Tasche tragen.\r\n2) Kein Dieb kann auf jeder Seite des Flusses allein mit mehr Geld gelassen werden, als er geraubt hat.\r\n3) Zwei Diebe können nicht auf jeder Seite des Flusses zusammen mit mehr Geld gelassen werden, als sie zusammen gesammelt haben.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 اللص 5000 مع كيس نقوده - ذهاب\r\n - 2 اللص لوحده - عودة\r\n - 3 اللص 8000 مع كيس نقود 3000 - ذهاب\r\n - 4 اللص لوحده - عودة\r\n - 5 اللصان 3000 و 5000 - ذهاب\r\n - 6 اللص 3000 مع كيس نقوده - عودة\r\n - 7 اللص 8000 مع كيس نقوده - ذهاب\r\n - 8 اللص 5000 مع كيس نقوده - عودة\r\n - 9 اللصان 3000 و 5000 - ذهاب\r\n - 10 اللص 8000 لوحده - عودة\r\n - 11 اللص 8000 مع كيس نقود 3000 - ذهاب\r\n - 12 اللص 5000 لوحده - عودة\r\n - 13 اللص 5000 مع كيس نقوده - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Robber of 5000 with his bag (cross).\r\n2- Robber alone (return).\r\n3- Robber of 8000 with 3000 bag (cross).\r\n4- Robber alone (return).\r\n5- Robbers of 3000 and 5000 (cross).\r\n6- Robber of 3000 with his bag (return).\r\n7- Robber of 8000 with his bag (cross).\r\n8- Robber of 5000 with his bag (return).\r\n9- Robbers of 3000 and 5000 (cross).\r\n10- Robber of 8000 alone (return).\r\n11- Robber of 8000 with 3000 bag (cross).\r\n12- Robber of 5000 alone (return).\r\n13- Robber of 5000 with his bag (cross).\r\n\r\nDone.",
+        "fr": "1- Le voleur des 5000 avec son sac (aller).\r\n2- Le voleur seul (retour).\r\n3- Le voleur des 8000, avec le sac de 3000 (aller).\r\n4- Le voleur seul (retour).\r\n5- Les voleurs de 3000 et 5000 (aller).\r\n6- Le voleur des 3000 avec son sac (retour).\r\n7- Le voleur des 8000 avec son sac (aller).\r\n8- Le voleur des 5000 avec son sac (retour).\r\n9- Les voleurs de 3000 et 5000 (aller).\r\n10- Le voleur des 8000, seul (retour).\r\n11- Le voleur des 8000, avec le sac de 3000 (aller).\r\n12- Le voleur des 5000, seul (retour).\r\n13- Le voleur des 5000 avec son sac (aller).\r\n\r\nDone.",
+        "es": "1- Ladrón de 5000 con su bolsa (cruzar).\r\n2- Ladrón solo (volver).\r\n3- Ladrón de 8000 con bolsa de 3000 (cruzar).\r\n4- Ladrón solo (volver).\r\n5- Ladrones de 3000 y 5000 (cruzar).\r\n6- Ladrón de 3000 con su bolsa (volver).\r\n7- Ladrón de 8000 con su bolsa (cruzar).\r\n8- Ladrón de 5000 con su bolsa (volver).\r\n9- Ladrones de 3000 y 5000 (cruzar).\r\n10- Ladrón de 8000 solo (volver).\r\n11- Ladrón de 8000 con bolsa de 3000 (cruzar).\r\n12- Ladrón de 5000 solo (volver).\r\n13- Ladrón de 5000 con su bolsa (cruzar).\r\n\r\nHecho.",
+        "de": "1- Dieb 5000$ + Tasche 5000$ (überqueren).\r\n2- Dieb 5000$ (zurück).\r\n3- Dieb 8000$ + Tasche 3000$ (überqueren).\r\n4- Dieb 8000$ (zurück).\r\n5- Dieb 3000$ + Dieb 5000$ (überqueren).\r\n6- Dieb 3000$ + Tasche 3000$ (zurück).\r\n7- Dieb 8000$ + Tasche 8000$ (überqueren).\r\n8- Dieb 5000$ + Tasche 5000$ (zurück).\r\n9- Dieb 3000$ + Dieb 5000$ (überqueren).\r\n10- Dieb 8000$ (zurück).\r\n11- Dieb 8000$ + Tasche 3000$ (überqueren).\r\n12- Dieb 5000$ (zurück). \r\n13- Dieb 5000$ + Tasche 5000$ (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Robbers and money bags",
+      "actors": [
+        {
+          "name": "Robber · 3000",
+          "icon": "🥷"
+        },
+        {
+          "name": "Bag · 3000",
+          "icon": "💰"
+        },
+        {
+          "name": "Robber · 5000",
+          "icon": "🥷"
+        },
+        {
+          "name": "Bag · 5000",
+          "icon": "💰"
+        },
+        {
+          "name": "Robber · 8000",
+          "icon": "🥷"
+        },
+        {
+          "name": "Bag · 8000",
+          "icon": "💰"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 15,
+      "instructions": {
+        "ar": "ثلاثة كلاب وثلاث قطط بأحجام مختلفة -كبير, متوسط, وصغير-\r\n يريدون عبور النهر\r\n\r\nالشروط\r\n- 1 يجب أن لا يتفوق عدد الكلاب على عدد القطط في أي ضفة\r\n- 2 لا يجب ان يتواجد الكلب الأوسط -ذو اللون الغامق- مع أي \r\nمن الكلبين الآخرين -الأكبر أو الأصغر- لوحدهما سواء على \r\nالضفة أو في القارب\r\n- 3 لا يجب ان يتواجد القط الأوسط -ذو اللون الغامق- مع أي\r\nمن القطين الآخرين -الأكبر أو الأصغر- لوحدهما سواء على\r\n الضفة أو في القارب\r\n- 4 القارب يتسع لاثنين كحد أقصى أي حيوان بإمكانه تحريك\r\n القارب\r\n\r\nهل يمكنك مساعدة الجميع في عبور النهر بأمان؟",
+        "en": "Three dogs and three cats must cross a river: a big dog, a medium dog, and a small dog; a big cat, a medium cat, and a small cat.\n\nRules:\n\n1) The raft can carry two animals, and all of the animals can row.\n\n2) The medium animal of each kind (the slightly different colored one), cannot be left alone with either of the other animals of its kind on the riverbank or on the raft.\n\n3) The big animal of each kind will not fight with the small animal.\n\n4) If ever there are more dogs than cats together on the bank, the dogs will fight with the cats.\n\nHow can they cross the river?",
+        "fr": "Trois chiens et trois chats doivent traverser une rivière : un grand chien, un moyen et un petit chien; un grand chat, un moyen et un petit chat.\n\nRègles :\n\n1) Le radeau peut transporter deux animaux, et tous les animaux peuvent ramer.\n\n2) L'animal moyen de chaque espèce (celui avec une couleur légèrement différente), ne peut pas rester seul avec l'un des animaux de son espèce, que ce soit sur la berge ou sur le radeau.\n\n3) L'animal le plus grand de chaque espèce ne se battra pas avec le plus petit.\n\n4) Si jamais il y avait plus de chiens que de chats sur la berge, les chiens se battraient avec les chats.\n\nComment peuvent-ils traverser la rivière ?",
+        "es": "Tres perros y tres gatos deben cruzar un río: un perro grande, un perro mediano y un perro pequeño; un gato grande, un gato mediano y un gato pequeño.\n\nReglas:\n\n1) La balsa puede transportar dos animales, y todos los animales pueden remar.\n\n2) El animal mediano de cada especie (de un color ligeramente diferente), no se puede quedar solo con ninguno de los otros animales de su especie en la orilla o en la balsa.\n\n3) El animal grande de cada especie no luchará con el animal pequeño.\n\n4) Si alguna vez hay más perros que gatos juntos en la orilla, los perros se pelearán con los gatos. \n\n¿Cómo pueden cruzar el río?",
+        "de": "Drei Hunde und drei Katzen in verschiedenen Größen: groß, mittel und klein möchten einen Fluss überqueren.\r\n\r\nRegelen:\r\n1) Die Anzahl der Hunde darf nicht mehr als die Anzahl der Katzen auf jeder Seite des Flusses sein.\r\n2) Der mittelgroße Hund (dunkel Farbe) muss nicht allein mit einem anderen Hund (mit dem großen oder kleinen Hund) weder auf einer Seite des Flusses noch auf dem Boot gelassen werden.\r\n3) Die mittelgroße Katze (dunkel Farbe) muss nicht allein mit einer anderen Katze ( mit der großen oder kleinen Katze) weder auf einer Seite des Flusses noch auf dem Boot gelassen werden.\r\n4) Das Boot kann maximal zwei Tiere tragen und jedes Tier kann es fahren.\r\n\r\nKannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الكلب الأوسط مع القط الأوسط - ذهاب\r\n - 2 القط - عودة\r\n - 3 الكلبان الأكبر والأصغر - ذهاب\r\n - 4 الكلب الأوسط - عودة\r\n - 5 القطان الأكبر والأصغر - ذهاب\r\n - 6 الكلب الأصغر والقط الأصغر - عودة\r\n - 7 الكلب الأوسط والقط الأوسط - ذهاب\r\n - 8 الكلب الأكبر والقط الأكبر - عودة\r\n - 9 القطان الأكبر والأصغر - ذهاب\r\n - 10 الكلب الأوسط - عودة\r\n - 11 الكلبان الأكبر والأصغر - ذهاب\r\n - 12 القط الأوسط - عودة\r\n - 13 الكلب الأوسط والقط الأوسط - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Medium dog with medium cat (cross).\r\n2- Medium cat (return).\r\n3- Big dog with small dog (cross).\r\n4- Medium dog (return).\r\n5- Big cat with small cat (cross).\r\n6- Small dog with small cat (return).\r\n7- Medium dog with medium cat (cross).\r\n8- Big dog with big cat (return).\r\n9- Big cat with small cat (cross).\r\n10- Medium dog (return).\r\n11- Big dog with small dog (cross).\r\n12- Medium cat (return).\r\n13- Medium dog with medium cat (cross).\r\n\r\nDone.",
+        "fr": "1- Le chien moyen avec le chat moyen (aller).\r\n2- Le chat moyen (retour).\r\n3- Le grand chien avec le petit chien (aller).\r\n4- Le chien moyen (retour).\r\n5- Le grand chat avec le petit chat (aller).\r\n6- Le petit chien avec le petit chat (retour).\r\n7- Le chien moyen avec le chat moyen (aller).\r\n8- Le grand chien avec le grand chien (retour).\r\n9- Le grand chat avec le petit chat (aller).\r\n10- Le chien moyen (retour).\r\n11- Le grand chien avec le petit chien (aller).\r\n12- Le chat moyen (retour).\r\n13- Le chien moyen avec le chat moyen (aller).\r\n\r\nFini.",
+        "es": "1- Perro mediano con gato mediano (cruzar).\r\n2- Gato mediano (volver).\r\n3- Perro grande con perro pequeño (cruzar).\r\n4- Perro mediano (volver).\r\n5- Gato grande con gato pequeño (cruzar).\r\n6- Perro pequeño con gato pequeño (volver).\r\n7- Perro mediano con gato mediano (cruzar).\r\n8- Perro grande con gato grande (volver).\r\n9- Gato grande con gato pequeño (cruzar).\r\n10- Perro mediano (volver).\r\n11- Perro grande con perro pequeño (cruzar).\r\n12- Gato mediano (volver).\r\n13- Perro mediano con gato mediano (cruzar).\r\n\r\nHecho.",
+        "de": "1- Mittelgroße Hund mit mittelgroße Katze (überqueren).\r\n2- Mittelgroße Katze (zurück).\r\n3- Große Hund mit kleine Hund (überqueren).\r\n4- mittelgroße Hund (zurück).\r\n5- Große Katze mit kleine Katze (überqueren).\r\n6- Kleine Hund mit kline Katze (zurück).\r\n7- Mittelgroße Hund mit mittelroße Katze (überqueren).\r\n8- Große Hund mit große Katze (zurück).\r\n9- große Katze mit kleine Katze (überqueren).\r\n10- Mittelgroße Hund (zurück).\r\n11- Große Hund mit kleine Hund (überqueren).\r\n12- Mittelgroße Katze (zurück).\r\n13- Mittelgroße Hund mit mittelgroße Katze (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Dogs and cats",
+      "actors": [
+        {
+          "name": "Big dog",
+          "icon": "🐕"
+        },
+        {
+          "name": "Medium dog",
+          "icon": "🐕"
+        },
+        {
+          "name": "Small dog",
+          "icon": "🐕"
+        },
+        {
+          "name": "Big cat",
+          "icon": "🐈"
+        },
+        {
+          "name": "Medium cat",
+          "icon": "🐈"
+        },
+        {
+          "name": "Small cat",
+          "icon": "🐈"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 16,
+      "instructions": {
+        "ar": "لعبة شطرنج بشروط جديدة لديك ملكا الشطرنج الأسود والأبيض\r\nمع وزير وجندي لكل منهما يجب نقل كل الأحجار إلى الضفة\r\n الأخرى للنهر\r\n\r\nالشروط:\r\n\r\n- 1 الملك لا يجب ان يترك وحيدا سواء في القارب او على أي\r\nضفة دون وجود أحد أتباعه\r\n- 2 الوزير يجب ان يقود القارب لوحده\r\n- 3 الجندي بإمكانه قيادة القارب مع جندي اللون الأخر\r\n\r\nكيف يمكنك نقل قطع الشطرنج إلى ضفة النهر الأخرى؟",
+        "en": "Two chess kings (white and black), each accompanied by his queen and one pawn, want to cross the river.\n\nRules:\n\n1) Kings should not be left alone either on the bank or on the raft without one of their followers.\n\n2) Queens can row, but must be alone on the raft.\n\n3) Pawns can row together.\n\n4) The raft can hold a maximum of two chess pieces.\n\nHow can they cross the river?",
+        "fr": "Deux rois (noir et blanc), chacun accompagné de sa reine et d'un pion, veulent traverser une rivière.\n\nRègles :\n\n1) Les rois ne doivent pas se retrouver seuls, ni sur la berge ni sur le radeau, sans l'un de leur partisans.\n\n2) Les reines peuvent ramer, mais doivent être seules sur le radeau.\n\n3) Les pions peuvent ramer ensemble.\n\n4) Le radeau peut supporter un maximum de deux pièces.\n\nComment peuvent-ils traverser la rivière ?",
+        "es": "Dos reyes de ajedrez (blanco y negro), cada uno acompañado por su reina y un peón, quieren cruzar el río.\n\nReglas:\n\n1) Los reyes no deberían quedarse solos ni en la orilla ni en la balsa sin uno de sus seguidores.\n\n2) Las reinas pueden remar, pero deben estar solas en la balsa.\n\n3) Los peones pueden remar juntos.\n\n4) La balsa puede soportar un máximo de dos piezas de ajedrez. \n\n¿Cómo pueden cruzar el río?",
+        "de": "Zwei Könige eines Schachspiels (weiß und schwarz) und jeder von ihnen hat die Königin und einen Bauer mit ihm, sie möchten einen Fluss überqueren.\r\n\r\nRegeln:\r\n\r\n1) Jeder König muss nicht allein auf einer Seite des Flusses oder auf dem Boot ohne entweder seine Königin oder seinen Bauer gelassen werden.\r\n\r\n2) Die Königinnen können das Boot fahren, aber jede Königin muss allein ohne andere Personen auf dem Boot sein.\r\n\r\n3) Zwei Bauern können zusammen auf dem Boot sein.\r\n\r\n4) Das Boot kann maximal zwei Schachfiguren tragen.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الجندي الأول والثاني - ذهاب\r\n - 2 الجندي الأول - عودة\r\n - 3 الجندي الأول والملك الأول - ذهاب\r\n - 4 الجندي الثاني - عودة\r\n - 5 الوزير الأول - ذهاب\r\n - 6 الجندي الأول - عودة\r\n - 7 الجندي الأول والثاني - ذهاب\r\n - 8 الجندي الثاني - عودة\r\n - 9 الوزير الثاني - ذهاب\r\n - 10 الجندي الأول - عودة\r\n - 11 الجندي الثاني والملك الثاني - ذهاب\r\n - 12 الجندي الثاني - عودة\r\n - 13 الجندي الأول والثاني - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- White pawn with the black pawn (cross).\r\n2- White pawn (return).\r\n3- White pawn with the white king (cross).\r\n4- Black pawn (return).\r\n5- White queen (cross).\r\n6- White pawn (return).\r\n7- White pawn with the black pawn (cross).\r\n8- Black pawn (return).\r\n9- Black queen (cross).\r\n10- White pawn (return).\r\n11- Black pawn with the black king (cross).\r\n12- Black pawn (return).\r\n13- White pawn with the black pawn (cross).\r\n\r\nDone.",
+        "fr": "1- Le pion blanc avec le pion noir (aller).\r\n2- Le pion blanc (retour).\r\n3- Le pion blanc avec le roi blanc (aller).\r\n4- Le pion noir (retour).\r\n5- La reine blanche (aller).\r\n6- Le pion blanc (retour).\r\n7- Le pion blanc avec le pion noir (aller).\r\n8- Le pion noir (retour).\r\n9- La reine noire (aller).\r\n10- Le pion blanc (retour).\r\n11- Le pion noir avec le roi noir (aller).\r\n12- Le pion noir (retour).\r\n13- Le pion blanc avec le pion noir (aller).\r\n\r\nFini.",
+        "es": "1- El peón blanco con el peón negro (cruzar).\r\n2- Peón blanco (volver).\r\n3- El peón blanco con el rey blanco (cruzar).\r\n4- Peón negro (volver).\r\n5- La reina blanca (cruzar).\r\n6- Peón blanco (volver).\r\n7- El peón blanco con el peón negro (cruzar).\r\n8- Peón negro (volver).\r\n9- La reina negra (cruzar).\r\n10- Peón blanco (volver).\r\n11- El peón negro con el rey negro (cruzar).\r\n12- Peón negro (volver).\r\n13- El peón blanco con el peón negro (cruzar).\r\n\r\nHecho.",
+        "de": "1- Weiße Bauer mit schwarze Bauer (überqueren).\r\n2- Weiße Bauer (zurück).\r\n3- Weiße Bauer mit weiße König (überqueren).\r\n4- Schwarze Bauer (zurück).\r\n5- Weiße Königin (überqueren).\r\n6- Weiße Bauer (zurück).\r\n7- Weiße Bauer mit schwarze Bauer (überqueren).\r\n8- Schwarze Bauer (zurück).\r\n9- Schwarze Königin (überqueren).\r\n10- Weiße Bauer (zurück).\r\n11- Schwarze Bauer mit schwarze König (überqueren).\r\n12- Schwarze Bauer (zurück).\r\n13- Weiße Bauer mit schwarze Bauer (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Chess pieces",
+      "actors": [
+        {
+          "name": "White king",
+          "icon": "♔"
+        },
+        {
+          "name": "White queen",
+          "icon": "♕"
+        },
+        {
+          "name": "White pawn",
+          "icon": "♙"
+        },
+        {
+          "name": "Black king",
+          "icon": "♚"
+        },
+        {
+          "name": "Black queen",
+          "icon": "♛"
+        },
+        {
+          "name": "Black pawn",
+          "icon": "♟"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 17,
+      "instructions": {
+        "ar": "عاد المزارع مرة أخرى من السوق لكن في هذه المرة أحضر\r\nمعه بقرتان بالإضافة للماعز لكنه فوجئ بانضمام ذئبين له على\r\nطرف النهر فصار مجبرا على نقلهما أيضا رأفة بهما وتفاديا\r\nلشرهما\r\n\r\nالشروط:\r\n\r\n- 1 المزارع فقط يستطيع قيادة القارب, كما أن القارب لا \r\nيتسع إلا للمزارع وحيوان واحد معه\r\n- 2 لا يمكن للماعز التواجد مع أي من الذئاب دون وجود \r\nالمزارع وإلا سيهاجمها\r\n- 3 لا يمكن لبقرة لوحدها التواجد مع الذئبين معا دون وجود\r\n المزارع لحمايتها\r\n- 4 لا تقدر الذئاب على مهاجمة البقرتين معا ولا لحتى لذئب\r\n واحد مواجهة بقرة لوحده حتى بدون وجود المزارع\r\n\r\nكيف يمكنك مساعدة المزارع في نقل الحيوانات بسلام \r\nهذه المرة؟",
+        "en": "A farmer wants to cross the river again, but this time he wants to take with him a goat, two cows, and two wolves.\r\n\r\nRules:\r\n\r\n1) The raft can fit the farmer plus either the goat, a wolf, or a cow.\r\n\r\n2) If the goat and either one of the wolves are left alone on one side, the wolf will eat the goat.\r\n\r\n3) If the cow and the two wolves are alone on one side, the wolves will eat the cow.\r\n\r\nHow can the farmer bring all the animals across the river?",
+        "fr": "Un fermier veut de nouveau traverser la rivière, mais cette fois il veut emmener avec lui, une chèvre, deux vaches et deux loups.\r\n\r\nRègles :\r\n\r\n1) Le radeau peut emmener le fermier plus une chèvre ou un loup ou une vache.\r\n\r\n2) Si la chèvre et l'un des loups restent sur une berge, le loup dévore la chèvre.\r\n\r\n3) Si la vache et les deux loups restent sur une des berges, les loups mangeront la vache.\r\n\r\nComment le fermier va-t-il amener tous les animaux de l'autre côté ?",
+        "es": "Un granjero quiere cruzar el río de nuevo, pero esta vez quiere llevar con él una cabra, dos vacas y dos lobos.\r\n\r\nReglas:\r\n\r\n1) La balsa puede soportar el granjero más la cabra o un lobo o una vaca.\r\n\r\n2) Si la cabra y uno de los lobros se quedan solos en un lado, el lobo se comerá a la cabra.\r\n\r\n3) Si la vaca y los dos lobos se quedan solos en un lado, los lobos se comerán a la vaca.\r\n\r\n¿Cómo puede llevar el granjero todos los animales al otro lado del río?",
+        "de": "Ein Bauer möchte wieder einen Fluss überqueren. Er hat eine Ziege, zwei Kühe und zwei Wölfe mit ihm.\r\n\r\nRegeln:\r\n1) Das boot kann der Bauer mit nur ein Tier ( eine Kuh oder einen Wolf oder die Ziege ) tragen.\r\n2) Nur der Bauer kann das Boot fahren.\r\n3) Wenn die Ziege allein mit einem Wolf auf einer Seite des Flusses bleibt, wird der Wolf die Ziege essen.\r\n4) Wenn nur eine Kuh allein mit zwei Wölfen auf einer Seite des Flusses bleibt, wird die Wölfe die Kuh essen.\r\n5) Zwei Kühe können mit zwei Wölfen zusammen bleiben und eine Kuh kann allein mit einem Wolf bleiben.\r\n\r\nWie kannst du dem Bauer helfen, den Fluss mit seinen Tieren zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 المزارع والماعز - ذهاب\r\n - 2 المزارع - عودة\r\n - 3 االمزارع وأحد الذئاب - ذهاب\r\n - 4 المزارع والماعز - عودة\r\n - 5 المزارع والذئب الثاني - ذهاب\r\n - 6 المزارع - عودة\r\n - 7 المزارع والبقرة الأولى - ذهاب\r\n - 8 المزارع و أحد الذئاب - عودة\r\n - 9 المزارع والماعز - ذهاب\r\n - 10 المزارع والذئب الثاني - عودة\r\n - 11 المزارع والبقرة الثانية - ذهاب\r\n - 12 المزارع - عودة\r\n - 13 المزارع وأحد الذئاب - ذهاب\r\n - 14 المزارع والماعز - عودة\r\n - 15 المزارع والذئب الثاني - ذهاب\r\n - 16 المزارع  - عودة\r\n - 17 المزارع والماعز - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Farmer with the goat (cross).\r\n2- Farmer (return).\r\n3- Farmer with a wolf (cross).\r\n4- Farmer with the goat (return).\r\n5- Farmer with the second wolf (cross).\r\n6- Farmer (return).\r\n7- Farmer with a cow (cross).\r\n8- Farmer with a wolf (return).\r\n9- Farmer with the goat (cross).\r\n10- Farmer with the second wolf (return).\r\n11- Farmer with the second cow (cross).\r\n12- Farmer (return).\r\n13- Farmer with a wolf (cross).\r\n14- Farmer with the goat (return).\r\n15- Farmer with the second wolf (cross).\r\n16- Farmer (return).\r\n17- Farmer with the goat (cross).\r\n \r\nDone.",
+        "fr": "1- Le fermier avec la chèvre (aller).\r\n2- Le fermier (retour).\r\n3- Le fermier avec un loup (aller).\r\n4- Le fermier avec la chèvre (retour).\r\n5- Le fermier avec le second loup (aller).\r\n6- Le fermier (retour).\r\n7- Le fermier avec une vache (aller).\r\n8- Le fermier avec un loup (retour).\r\n9- Le fermier avec la chèvre (aller).\r\n10- Le fermier avec le second loup (retour).\r\n11- Le fermier avec la deuxième vache (aller).\r\n12- Le fermier (retour).\r\n13- Le fermier avec un loup (aller).\r\n14- Le fermier avec la chèvre (retour).\r\n15- Le fermier avec le deuxième loup (aller).\r\n16- Le fermier (retour).\r\n17- Le fermier avec la chèvre (aller).\r\n \r\nFini.",
+        "es": "1- El granjero con la cabra (cruzar).\r\n2- Granjero (volver).\r\n3- El granjero con un lobo (cruzar).\r\n4- El granjero con la cabra (volver).\r\n5- El granjero con el segundo lobo (cruzar).\r\n6- Granjero (volver).\r\n7- El granjero con una vaca (cruzar).\r\n8- El granjero con un lobo (volver).\r\n9- El granjero con la cabra (cruzar).\r\n10- El granjero con el segundo lobo (volver).\r\n11- El granjero con la segunda vaca (cruzar).\r\n12- Granjero (volver).\r\n13- El granjero con un lobo (cruzar).\r\n14- El granjero con la cabra (volver).\r\n15- El granjero con el segundo lobo (cruzar).\r\n16- Granjero (volver).\r\n17- El granjero con la cabra (cruzar).\r\n \r\nHecho.",
+        "de": "1- Der Bauer mit der Ziege (überqueren).\r\n2- Der Bauer (zurück).\r\n3- Der Bauer mit einem Wolf (überqueren).\r\n4- Der Bauer mit der Ziege (zurück).\r\n5- Der Bauer mit zweitem Wolf (überqueren).\r\n6- Der Bauer (zurück).\r\n7- Der Bauer mit erster Kuh (überqueren).\r\n8- Der Bauer mit einem Wolf (zurück).\r\n9- Der Bauer mit der Ziege (überqueren).\r\n10- Der Bauer mit zweitem Wolf (zurück).\r\n11- Der Bauer mit zweiter Kuh (überqueren).\r\n12- Der Bauer (zurück).\r\n13- Der Bauer mit einem Wolf (überqueren).\r\n14- Der Bauer mit der Ziege (zurück).\r\n15- Der Bauer mit zweitem Wolf (überqueren).\r\n16- Der Bauer (zurück).\r\n17- Der Bauer mit der Ziege (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Farmer, goat, cows and wolves",
+      "actors": [
+        {
+          "name": "Farmer",
+          "icon": "👨‍🌾"
+        },
+        {
+          "name": "Goat",
+          "icon": "🐐"
+        },
+        {
+          "name": "Wolf 1",
+          "icon": "🐺"
+        },
+        {
+          "name": "Wolf 2",
+          "icon": "🐺"
+        },
+        {
+          "name": "Cow 1",
+          "icon": "🐄"
+        },
+        {
+          "name": "Cow 2",
+          "icon": "🐄"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 18,
+      "instructions": {
+        "ar": "تحاول خمسة حيوانات عبور النهر : فأر, دجاجة, دب, واثنان من \r\nالغوريلا\r\n\r\nالشروط\n\r\n- 1 القارب يتسع للحيوانين الصغيرين معا -الفأر والدجاجة-\r\nأو لحيوان كبير لوحده, وكل الحيوانات يمكنها التجديف\r\n- 2 الفأر يخاف البقاء لوحده لذا لا يجب تركه بمفرده في أي\r\n ضفة\r\n- 3 الدجاجة تخاف من الغوريلا لذا لا يجب تركها لوحدها\r\n مع أي غوريلا دون وجود حيوان أخر\r\n\r\nكيف يمكنك نقل جميع الحيوانات إلى الطرف المقابل؟",
+        "en": "Five animals want to cross the river: a mouse, a chicken, a bear, and two gorillas.\n\nRules:\n\n1- All animals can row, but the raft can only hold the two small animals (mouse and chicken), or one big animal (a bear or a gorilla).\n\n2- The mouse should not be left alone on either bank.\n\n3- The chicken should not be left alone with any gorilla.\n\nHow can they cross the river?",
+        "fr": "Cinq animaux veulent traverser la rivière: une souris, un poulet, un ours et deux gorilles.\n\nRègles:\n\n1- Tous les animaux peuvent ramer, mais le radeau ne peut transporter que les deux petits animaux (souris et de poulet), ou un gros animal (un ours ou un gorille).\n\n2- La souris ne doit pas être laissé seul sur la berge.\n\n3- Le poulet ne devrait pas être laissé seul avec n'importe quel gorille.\n\nComment peuvent-ils traverser la rivière?",
+        "es": "Cinco animales quieren cruzar el río: un ratón, un pollo, un oso y dos gorilas.\n\nReglas:\n\n1- Todos los animales pueden remar, pero la balsa sólo puede contener los dos pequeños animales (ratón y pollo), o un animal grande (un oso o un gorila).\n\n2- El ratón no debe dejarse solo en ninguna de las dos orillas.\n\n3- El pollo no debe dejarse solo con ningún gorila.\n\n¿Cómo pueden cruzar el río?",
+        "de": "Fünf Tiere versuchen einen Fluss zu überqueren. Sie sind: eine Maus, ein Huhn, ein Bär und zwei Gorillas.\r\n\r\nRegeln:\r\n\r\n1) Das Boot kann die beide kleine Tiere zusammen (die Maus und das Huhn) oder nur ein groß Tier (den Bär oder einen Gorilla) tragen und jedes Tier kann das Boot fahren.\r\n\r\n2) Die Maus kann nicht auf einer Seite des Flusses allein bleiben.\r\n\r\n3) Das Huhn muss nicht allein mit den Gorillas gelassen werden.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الفأر والدجاجة - ذهاب\r\n - 2 الفأر - عودة\r\n - 3 الدب - ذهاب\r\n - 4 الدجاجة - عودة\r\n - 5 الفأر والدجاجة - ذهاب\r\n - 6 الفأر  - عودة\r\n - 7 الغوريلا الأولى - ذهاب\r\n - 8 الدجاجة - عودة\r\n - 9 الغوريلا الثانية - ذهاب\r\n - 10 الدب - عودة\r\n - 11 الفأر والدجاجة - ذهاب\r\n - 12 الدجاجة - عودة\r\n - 13 الدب - ذهاب\r\n - 14 الفأر - عودة\r\n - 15 الفأر والدجاجة - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Mouse with chicken (cross).\n2- Mouse (return).\n3- Bear (cross).\n4- Chicken (return).\n5- Mouse with chicken (cross).\n6- Mouse (return).\n7- First gorilla (cross).\n8- Chicken (return).\n9- Second gorilla (cross).\n10- Bear (return).\n11- Mouse with chicken (cross).\n12- Chicken (return).\n13- Bear (cross).\n14- Mouse (return).\n15- Mouse with chicken (cross).\n\nDone.",
+        "fr": "1- Souris avec poulet (aller).\n2- Souris (retour).\n3- ours (aller).\n4- Poulet (retour).\n5- Souris avec poulet (aller).\n6- Souris (retour).\n7- Premier gorille (aller).\n8- Poulet (retour).\n9- Deuxième gorille (aller).\n10- Bear (retour).\n11- Souris avec poulet (aller).\n12- Poulet (retour).\n13- Ours (aller).\n14- Souris (retour).\n15- Souris avec poulet (aller).\n\nFini.",
+        "es": "1- Ratón con pollo (cruzar).\n2- Ratón (volver).\n3- Oso (cruzar).\n4- Pollo (volver).\n5- Ratón con pollo (cruzar).\n6- Ratón (volver).\n7- Primer gorila (cruzar).\n8- Pollo (volver).\n9- Segundo gorila (cruzar).\n10- Oso (volver).\n11- Ratón con pollo (cruzar).\n12- Pollo (volver).\n13- Oso (cruzar).\n14- Ratón (volver).\n15- Ratón con pollo (cruzar).\n\nHecho.",
+        "de": "1- Die Maus mit dem Huhn (überqueren).\r\n2- Die Maus (zurück).\r\n3- Der Bär (überqueren).\r\n4- Das Huhn (zurück).\r\n5- Die Maus mit dem Huhn (überqueren).\r\n6- Die Maus (zurück).\r\n7- Der erste Gorilla (überqueren).\r\n8- Das Huhn (zurück).\r\n9- Der zweite Gorilla (überqueren).\r\n10- Der Bär (zurück).\r\n11- Die Maus mit dem Huhn (überqueren).\r\n12- Das Huhn (zurück).\r\n13- Der Bär (überqueren).\r\n14- Die Maus (zurück).\r\n15-Die Maus mit dem Huhn (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Five animals",
+      "actors": [
+        {
+          "name": "Mouse",
+          "icon": "🐁"
+        },
+        {
+          "name": "Chicken",
+          "icon": "🐔"
+        },
+        {
+          "name": "Bear",
+          "icon": "🐻"
+        },
+        {
+          "name": "Gorilla 1",
+          "icon": "🦍"
+        },
+        {
+          "name": "Gorilla 2",
+          "icon": "🦍"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 19,
+      "instructions": {
+        "ar": "أب وأم مع ابنهما وابنتهما يريدون عبور النهر ومساعدة رجل\r\nعجوز وزوجته في العبور\r\n\r\nالشروط\r\n\r\n- 1 القارب يتسع لشخصين فقط\r\n- 2 الأب والأم والرجل العجوز فقط يمكنهم التجديف لكن\r\nالرجل العجوز يصر على التجديف وحيدا\r\n- 3 الطفلان متعلقان بوالديهما لذا لا يمكن تركهما لوحدهما\r\nمع أي أحد أخر دون وجود أهلهم لكن يمكنهم البقاء بمفردهم\r\nإذا لم يكن هناك شخص أخر\r\n- 4 الولد يصر على ركوب القارب برفقة والده وكذلك\r\nالبنت لا تصعد القارب إلا مع أمها\r\n\r\nكيف يمكنك مساعدة هذه العائلة والعجوزين في العبور؟",
+        "en": "Father, mother, and their son and daughter want to cross the river and help an old man with his wife to get to the other side as well.\n\nRules:\n\n1- The raft can hold a maximum of two people.\n\n2- Only father, mother, and the old man can row, but the old man refuses to be accompanied on the raft.\n\n3- The children cannot stay with anyone without one of their parents.\n\n4- The son can only row with his father, and the daughter can only row with her mother.\n\nHow can they cross the river?",
+        "fr": "Père, mère, et leur fils et leur fille veulent traverser la rivière et aider un vieil homme avec sa femme à se rendre de l'autre côté aussi.\n\nRègles :\n\n1- Le radeau supporte un maximum de deux personnes.\n\n2- Seul le père, la mère, et le vieil homme peut ramer, mais le vieil homme refuse d'être accompagné sur le radeau.\n\n3- Les enfants ne peuvent pas rester avec une autre personne sans l'un de leurs parents.\n\n4- Le fils ne peut que ramer avec son père, et la fille ne peut que ramer avec sa mère.\n\nComment peuvent-ils traverser la rivière?",
+        "es": "Un padre, una madre y su hijo y su hija quieren cruzar el río y ayudar a un anciano con su esposa a llegar al otro lado también.\n\nReglas:\n\n1- La balsa puede soportar un máximo de dos personas.\n\n2- Sólo el padre, la madre, y el viejo se puede remar, pero el anciano se niega a estar acompañado en la balsa.\n\n3- Los niños no pueden quedarse con nadie sin uno de sus padres.\n\n4- El hijo sólo puede remar con su padre, a la hija sólo puede remar con su madre.\n\n¿Cómo pueden cruzar el río?",
+        "de": "Ein Vater und eine Mutter mit ihrem Sohn und ihrer Tochter möchten einen Fluss überqueren und es gibt auch ein alter Mann und eine alte Frau brauchen Hilfe, um den Fluss zu überqueren.\r\n\r\nRegeln:\r\n1) Das Boot kann maximal zwei Personen tragen.\r\n2) Nur der Vater, die Mutter und der alter Mann können das Boot fahren aber der alter Mann möchte allein ohne andere Personen auf dem Boot sein.\r\n3) Die Kinder können nicht allein ohne mindestens ein von ihren Eltern (Vater oder Mutter) mit anderen Personen gelassen werden. Aber die Kinder können allein ohne andere Personen gelassen werden.\r\n4) Der Sohn muss mit seinem Vater auf dem Boot sein und Die Tochter muss mit ihrer Mutter auf dem Boot sein.\r\n\r\nWie kannst du ihnen helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 الأب والابن - ذهاب\r\n - 2 الأب - عودة\r\n - 3 الأم والبنت - ذهاب\r\n - 4 الأم - عودة\r\n - 5 الأب والأم - ذهاب\r\n - 6 الأب والابن - عودة\r\n - 7 الرجل العجوز - ذهاب\r\n - 8 الأم والبنت - عودة\r\n - 9 الأب والمرأة العجوز - ذهاب\r\n - 10 الأب - عودة\r\n - 11 الأب والأم - ذهاب\r\n - 12 الأب - عودة\r\n - 13 الأب والابن - ذهاب\r\n - 14 الأم - عودة\r\n - 15 الأم والبنت - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Father with son (cross).\n2- Father (return).\n3- Mother with daughter (cross).\n4- Mother (return).\n5- Father with mother (cross).\n6- Father with son (return).\n7- Old man (cross)\n8- Mother with daughter (return).\n9- Father with old woman (cross).\n10- Father (return).\n11- Father with mother (cross)\n12- Father (return).\n13- Father with son (cross).\n14- Mother (return).\n15- Mother with daughter (cross).\n\nDone.",
+        "fr": "1- Père avec fils (aller).\n2- Père (retour).\n3- Mère avec fille (aller).\n4- Mère (retour).\n5- Père avec mère (aller).\n6- Père avec fils (retour).\n7- Vieil homme (aller)\n8- Mère avec fille (retour).\n9- Père avec vieille femme (aller).\n10- Père (retour).\n11- Père avec mère (aller)\n12- Père (retour).\n13- Père avec fils (aller).\n14- Mère (retour).\n15- Mère avec fille (aller).\n\nFini.",
+        "es": "1- Padre con hijo (cruzar).\n2- Padre (volver).\n3- Madre con hija (cruzar).\n4- Madre (volver).\n5- Padre con madre (cruzar).\n6- Padre con hijo (volver).\n7- Anciano (cruzar)\n8- Madre con hija (volver).\n9- Padre con anciana (cruzar).\n10- Padre (volver).\n11- Padre con madre (cruzar)\n12- Padre (volver).\n13- Padre con hijo (cruzar).\n14- Madre (volver).\n15- Madre con hija (cruzar).\n\nHecho.",
+        "de": "1- Vater und Sohn (überqueren).\r\n2- Vater (zurück).\r\n3- Mutter und Tochter (überqueren).\r\n4- Mutter (zurück).\r\n5- Vater und Mutter (überqueren).\r\n6- Vater und Sohn (zurück). (zurück).\r\n7- Der alter Mann (überqueren).\r\n8- Mutter und Tochter (zurück).\r\n9- Vater und die alte Frau (überqueren).\r\n10- Vater (zurück).\r\n11- Vater und Mutter (überqueren).\r\n12- Vater (zurück).\r\n13- Vater und Sohn (überqueren).\r\n14- Mutter (zurück).\r\n15- Mutter und Tochter (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Two families and elderly couple",
+      "actors": [
+        {
+          "name": "Father",
+          "icon": "👨"
+        },
+        {
+          "name": "Mother",
+          "icon": "👩"
+        },
+        {
+          "name": "Son",
+          "icon": "👦"
+        },
+        {
+          "name": "Daughter",
+          "icon": "👧"
+        },
+        {
+          "name": "Old man",
+          "icon": "👴"
+        },
+        {
+          "name": "Old woman",
+          "icon": "👵"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 20,
+      "instructions": {
+        "ar": "مع طلوع شمس النهار وقفت ستة حيوانات على ضفة النهر\r\nأسدان مع سنجابان مع اثنان من حيوانات الراكون راغبين\r\nفي عبور النهر\r\n\r\nالشروط\r\n\r\n- 1 السناجب حيوانات تنشط فقط خلال النهار لذلك لا\r\nيمكنها التجديف إلا نهارا\r\n- 2 حيوانات الراكون تنشط فقط خلال الليل لذلك لا \r\nيمكنها التجديف إلا ليلا\r\n- 3 الأسود حيوانات تنشط في الليل والنهار لذلك \r\nيمكنها التجديف في أي وقت\r\n- 4 يمكن لأي حيوان اي يكون في القارب بمفرده أو\r\nمع حيوان أخر من جنسه فقط\r\n- 5 تستغرق كل نقلة ذهاب ونقلة العودة التي تليها\r\nنهارا كاملا أو ليلة كاملة\r\n\r\nكيف يمكنك مساعدة هذه الحيوانات في العبور مع \r\nمراعاة ساعات نشاطها الفيزيولوجية؟",
+        "en": "Six animals need to cross the river: two lions, two raccoons, and two squirrels.\n\nRules:\n\n1- Squirrels are diurnal animals, they can only row during the day.\n\n2- Raccoons are nocturnal animals, they can only row during the night.\n\n3- Lions are cathemeral animals, they can row anytime.\n\n4- Each animal can be on the raft alone or with an animal of its kind.\n\n5- Each crossing and the following return take a full day or a full night.\n\nHow can they cross the river?",
+        "fr": "Six animaux ont besoin de traverser la rivière: deux lions, deux ratons laveurs et deux écureuils.\n\nRègles :\n\n1- Les écureuils sont des animaux diurnes, ils ne peut que ramer pendant la journée.\n\n2- Les ratons laveurs sont des animaux nocturnes, ils ne peut que ramer pendant la nuit.\n\n3- Les Lions sont des animaux cathemeral, ils peuvent ramer à tout moment.\n\n4- Chaque animal peut être sur le radeau seul ou avec un animal de son genre.\n\n5- Chaque croisement et le retour suivant prennent une journée complète ou une nuit complète.\n\nComment peuvent-ils traverser la rivière?",
+        "es": "Seis animales necesitan cruzar el río: dos leones, dos mapaches y dos ardillas.\n\nReglas:\n\n1- Las ardillas son animales diurnos, sólo pueden remar durante el día.\n\n2- Los mapaches son animales nocturnos, sólo pueden remar durante la noche.\n\n3- Los leones son animales cathemeral, se puede remar en cualquier momento.\n\n4- Cada animal puede estar en la balsa sola o con un animal de su clase.\n\n5- Cada cruzar y el siguiente volver toman un día completo o una noche completa.\n\n¿Cómo pueden cruzar el río?",
+        "de": "Am Morgen stehen sechs Tiere auf einer Seite eines Flusses. Sie sind: zwei Löwen, zwei Hamster und zwei Waschbären. Sie möchten den Fluss überqueren.\r\n\r\nRegeln:\r\n1) Die Hamster sind tägliche Tiere. Deshalb können sie nur Während der Tageslichtstunden das Boot fahren.\r\n2) Die Waschbären sind Nachttiere. deshalb können sie nur in der Nacht das Boot fahren.\r\n3) Die Löwen können jede Zeit das Boot fahren ( täglisch oder in der Nacht).\r\n4) Jedes Tier kann auf dem Boot allein oder nur mit einem anderen Tier von seiner Art sein (Z.B. Löwe mit Löwe ...).\r\n5) Jede Überquerung und die folgende Rückkehr des Flusses dauert eine volle Nacht oder volle Tageslichtstunden.\r\n\r\nWie kannst du diesen Tieren helfen, den Fluss zu überqueren?"
+      },
+      "solutions": {
+        "ar": "- 1 السنجابان - ذهاب\r\n - 2 سنجاب واحد - عودة\r\n - 3 الراكونان - ذهاب\r\n - 4 راكون واحد - عودة\r\n - 5 الأسدان - ذهاب\r\n - 6 السنجاب المتبقي - عودة\r\n - 7 الراكون الأخير - ذهاب\r\n - 8 أحد الأسود - عودة\r\n - 9 السنجابان - ذهاب\r\n - 10 الأسد المتبقي - عودة\r\n - 11 الأسدان  - ذهاب\r\n\r\n انتهى الحل",
+        "en": "1- Two squirrels (cross).\n2- A squirrel (return).\n3- Two raccoons (cross).\n4- A raccoon (return).\n5- Two lions (cross).\n6- The squirrel (return).\n7- The raccoon (cross).\n8- A lion (return).\n9- Two squirrels (cross).\n10- A lion (return).\n11- Two lions (cross).\n\nDone.",
+        "fr": "1- Deux écureuils (aller).\n2- Un écureuil (retour).\n3- Deux ratons laveurs (aller).\n4- Un raton laveur (retour).\n5- Deux lions (aller).\n6- L'écureuil (retour).\n7- Le raton laveur (aller).\n8- Un lion (retour).\n9- Deux écureuils (aller).\n10- Un lion (retour).\n11- Deux lions (aller).\n\nFini.",
+        "es": "1- Dos ardillas (cruzar).\n2- Una ardilla (volver).\n3- Dos mapaches (cruzar).\n4- Un mapache (volver).\n5- Dos leones (cruzar).\n6- La ardilla (volver).\n7- El mapache (cruzar).\n8- Un león (volver).\n9- Dos ardillas (cruzar).\n10- Un león (volver).\n11- Dos leones (cruzar).\n\nHecho.",
+        "de": "1- Zwei Hamster (überqueren).\r\n2- Ein Hamster (zurück).\r\n3- Zwei Waschbären (überqueren).\r\n4- Ein Waschbär (zurück).\r\n5- Zwei Löwen (überqueren).\r\n6- Ein Hamster (zurück).\r\n7- Der andere Waschbär (überqueren).\r\n8- Ein Löwe (zurück).\r\n9- Zwei Hamster (überqueren).\r\n10- Der andere Löwe (zurück).\r\n11- Zwei Löwen (überqueren).\r\n\r\nFertig"
+      },
+      "title": "Lions, raccoons and squirrels",
+      "actors": [
+        {
+          "name": "Lion 1",
+          "icon": "🦁"
+        },
+        {
+          "name": "Lion 2",
+          "icon": "🦁"
+        },
+        {
+          "name": "Raccoon 1",
+          "icon": "🦝"
+        },
+        {
+          "name": "Raccoon 2",
+          "icon": "🦝"
+        },
+        {
+          "name": "Squirrel 1",
+          "icon": "🐿️"
+        },
+        {
+          "name": "Squirrel 2",
+          "icon": "🐿️"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": false
+    },
+    {
+      "id": 21,
+      "instructions": {
+        "ar": "يجب عليك نقل أربعة أوزان معدنية من ضفة نهر إلى أخرى\r\nهذه الأوزان هي 4 كغ و 3 كغ و 2 كغ و 1كغ\r\n\r\nالشروط\r\n\r\n- 1 يمكنك تحميل اثنين من الأوزان المعدنية في القارب\r\nكحد أقصى\r\n- 2 يجب ان لا يتجاوز الفرق في الوزن الإجمالي المنقول \r\nبين كل نقلتين متتاليتين 1 كغ على الأكثر \r\n\r\nكيف يمكنك نقل هذه الأوزان الأربعة مع مراعاة الشروط؟",
+        "en": "You need to transfer four metal weights to the other side of the river: 1kg, 2kg, 3kg, and 4kg.\n\nRules:\n\n1- Raft can carry a maximum of two metal weights.\n\n2- The difference in total loaded weight between two successive transfers should not be greater than 1 kg.\n\nHow can you transfer all four weights to the other side of the river?",
+        "fr": "Vous devez transférer quatre poids de métal de l'autre côté de la rivière: 1kg, 2kg, 3kg et 4kg.\n\nRègles :\n\n1- Le raft peut porter un maximum de deux poids métalliques.\n\n2- La différence de poids total chargé entre deux transferts successifs ne doit pas être supérieure à 1 kg.\n\nComment pouvez-vous transférer les quatre poids de l'autre côté de la rivière?",
+        "es": "Usted necesita transferir cuatro pesos del metal al otro lado del río: 1kg, 2kg, 3kg, y 4kg.\n\nReglas:\n\n1- La balsa puede llevar un máximo de dos pesos del metal.\n\n2- La diferencia en el peso total cargado entre dos transferencias sucesivas no debe ser superior a 1 kg.\n\n¿Cómo puedes transferir los cuatro pesos al otro lado del río?",
+        "de": "Es gibt vier Gewichte aus Metall und du musst diese Gewichte einen Fluss überqueren.\r\n\r\nSie sind: 4kg, 3kg, 2kg und 1kg\r\n\r\nRegeln:\r\n\r\n1) Das Boot kann maximal zwei Gewichte tragen.\r\n\r\n2) Der Unterschied im Gesamtgewicht zwischen zwei aufeinanderfolgenden Transfers sollte nicht größer als 1kg sein.\r\n\r\nWie kannst du diese gewichte bewegen?"
+      },
+      "solutions": {
+        "ar": "NO SOLUTION FOR GENIUS ONLY LEVEL",
+        "en": "NO SOLUTION FOR GENIUS ONLY LEVEL",
+        "fr": "NO SOLUTION FOR GENIUS ONLY LEVEL",
+        "es": "NO SOLUTION FOR GENIUS ONLY LEVEL",
+        "de": "Es gibt keine Lösung, nur für die Genies"
+      },
+      "title": "Four metal weights",
+      "actors": [
+        {
+          "name": "1 kg",
+          "icon": "⚖️"
+        },
+        {
+          "name": "2 kg",
+          "icon": "⚖️"
+        },
+        {
+          "name": "3 kg",
+          "icon": "⚖️"
+        },
+        {
+          "name": "4 kg",
+          "icon": "⚖️"
+        }
+      ],
+      "capacity": 2,
+      "geniusOnly": true
+    }
+  ],
+  "ui": {
+    "ar": "[titles]\r\ngame_title = ألغاز عبور النهر\r\nlevel_title = المرحلة\r\ninstructions_title = التعليمات\r\nsolution_title = الحل\r\npause_menu_title = إيقاف مؤقت\r\nresume_title = متابعة\r\nshare_level_title = شارك المرحلة\r\nexit_title = خروج\r\ngame_over_title = تم العبور بنجاح\r\nwatch_video_title = هل ترغب بمشاهدة فيديو والإطلاع على الحل؟\r\nwatch_video_yes = نعم\r\nwatch_video_later = لاحقاً\r\nprevious_level_title = المرحلة السابقة\r\nmore_levels_title = المزيد من المراحل\r\ncoming_soon_title = قريباً\r\ntime_title = التوقيت\r\nmoves_title = النقلات\r\ntutorial_text1 = اختر المزارع لوضعه في القارب\r\ntutorial_text2 = اختر الماعز لوضعها في القارب\r\ntutorial_text3 = اضغط هنا لتحريك القارب\r\nuser_not_rewarded_text = لم يتم مشاهدة الفيديو كاملاً\r\nvideo_not_available_text = لا يوجد فيديو متاح حالياً\r\ngame_settings_text = إعدادات اللعبة\r\nsave_exit_text = حفظ و رجوع\r\nlanguage_text = اللغة\r\ngenius_only_text = للأذكياء فقط\r\ngenius_solution_text = لا يمكن إظهار الحل في مرحلة الأذكياء\r\n\r\n[level1_tips]\r\nlevel1_0 = المزارع فقط يستطيع قيادة القارب\r\nlevel1_1 = الذئب سيأكل الماعز دون وجود المزارع\r\nlevel1_2 = الماعز ستأكل الملفوف دون وجود المزارع\r\nlevel1_moves_tip = عليك إكمال المرحلة في 7 نقلات\r\nlevel1_time_tip = عليك إكمال المرحلة خلال 35 ثانية\r\n\r\n[level2_tips]\r\nlevel2_0 = يجب على احد الجنود قيادة القارب\r\nlevel2_1 = الجندي الجبان يرفض البقاء وحيداً على القارب\r\nlevel2_2 = الجندي الجبان يرفض البقاء وحيداً على الضفة\r\nlevel2_3 = الجندي الشجاع يصر على البقاء وحيداً في القارب\r\nlevel2_moves_tip = عليك إكمال المرحلة في 7 نقلات\r\nlevel2_time_tip = عليك إكمال المرحلة خلال 35 ثانية\r\n\r\n[level3_tips]\r\nlevel3_0 = يجب على أحد ما قيادة القارب\r\nlevel3_1 = القارب يتسع لعامل واحد فقط\r\nlevel3_2 = القارب لا يتسع لعامل مع أحد الأولاد\r\nlevel3_moves_tip =  عليك إكمال المرحلة في 9 نقلات\r\nlevel3_time_tip = عليك إكمال المرحلة خلال 45 ثانية\r\n\r\n[level4_tips]\r\nlevel4_0 =يجب على أحد ما قيادة القارب\r\nlevel4_1 =لا يمكن للشخص الأول البقاء مع الثاني في القارب\r\nlevel4_2 =لا يمكن للشخص الأول البقاء مع الثاني على الضفة\r\nlevel4_3 =لا يمكن للشخص الثاني البقاء مع الثالث في القارب\r\nlevel4_4 =لا يمكن للشخص الثاني البقاء مع الثالث على الضفة\r\nlevel4_5 =لا يمكن للشخص الثالث البقاء مع الرابع في القارب\r\nlevel4_6 =لا يمكن للشخص الثالث البقاء مع الرابع على الضفة\r\nlevel4_7 =لا يمكن للشخص الرابع البقاء مع الخامس في القارب\r\nlevel4_8 =لا يمكن للشخص الرابع البقاء مع الخامس على الضفة\r\nlevel4_9 =لا يمكن للشخص الأول البقاء مع الخامس في القارب\r\nlevel4_10 =لا يمكن للشخص الأول البقاء مع الخامس على الضفة\r\nlevel4_moves_tip = عليك إكمال المرحلة في 7 نقلات\r\nlevel4_time_tip =عليك إكمال المرحلة خلال 35 ثانية\r\n\r\n[level5_tips]\r\nlevel5_0 = يجب على أحد ما قيادة القارب\r\nlevel5_1 = الحمولة القصوى للقارب هي 100 كغ\r\nlevel5_moves_tip = عليك إكمال المرحلة في 9 نقلات\r\nlevel5_time_tip = عليك إكمال المرحلة خلال 45 ثانية\r\n\r\n[level6_tips]\r\nlevel6_0 = يجب على أحد المسافرين ركوب القارب\r\nlevel6_1 = المسافر الأول بمفرده مع حقائب ليست له\r\nlevel6_2 = المسافر الثاني بمفرده مع حقائب ليست له\r\nlevel6_3 = المسافر الثالث بمفرده مع حقائب ليست له\r\nlevel6_moves_tip = عليك إكمال المرحلة في 9 نقلات\r\nlevel6_time_tip =  عليك إكمال المرحلة خلال 45 ثانية\r\n\r\n[level7_tips]\r\nlevel7_0 = دقيقة متبقية\r\nlevel7_1 = انتهى الوقت .. وفاتهم ميعاد القطار\r\nlevel7_2 = يجب عليك إعادة المرحلة\r\nlevel7_moves_tip = عليك إكمال المرحلة في 7 نقلات\r\nlevel7_time_tip = عليك إكمال المرحلة خلال 35 ثانية\r\n\r\n[level8_tips]\r\nlevel8_0 = يجب على أحد ما قيادة القارب\r\nlevel8_1 = سيتفوق عدد اللصوص على عدد الشرطة\r\nlevel8_moves_tip = عليك إكمال المرحلة في 11 نقلة\r\nlevel8_time_tip = عليك إكمال المرحلة خلال 55 ثانية\r\n\r\n[level9_tips]\r\nlevel9_0 = الأشخاص باللباس الأخضر فقط يستطيعون القيادة\r\nlevel9_1 = سيتفوق عدد اللصوص على عدد التجار\r\nlevel9_moves_tip = عليك إكمال المرحلة في 7 نقلات\r\nlevel9_time_tip = عليك إكمال المرحلة خلال 35 ثانية\r\n\r\n[level10_tips]\r\nlevel10_0 =يجب على أحد ما قيادة القارب\r\nlevel10_1 =اللاعب الأول مع مدرب أخر دون وجود مدربه\r\nlevel10_2 =اللاعب الثاني مع مدرب أخر دون وجود مدربه\r\nlevel10_3 =اللاعب الثالث مع مدرب أخر دون وجود مدربه\r\nlevel10_moves_tip =عليك إكمال المرحلة في 11 نقلة\r\nlevel10_time_tip =عليك إكمال المرحلة خلال 55 ثانية\r\n\r\n[level11_tips]\r\nlevel11_0 =الأم الأولى وابنها فقط يستطيعون القيادة\r\nlevel11_1 =الولد الأول بمفرده مع أم أخرى دون وجود أمه\r\nlevel11_2 =الولد الأول بمفرده مع أم أخرى دون وجود أمه\r\nlevel11_3 =الفتاة الأولى بمفردها مع أم أخرى دون وجود أمها\r\nlevel11_4 =الولد الثاني بمفرده مع أم أخرى دون وجود أمه\r\nlevel11_5 =الفتاة الثانية بمفردها مع أم أخرى دون وجود أمها\r\nlevel11_moves_tip =عليك إكمال المرحلة في 9 نقلات\r\nlevel11_time_tip =عليك إكمال المرحلة خلال 45 ثانية\r\n\r\n[level12_tips]\r\nlevel12_0 =الآباء فقط يستطيعون قيادة القارب\r\nlevel12_1 =لا يمكن ترك الطفلة مع غير أهلها دون وجودهم معها\r\nlevel12_2 =لا يمكن ترك الطفلة مع غير أهلها دون وجودهم معها\r\nlevel12_3 =لا يمكن ترك الطفلة مع غير أهلها دون وجودهم معها\r\nlevel12_4 =لا يمكن ترك الطفلة مع غير أهلها دون وجودهم معها\r\nlevel12_5 =لا يجب أن تتواجد الطفلة بمفردها على أي ضفة\r\nlevel12_moves_tip =عليك إكمال المرحلة في 9 نقلات\r\nlevel12_time_tip =عليك إكمال المرحلة خلال 45 ثانية\r\n\r\n[level13_tips]\r\nlevel13_0 =المزارع وأولاده فقط يستطيعون القيادة\r\nlevel13_1 =الارانب تخاف من البنت دون وجود الولد\r\nlevel13_2 =السناجب تخاف من الولد دون وجود البنت\r\nlevel13_3 =الكلب سيعض أي شيء دون وجود المزارع\r\nlevel13_moves_tip =عليك إكمال المرحلة في 17 نقلة\r\nlevel13_time_tip =عليك إكمال المرحلة خلال دقيقة و 45 ثانية\r\n\r\n[level14_tips]\r\nlevel14_0 =يجب على أحد اللصوص قيادة القارب\r\nlevel14_1 =سيصبح مع اللص الأول كمية نقود أكثر مما سرق\r\nlevel14_2 =سيصبح مع اللص الثاني كمية نقود أكثر مما سرق\r\nlevel14_3 =سيصبح مع اللص الثالث كمية نقود أكثر مما سرق\r\nlevel14_4 =سيصبح مع اللصوص كمية نقود أكثر مما سرقوا معا\r\n\r\nlevel14_moves_tip =عليك إكمال المرحلة في 13 نقلة\r\nlevel14_time_tip =عليك إكمال المرحلة خلال دقيقة و 5 ثوان\r\n\r\n[level15_tips]\r\nlevel15_0 =لا يوجد أحد في القارب\r\nlevel15_1 =القط الأوسط مع قط آخر في القارب\r\nlevel15_2 =الكلب الأوسط مع كلب آخر في القارب\r\nlevel15_3 =القط الأوسط مع قط آخر بمفردهما على الضفة\r\nlevel15_4 =الكلب الأوسط مع كلب آخر بمفردهما على الضفة\r\nlevel15_5 =سيتفوق عدد الكلاب على عدد القطط\r\nlevel15_moves_tip =عليك إكمال المرحلة في 13 نقلة\r\nlevel15_time_tip =عليك إكمال المرحلة خلال دقيقة و 5 ثوان\r\n\r\n[level16_tips]\r\nlevel16_0 =لا يوجد أحد في القارب\r\nlevel16_1 =يجب أن يبقى الوزير بمفرده في القارب\r\nlevel16_2 =لا يجب أن يبقى الملك بمفرده في القارب\r\nlevel16_3 =لا يجب أن يبقى الملك بمفرده على الضفة\r\nlevel16_moves_tip =عليك إكمال المرحلة في 13 نقلة\r\nlevel16_time_tip =عليك إكمال المرحلة خلال دقيقة و 5 ثوان\r\n\r\n[level17_tips]\r\nlevel17_0 =المزارع فقط يستطيع قيادة القارب\r\nlevel17_1 =أحد الذئاب سيأكل الماعز دون وجود المزارع\r\nlevel17_2 =الذئبان سيأكلان البقرة دون وجود المزارع\r\nlevel17_moves_tip =عليك إكمال المرحلة في 17 نقلة\r\nlevel17_time_tip =عليك إكمال المرحلة خلال دقيقة و 45 ثانية\r\n\r\n[level18_tips]\r\nlevel18_0 =لا يوجد أحد في القارب\r\nlevel18_1 =القارب يتسع للحيوانات الصغيرة أو حيوان كبير واحد\r\nlevel18_2 = لا يجب أن يبقى الفأر بمفرده في أي ضفة\r\nlevel18_3 = لا يجب أن تبقى الدجاجة بمفردها مع أي غوريلا\r\nlevel18_moves_tip = عليك إكمال المرحلة في 15 نقلة\r\nlevel18_time_tip = عليك إكمال المرحلة خلال دقيقة و 15 ثانية\r\n\r\n[level19_tips]\r\nlevel19_0 =لا يوجد أحد في القارب\r\nlevel19_1 =الأب والأم والرجل العجوز فقط يستطيعون القيادة\r\nlevel19_2 =الرجل العجوز يصر على البقاء وحيدا في القارب\r\nlevel19_3 =الولد يمكنه ركوب القارب مع والده فقط\r\nlevel19_4 =البنت يمكنها ركوب القارب مع والدتها فقط\r\nlevel19_5 =لا يمكن للأطفال البقاء مع أي أحد دون وجود الأهل\r\nlevel19_moves_tip = عليك إكمال المرحلة في 15 نقلة\r\nlevel19_time_tip = عليك إكمال المرحلة خلال دقيقة و 15 ثانية\r\n\r\n[level20_tips]\r\nlevel20_0 =لا يوجد أحد في القارب\r\nlevel20_1 =لا يمكن لأي حيوان ركوب القارب إلى مع أخر من جنسه\r\nlevel20_2 =السناجب بإمكانها التجديف فقط خلال النهار\r\nlevel20_3 =الراكون بإمكانها التجديف فقط خلال الليل\r\nlevel20_moves_tip =عليك إكمال المرحلة في 11 نقلة\r\nlevel20_time_tip =عليك إكمال المرحلة خلال 55 ثانية\r\n\r\n[level21_tips]\r\nlevel21_0 =لا يمكن إرسال القارب خاليا\r\nlevel21_1 = الوزن المنقول سابقا\r\nlevel21_2 = الوزن السابق\r\nlevel21_3 = الوزن الحالي\r\nlevel21_moves_tip =عليك إكمال المرحلة في 13 نقلة\r\nlevel21_time_tip =عليك إكمال المرحلة خلال دقيقة و 5 ثوان",
+    "en": "[titles]\r\ngame_title = River Crossing\r\nlevel_title = Level\r\ninstructions_title = Instructions\r\nsolution_title = Solution\r\npause_menu_title = Pause Menu\r\nresume_title = Resume\r\nshare_level_title = Share Level\r\nexit_title = Exit\r\ngame_over_title = Level Complete\r\nwatch_video_title = Watch a video and see Solution?\r\nwatch_video_yes = Yes\r\nwatch_video_later = Later\r\nprevious_level_title = Previous Level\r\nmore_levels_title = More Levels\r\ncoming_soon_title = Coming Soon\r\ntime_title = Time\r\nmoves_title = Moves\r\ntutorial_text1 = Select the farmer to load him on the raft\r\ntutorial_text2 = Select the goat to load it on the raft\r\ntutorial_text3 = Press this button to move the raft\r\nuser_not_rewarded_text = Video is not watched completely\r\nvideo_not_available_text = No Video Available, Try again later\r\ngame_settings_text = Game Settings\r\nsave_exit_text = Save & Exit\r\nlanguage_text = Language\r\ngenius_only_text = Genius Only\r\ngenius_solution_text = No solution tips for genius-only level\r\n\r\n[level1_tips]\r\nlevel1_0 = Farmer should steer the raft\r\nlevel1_1 = Wolf will eat the goat\r\nlevel1_2 = Goat will eat the cabbage\r\nlevel1_moves_tip = Complete the level in 7 moves\r\nlevel1_time_tip = Complete the level in 35 seconds\r\n\r\n[level2_tips]\r\nlevel2_0 = A soldier should steer the raft\r\nlevel2_1 = The lazy refuses to be alone on raft\r\nlevel2_2 = The lazy refuses to be alone on riverbank\r\nlevel2_3 = The arrogant insists to be alone on raft\r\nlevel2_moves_tip = Complete the level in 7 moves\r\nlevel2_time_tip = Complete the level in 35 seconds\r\n\r\n[level3_tips]\r\nlevel3_0 = Someone should steer the raft\r\nlevel3_1 = The raft can only hold one worker\r\nlevel3_2 = The raft can't hold a worker with a child\r\nlevel3_moves_tip =  Complete the level in 9 moves\r\nlevel3_time_tip = Complete the level in 45 seconds\r\n\r\n[level4_tips]\r\nlevel4_0 = Someone should ride the raft\r\nlevel4_1 = 1st person can't stay with 2nd on raft\r\nlevel4_2 = 1st person can't stay with 2nd on bank\r\nlevel4_3 = 2nd person can't stay with 3rd on raft\r\nlevel4_4 = 2nd person can't stay with 3rd on bank\r\nlevel4_5 = 3rd person can't stay with 4th on raft\r\nlevel4_6 = 3rd person can't stay with 4th on bank\r\nlevel4_7 = 4th person can't stay with 5th on raft\r\nlevel4_8 = 4th person can't stay with 5th on bank\r\nlevel4_9 = 5th person can't stay with 1st on raft\r\nlevel4_10 = 5th person can't stay with 1st on bank\r\nlevel4_moves_tip = Complete the level in 7 moves\r\nlevel4_time_tip = Complete the level in 35 seconds\r\n\r\n[level5_tips]\r\nlevel5_0 = Someone should steer the raft\r\nlevel5_1 = The raft can hold a maximum of 100 kg\r\nlevel5_moves_tip = Complete the level in 9 moves\r\nlevel5_time_tip = Complete the level in 45 seconds\r\n\r\n[level6_tips]\r\nlevel6_0 = A traveler should steer the raft\r\nlevel6_1 = 1st traveler is alone with others bags\r\nlevel6_2 = 2nd traveler is alone with others bags\r\nlevel6_3 = 3rd traveler is alone with others bags\r\nlevel6_moves_tip = Complete the level in 9 moves\r\nlevel6_time_tip =  Complete the level in 45 seconds\r\n\r\n[level7_tips]\r\nlevel7_0 = minutes remaining\r\nlevel7_1 = Time is up .. they missed the train\r\nlevel7_2 = You have to restart the level\r\nlevel7_moves_tip = Complete the level in 7 moves\r\nlevel7_time_tip = Complete the level in 35 seconds\r\n\r\n[level8_tips]\r\nlevel8_0 = Someone should steer the raft\r\nlevel8_1 = More robbers than cops on the same side\r\nlevel8_moves_tip = Complete the level in 11 moves\r\nlevel8_time_tip = Complete the level in 55 seconds\r\n\r\n[level9_tips]\r\nlevel9_0 = Only persons with green clothes can row\r\nlevel9_1 = More robbers than merchants on a side\r\nlevel9_moves_tip = Complete the level in 7 moves\r\nlevel9_time_tip = Complete the level in 35 seconds\r\n\r\n[level10_tips]\r\nlevel10_0 = Someone should steer the raft\r\nlevel10_1 = 1st athlete is alone with another coach\r\nlevel10_2 = 2nd athlete is alone with another coach\r\nlevel10_3 = 3rd athlete is alone with another coach\r\nlevel10_moves_tip = Complete the level in 11 moves\r\nlevel10_time_tip = Complete the level in 55 seconds\r\n\r\n[level11_tips]\r\nlevel11_0 = Only 1st mother and her son can row\r\nlevel11_1 = 1st boy is alone with another mother\r\nlevel11_2 = 1st boy is alone with another mother\r\nlevel11_3 = 1st girl is alone with another mother\r\nlevel11_4 = 2nd boy is alone with another mother\r\nlevel11_5 = 2nd girl is alone with another mother\r\nlevel11_moves_tip = Complete the level in 9 moves\r\nlevel11_time_tip = Complete the level in 45 seconds\r\n\r\n[level12_tips]\r\nlevel12_0 = Only fathers can row\r\nlevel12_1 = Child can't stay alone with other parents\r\nlevel12_2 = Child can't stay alone with other parents\r\nlevel12_3 = Child can't stay alone with other parents\r\nlevel12_4 = Child can't stay alone with other parents\r\nlevel12_5 = No child can be left alone on either bank\r\nlevel12_moves_tip = Complete the level in 9 moves\r\nlevel12_time_tip = Complete the level in 45 seconds\r\n\r\n[level13_tips]\r\nlevel13_0 = Only farmer, girl, and boy can row\r\nlevel13_1 = The girl will tease the rabbits\r\nlevel13_2 = The boy will tease the squirrels\r\nlevel13_3 = The fierce dog will bite someone!\r\nlevel13_moves_tip = Complete the level in 17 moves\r\nlevel13_time_tip = Complete the level in 1 min 25 seconds\r\n\r\n[level14_tips]\r\nlevel14_0 = A robber should steer the raft\r\nlevel14_1 = 1st robber has more than what he stole\r\nlevel14_2 = 2nd robber has more than what he stole\r\nlevel14_3 = 3rd robber has more than what he stole\r\nlevel14_4 = Robbers with more than what they stole\r\n\r\nlevel14_moves_tip = Complete the level in 13 moves\r\nlevel14_time_tip = Complete the level in 1 min 5 seconds\r\n\r\n[level15_tips]\r\nlevel15_0 = The raft is empty!\r\nlevel15_1 = Medium cat on raft with another cat\r\nlevel15_2 = Medium dog on raft with another dog\r\nlevel15_3 = Medium cat is alone with another cat\r\nlevel15_4 = Medium dog is alone with another dog\r\nlevel15_5 = Cats will be outnumbered by Dogs\r\nlevel15_moves_tip = Complete the level in 13 moves\r\nlevel15_time_tip = Complete the level in 1 min 5 seconds\r\n\r\n[level16_tips]\r\nlevel16_0 = The raft is empty!\r\nlevel16_1 = Queen should be alone on the raft\r\nlevel16_2 = King shouldn't be alone on the raft\r\nlevel16_3 = King shouldn't be alone on the bank\r\nlevel16_moves_tip =  Complete the level in 13 moves\r\nlevel16_time_tip = Complete the level in 1 min 5 seconds\r\n\r\n[level17_tips]\r\nlevel17_0 = Farmer should steer the raft\r\nlevel17_1 = A Wolf will eat the goat\r\nlevel17_2 = Two wolves will eat a cow\r\nlevel17_moves_tip = Complete the level in 17 moves\r\nlevel17_time_tip = Complete the level in 1 min 25 seconds\r\n\r\n[level18_tips]\r\nlevel18_0 = The raft is empty!\r\nlevel18_1 = Small animals or one big animal can be loaded\r\nlevel18_2 = Mouse should not be alone on either bank\r\nlevel18_3 = Chicken should not be alone with any gorilla\r\nlevel18_moves_tip = Complete the level in 15 moves\r\nlevel18_time_tip = Complete the level in 1 min 15 seconds\r\n\r\n[level19_tips]\r\nlevel19_0 = The raft is empty!\r\nlevel19_1 = Only father, mother, and the old man can row\r\nlevel19_2 = Old man refuses to be accompanied on the raft\r\nlevel19_3 = Son can only row with his father\r\nlevel19_4 = Daughter can only row with her mother\r\nlevel19_5 = Children can't stay with anyone without one of their parents\r\nlevel19_moves_tip = Complete the level in 15 moves\r\nlevel19_time_tip = Complete the level in 1 min 15 seconds\r\n\r\n[level20_tips]\r\nlevel20_0 = The raft is empty!\r\nlevel20_1 = Transferred animals should be of the same kind\r\nlevel20_2 = Squirrels can only row during the day\r\nlevel20_3 = Raccoons can only row during the night\r\nlevel20_moves_tip = Complete the level in 11 moves\r\nlevel20_time_tip = Complete the level in 55 seconds\r\n\r\n[level21_tips]\r\nlevel21_0 = The raft is empty!\r\nlevel21_1 = Previously transferred weight =\r\nlevel21_2 = previous weight\r\nlevel21_3 = current weight\r\nlevel21_moves_tip = Complete the level in 13 moves\r\nlevel21_time_tip = Complete the level in 1 min 5 seconds",
+    "fr": "[titles]\ngame_title = Traversée de Rivière\nlevel_title = Niveau\ninstructions_title = Instructions\nsolution_title = Solution\npause_menu_title = Menu Pause\nresume_title = Continuer\nshare_level_title = Partager Niveau\nexit_title = Quitter\ngame_over_title = Niveau Terminé\nwatch_video_title = Visionner une vidéo et voir la Solution ?\nwatch_video_yes = Oui\nwatch_video_later = Plus tard\nprevious_level_title = Niveau Précédant\nmore_levels_title = Plus de Niveaux\ncoming_soon_title = Bientôt\ntime_title = Temps\nmoves_title = Coups\ntutorial_text1 = Sélectionnez le fermier pour qu’il monte sur le radeau\ntutorial_text2 = Sélectionnez la chèvre pour qu’elle monte sur le radeau\ntutorial_text3 = Appuyer sur ce bouton pour déplacer le radeau\nuser_not_rewarded_text = La vidéo n’a pas été visionnée en entier\nvideo_not_available_text = Aucune Vidéo Disponible, Réessayez plus tard\ngame_settings_text = Paramètres de jeu\nsave_exit_text = Save & Exit\nlanguage_text = Langue\ngenius_only_text = Génie seul\ngenius_solution_text = Pas de conseils de solution pour le génie seulement niveau\n\n[level1_tips]\nlevel1_0 = Le fermier doit conduire le radeau\nlevel1_1 = Le loup mangera la chèvre\nlevel1_2 = La chèvre mangera le chou\nlevel1_moves_tip = Terminez le niveau en 7 coups\nlevel1_time_tip = Terminez le niveau en 35 secondes\n\n[level2_tips]\nlevel2_0 = Un soldat doit conduire le radeau\nlevel2_1 = Le paresseux refuse d’être seul sur le radeau\nlevel2_2 = Le paresseux refuse d’être seul sur la berge\nlevel2_3 = L’arrogant insiste pour être seul sur le radeau\nlevel2_moves_tip = Terminez le niveau en 7 coups\nlevel2_time_tip = Terminez le niveau en 35 secondes\n\n[level3_tips]\nlevel3_0 = Quelqu’un doit conduire le radeau\nlevel3_1 = Le radeau ne peut contenir qu’un seul ouvrier\nlevel3_2 = Le radeau ne peut pas contenir un ouvrier et un enfant\nlevel3_moves_tip = Terminez le niveau en 9 coups\nlevel3_time_tip = Terminez le niveau en 45 secondes\n\n[level4_tips]\nlevel4_0 = Quelqu’un doit diriger le radeau\nlevel4_1 = La 1re personne ne peut pas rester avec la 2e sur le radeau\nlevel4_2 = La 1re personne ne peut pas rester avec la 2e sur la berge\nlevel4_3 = La 2e personne ne peut pas rester avec la 3e sur le radeau\nlevel4_4 = La 2e personne ne peut pas rester avec la 3e sur la berge\nlevel4_5 = La 3e personne ne peut pas rester avec la 4e sur le radeau\nlevel4_6 = La 3e personne ne peut pas rester avec la 4e sur la berge\nlevel4_7 = La 4e personne ne peut pas rester avec la 5e sur le radeau\nlevel4_8 = La 4e personne ne peut pas rester avec la 5e sur la berge\nlevel4_9 = La 5e personne ne peut pas rester avec la 1re sur le radeau\nlevel4_10 = La 5e personne ne peut pas rester avec la 1re sur la berge\nlevel4_moves_tip = Terminez le niveau en 7 coups\nlevel4_time_tip = Terminez le niveau en 35 secondes\n\n[level5_tips]\nlevel5_0 = Quelqu’un doit conduire le radeau\nlevel5_1 = Le radeau supporte un maximum de 100 kg\nlevel5_moves_tip = Terminez le niveau en 9 coups\nlevel5_time_tip = Terminez le niveau en 45 secondes\n\n[level6_tips]\nlevel6_0 = Un voyageur doit conduire le radeau\nlevel6_1 = Le 1er voyageur est seul avec les sacs des autres\nlevel6_2 = Le 2e voyageur est seul avec les sacs des autres\nlevel6_3 = Le 3e voyageur est seul avec les sacs des autres\nlevel6_moves_tip = Terminez le niveau en 9 coups\nlevel6_time_tip = Terminez le niveau en 45 secondes\n\n[level7_tips]\nlevel7_0 = minutes restantes\nlevel7_1 = Temps écoulé... Ils ont raté le train\nlevel7_2 = Vous devez recommencer le niveau\nlevel7_moves_tip = Terminez le niveau en 7 coups\nlevel7_time_tip = Terminez le niveau en 35 secondes\n\n[level8_tips]\nlevel8_0 = Quelqu’un doit conduire le radeau\nlevel8_1 = Plus de voleurs que de policiers sur le même côté\nlevel8_moves_tip = Terminez le niveau en 11 coups\nlevel8_time_tip = Terminez le niveau en 55 secondes\n\n[level9_tips]\nlevel9_0 = Seules les personnes avec des habits verts peuvent ramer\nlevel9_1 = Plus de voleurs que de marchants d’un côté\nlevel9_moves_tip = Terminez le niveau en 7 coups\nlevel9_time_tip = Terminez le niveau en 35 secondes\n\n[level10_tips]\nlevel10_0 = Quelqu’un doit conduire le radeau\nlevel10_1 = Le 1er athlète est seul avec un autre entraîneur\nlevel10_2 = Le 2e athlète est seul avec un autre entraîneur\nlevel10_3 = Le 3e athlète est seul avec un autre entraîneur\nlevel10_moves_tip = Terminez le niveau en 11 coups\nlevel10_time_tip = Terminez le niveau en 55 secondes\n\n[level11_tips]\nlevel11_0 = Seule la 1re mère et son fils peuvent ramer\nlevel11_1 = Le 1er garçon est seul avec une autre mère\nlevel11_2 = Le 1er garçon est seul avec une autre mère\nlevel11_3 = La 1re fille est seule avec une autre mère\nlevel11_4 = Le 2e garçon est seul avec une autre mère\nlevel11_5 = La 2e fille est seule avec une autre mère\nlevel11_moves_tip = Terminez le niveau en 9 coups\nlevel11_time_tip = Terminez le niveau en 45 secondes\n\n[level12_tips]\nlevel12_0 = Seuls les parents peuvent ramer\nlevel12_1 = Les enfants ne peuvent pas rester seuls avec d’autres parents\nlevel12_2 = Les enfants ne peuvent pas rester seuls avec d’autres parents\nlevel12_3 = Les enfants ne peuvent pas rester seuls avec d’autres parents\nlevel12_4 = Les enfants ne peuvent pas rester seuls avec d’autres parents\nlevel12_5 = Aucun enfant ne peut rester seul sur une rive\nlevel12_moves_tip = Terminez le niveau en 9 coups\nlevel12_time_tip = Terminez le niveau en 45 secondes\n\n[level13_tips]\nlevel13_0 = Seuls le fermier, la fille et le garçon peuvent ramer\nlevel13_1 = La fille va tourmenter les lapins\nlevel13_2 = Le garçon va tourmenter les écureuils\nlevel13_3 = Le chien féroce va mordre quelqu’un !\nlevel13_moves_tip = Terminez le niveau en 17 coups\nlevel13_time_tip = Terminez le niveau en 1 min 25 secondes\n\n[level14_tips]\nlevel14_0 = Un voleur doit conduire le radeau\nlevel14_1 = Le 1er voleur a plus que ce qu’il a volé\nlevel14_2 = Le 2e voleur a plus que ce qu’il a volé\nlevel14_3 = Le 3e voleur a plus que ce qu’il a volé\nlevel14_4 = Voleurs avec plus que ce qu’ils ont volé\nlevel14_moves_tip = Terminez le niveau en 13 coups\nlevel14_time_tip = Terminez le niveau en 1 min 5 secondes\n\n[level15_tips]\nlevel15_0 = Le radeau est vide !\nlevel15_1 = Un chat moyen sur le radeau avec un autre chat\nlevel15_2 = Un chien moyen sur le radeau avec un autre chien\nlevel15_3 = Un chat moyen est seul avec un autre chat\nlevel15_4 = Un chien moyen est seul avec un autre chien\nlevel15_5 = Les chats seront en minorités par rapport aux chiens\nlevel15_moves_tip = Terminez le niveau en 13 coups\nlevel15_time_tip = Terminez le niveau en 1 min 5 secondes\n\n[level16_tips]\nlevel16_0 = Le radeau est vide !\nlevel16_1 = La reine doit être seule sur le radeau\nlevel16_2 = Le roi ne devrait pas être seul sur le radeau\nlevel16_3 = Le roi ne devrait pas être seul sur la rive\nlevel16_moves_tip = Terminez le niveau en 13 coups\nlevel16_time_tip = Terminez le niveau en 1 min 5 secondes\n\n[level17_tips]\nlevel17_0 = Le fermier doit conduire le radeau\nlevel17_1 = Un loup mangera la chèvre\nlevel17_2 = Les deux loups mangeront la vache\nlevel17_moves_tip = Terminez le niveau en 17 coups\nlevel17_time_tip = Terminez le niveau en 1 min 25 secondes\n\n[level18_tips]\nlevel18_0 = Le radeau est vide!\nlevel18_1 = Les petits animaux ou un gros animal peuvent être transportés\nlevel18_2 = La souris ne doit pas être laissé seul sur la berge\nlevel18_3 = Le poulet ne doit pas être seul avec un gorille\nlevel18_moves_tip = Terminez le niveau en 15 coups\nlevel18_time_tip = Terminez le niveau en 1 min 15 secondes\n\n[level19_tips]\nlevel19_0 = Le radeau est vide!\nlevel19_1 = Père seulement, la mère, et le vieil homme peut ramer\nlevel19_2 = Le vieil homme refuse d'être accompagné sur le radeau\nlevel19_3 = Le fils ne peut que ramer avec son père\nlevel19_4 = La fille ne peut que ramer avec sa mère.\nlevel19_5 = Les enfants ne peuvent pas rester avec une autre personne sans l'un de leurs parents\nlevel19_moves_tip = Terminez le niveau en 15 coups\nlevel19_time_tip = Terminez le niveau en 1 min 15 secondes\n\n[level20_tips]\nlevel20_0 = Le radeau est vide!\nlevel20_1 = Les animaux transférés devraient être du même genre\nlevel20_2 = Écureuils ne peut que ramer pendant la journée\nlevel20_3 = Ratons laveurs ne peut que ramer pendant la nuit\nlevel20_moves_tip = Terminez le niveau en 11 coups\nlevel20_time_tip = Terminez le niveau en 55 secondes\n\n[level21_tips]\nlevel21_0 = Le radeau est vide!\nlevel21_1 = Poids précédemment transféré =\nlevel21_2 = poids précédent\nlevel21_3 = poids actuel\nlevel21_moves_tip = Terminez le niveau en 13 coups\nlevel21_time_tip = Terminez le niveau en 1 min 5 secondes\n",
+    "es": "[titles]\ngame_title = River Crossing\nlevel_title = Nivel\ninstructions_title = Instrucciones\nsolution_title = Solución\npause_menu_title = Pausar Menú\nresume_title = Reanudar\nshare_level_title = Compartir Nivel\nexit_title = Salir\ngame_over_title = Nivel Completo\nwatch_video_title = ¿Ver un video y ver la Solución?\nwatch_video_yes = Sí\nwatch_video_later = Más Tarde\nprevious_level_title = Nivel Anterior\nmore_levels_title = Más Niveles\ncoming_soon_title = Próximamente\ntime_title = Hora\nmoves_title = Movimientos\ntutorial_text1 = Selecciona el granjero para cargarlo en la balsa\ntutorial_text2 = Selecciona la cabra para cargarla en la balsa\ntutorial_text3 = Presiona este botón para mover la balsa\nuser_not_rewarded_text = El vídeo no se ha visto entero\nvideo_not_available_text = No Hay Vídeo Disponible\ngame_settings_text = Configuraciones de juego\nsave_exit_text = Guardar y salir\nlanguage_text = Idioma\ngenius_only_text = Solo genio\ngenius_solution_text = No hay consejos de solución para el nivel sólo genio\n\n[level1_tips]\nlevel1_0 = El granjero debería conducir la balsa\nlevel1_1 = El lobo se comerá la cabra\nlevel1_2 = La cabra se comerá la col\nlevel1_moves_tip = Completa el nivel en 7 movimientos\nlevel1_time_tip = Completa el nivel en 35 segundos\n\n[level2_tips]\nlevel2_0 = Un soldado debería conducir la balsa\nlevel2_1 = El vago rehúsa a estar solo en la balsa\nlevel2_2 = El vago rehúsa a estar solo en la orilla del río\nlevel2_3 = El arrogante insiste en estar solo en la balsa\nlevel2_moves_tip = Completa el nivel en 7 movimientos\nlevel2_time_tip = Completa el nivel en 35 segundos\n\n[level3_tips]\nlevel3_0 = Alguien debería conducir la balsa\nlevel3_1 = La balsa sólo puede soportar un trabajador\nlevel3_2 = La balsa no puede soportar un trabajador con un niño\nlevel3_moves_tip =  Completa el nivel en 9 movimientos\nlevel3_time_tip = Completa el nivel en 45 segundos\n\n[level4_tips]\nlevel4_0 = Alguien debería montar en la balsa\nlevel4_1 = la 1ª persona no puede quedarse con la 2ª en la balsa\nlevel4_2 = la 1ª persona no puede quedarse con la 2ª en la orilla\nlevel4_3 = la 2ª persona no puede quedarse con la 3ª en la balsa\nlevel4_4 = la 2ª persona no puede quedarse con la 3ª en la orilla\nlevel4_5 = la 3ª persona no puede quedarse con la 4ª en la balsa\nlevel4_6 = la 3ª persona no puede quedarse con la 4ª en la orilla\nlevel4_7 = la 4ª persona no puede quedarse con la 5ª en la balsa\nlevel4_8 = la 4ª persona no puede quedarse con la 5ª en la orilla\nlevel4_9 = la 5ª persona no puede quedarse con la 1ª en la balsa\nlevel4_10 = la 5ª persona no puede quedarse con la 1ª en la orilla\nlevel4_moves_tip = Completa el nivel en 7 movimientos\nlevel4_time_tip = Completa el nivel en 35 segundos\n\n[level5_tips]\nlevel5_0 = Alguien debería conducir la balsa\nlevel5_1 = La balsa puede soportar un máximo de 100 kg\nlevel5_moves_tip = Completa el nivel en 9 movimientos\nlevel5_time_tip = Completa el nivel en 45 segundos\n\n[level6_tips]\nlevel6_0 = Un viajero debería conducir la balsa\nlevel6_1 = El 1er viajero está solo con las bolsas de otros\nlevel6_2 = El 2º viajero está solo con las bolsas de otros\nlevel6_3 = El 3er viajero está solo con las bolsas de otros\nlevel6_moves_tip = Completa el nivel en 9 movimientos\nlevel6_time_tip =  Completa el nivel en 45 segundos\n\n[level7_tips]\nlevel7_0 = minutos restantes\nlevel7_1 = El tiempo se ha agotado... perdieron el tren\nlevel7_2 = Tienes que volver a empezar el nivel\nlevel7_moves_tip = Completa el nivel en 7 movimientos\nlevel7_time_tip = Completa el nivel en 35 segundos\n\n[level8_tips]\nlevel8_0 = Alguien debería conducir la balsa\nlevel8_1 = Más ladrones que policías en el mismo lado\nlevel8_moves_tip = Completa el nivel en 11 movimientos\nlevel8_time_tip = Completa el nivel en 55 segundos\n\n[level9_tips]\nlevel9_0 = Sólo las personas con ropa verde pueden remar\nlevel9_1 = Más ladrones que comerciantes en un lado\nlevel9_moves_tip = Completa el nivel en 7 movimientos\nlevel9_time_tip = Completa el nivel en 35 segundos\n\n[level10_tips]\nlevel10_0 = Alguien debería conducir la balsa\nlevel10_1 = El 1er atleta está solo con otro entrenador\nlevel10_2 = El 2º atleta está solo con otro entrenador\nlevel10_3 = El 3er atleta está solo con otro entrenador\nlevel10_moves_tip = Completa el nivel en 11 movimientos\nlevel10_time_tip = Completa el nivel en 55 segundos\n\n[level11_tips]\nlevel11_0 = Sólo la 1ª madre y su hijo pueden remar\nlevel11_1 = El 1er niño está solo con otra madre\nlevel11_2 = El 1er niño está solo con otra madre\nlevel11_3 = La 1ª niña está sola con otra madre\nlevel11_4 = El 2º niño está solo con otra madre\nlevel11_5 = La 2ª niña está sola con otra madre\nlevel11_moves_tip = Completa el nivel en 9 movimientos\nlevel11_time_tip = Completa el nivel en 45 segundos\n\n[level12_tips]\nlevel12_0 = Solo los padres pueden remar\nlevel12_1 = El niño no puede quedarse solo con otros padres\nlevel12_2 = El niño no puede quedarse solo con otros padres\nlevel12_3 = El niño no puede quedarse solo con otros padres\nlevel12_4 = El niño no puede quedarse solo con otros padres\nlevel12_5 = Ningún niño puede dejarse solo o ninguna orilla\nlevel12_moves_tip = Completa el nivel en 9 movimientos\nlevel12_time_tip = Completa el nivel en 45 segundos\n\n[level13_tips]\nlevel13_0 = Sólo el granjero, la niña y el niño pueden remar\nlevel13_1 = La niña bromeará con los conejos\nlevel13_2 = El niño bromeará con las ardillas\nlevel13_3 = ¡El perro feroz morderá a alguien!\nlevel13_moves_tip = Completa el nivel en 17 movimientos\nlevel13_time_tip = Completa el nivel en 1 min 25 segundos\n\n[level14_tips]\nlevel14_0 = Un ladrón debería conducir la balsa\nlevel14_1 = El 1er ladrón tiene más de lo que robó\nlevel14_2 = El 2º ladrón tiene más de lo que robó\nlevel14_3 = El 3er ladrón tiene más de lo que robó\nlevel14_4 = Los ladrones con más de lo que robaron\n\nlevel14_moves_tip = Completa el nivel en 13 movimientos\nlevel14_time_tip = Completa el nivel en 1 min 5 segundos\n\n[level15_tips]\nlevel15_0 = ¡La balsa está vacía!\nlevel15_1 = El gato mediano en la balsa con otro gato\nlevel15_2 = El perro mediano en la balsa con otro perro\nlevel15_3 = El gato mediano está solo con otro gato\nlevel15_4 = El perro mediano está solo con otro perro\nlevel15_5 = Los Garos serán superados en número por los Perros\nlevel15_moves_tip = Completa el nivel en 13 movimientos\nlevel15_time_tip = Completa el nivel en 1 min 5 segundos\n\n[level16_tips]\nlevel16_0 = ¡La balsa está vacía!\nlevel16_1 = La reina debería estar sola en la balsa\nlevel16_2 = El rey no debería estar solo en la balsa\nlevel16_3 = El rey no debería estar solo en la orilla\nlevel16_moves_tip =  Completa el nivel en 13 movimientos\nlevel16_time_tip = Completa el nivel en 1 min 5 segundos\n\n[level17_tips]\nlevel17_0 = El granjero debería conducir la balsa\nlevel17_1 = Un Lobo se comerá la cabra\nlevel17_2 = Dos lobos se comerán una vaca\nlevel17_moves_tip = Completa el nivel en 17 movimientos\nlevel17_time_tip = Completa el nivel en 1 min 25 segundos\n\n[level18_tips]\nlevel18_0 = ¡La balsa está vacía!\nlevel18_1 = Los animales pequeños o un animal grande se pueden cargar\nlevel18_2 = El ratón no debe dejarse solo en ninguna de las dos orillas\nlevel18_3 = El pollo no debe dejarse solo con ningún gorila\nlevel18_moves_tip = Completa el nivel en 15 movimientos\nlevel18_time_tip = Completa el nivel en 1 min 15 segundos\n\n[level19_tips]\nlevel19_0 = ¡La balsa está vacía!\nlevel19_1 = Sólo el padre, la madre y el anciano pueden remar\nlevel19_2 = El anciano se niega a ser acompañado en la balsa\nlevel19_3 = Hijo solo puede remar con su padre\nlevel19_4 = Hija sólo puede remar con su madre\nlevel19_5 = Los niños no pueden quedarse con nadie sin uno de sus padres\nlevel19_moves_tip = Completa el nivel en 15 movimientos\nlevel19_time_tip = Completa el nivel en 1 min 15 segundos\n\n[level20_tips]\nlevel20_0 = ¡La balsa está vacía!\nlevel20_1 = Los animales transferidos deben ser del mismo especie\nlevel20_2 = Ardillas sólo pueden remar durante el día\nlevel20_3 = Mapaches sólo pueden remar durante la noche\nlevel20_moves_tip = Completa el nivel en 11 movimientos\nlevel20_time_tip = Completa el nivel en 55 segundos\n\n[level21_tips]\nlevel21_0 = ¡La balsa está vacía!\nlevel21_1 = peso previamente transferido =\nlevel21_2 = peso anterior\nlevel21_3 = peso actual\nlevel21_moves_tip = Completa el nivel en 13 movimientos\nlevel21_time_tip = Completa el nivel en 1 min 5 segundos\n",
+    "de": "[titles]\r\ngame_title = Überqueung des Flusses\r\nlevel_title = Stufe\r\ninstructions_title = Anleitungen\r\nsolution_title = Lösung\r\npause_menu_title = Pause-Menü\r\nresume_title = Fortsetzen\r\nshare_level_title = Teilen die Stufe\r\nexit_title = Schließen\r\ngame_over_title = Die Stufe beendet\r\nwatch_video_title = Sehen Sie sich ein Video an und sehen Sie die Lösung?\r\nwatch_video_yes = Ja\r\nwatch_video_later = Später\r\nprevious_level_title = Vorherige Stufe\r\nmore_levels_title = Mehr Stufen\r\ncoming_soon_title = Demnächst\r\ntime_title = Zeit\r\nmoves_title = Bewegungen\r\ntutorial_text1 = Wählen Sie den Bauer, um ihn auf das Boot zu legen\r\ntutorial_text2 = Wählen Sie die Ziege, um sie auf das Boot zu legen\r\ntutorial_text3 = Drücken Sie diese Taste, um das Boot zu bewegen\r\nuser_not_rewarded_text = Das Video wurde nicht vollständig beobachtet\r\nvideo_not_available_text = Kein Video verfügbar, versuchen Sie es später nochmal\r\ngame_settings_text = Spieleinstellungen\r\nsave_exit_text = Speichern und Schließen\r\nlanguage_text = Sprache\r\ngenius_only_text = nur Genie\r\ngenius_solution_text = Keine Lösungs-Tipps, das ist nur für Genie-Level\r\n\r\n[level1_tips]\r\nlevel1_0 = Der Bauer muss Das Boot fahren\r\nlevel1_1 = Der Wolf wird die Ziege essen\r\nlevel1_2 = Die Ziege wird den Kohl essen\r\nlevel1_moves_tip = Beenden Sie diese Stufe in 7 Bewegungen\r\nlevel1_time_tip = Beenden Sie diese Stufe in 35 Sekunden\r\n\r\n[level2_tips]\r\nlevel2_0 = Ein Soldat muss das Boot fahren\r\nlevel2_1 = Der faulige Soldat akzeptiert nicht allein auf dem Boot sein\r\nlevel2_2 = Der faulige Soldat akzeptiert nicht allein auf der Seite des Flusses sein\r\nlevel2_3 = Der arrogante Soldat erlaubt niemandem, mit ihm auf dem Boot zu sein\r\nlevel2_moves_tip = Beenden Sie diese Stufe in 7 Bewegungen\r\nlevel2_time_tip = Beenden Sie diese Stufe in 35 Sekunden\r\n\r\n[level3_tips]\r\nlevel3_0 = Jemend muss das Boot fahren\r\nlevel3_1 = Das Boot kann maximal nur einen Mann tragen\r\nlevel3_2 = Das Boot kann nicht einen Mann mit einem Kind tragen\r\nlevel3_moves_tip = Beenden Sie diese Stufe in 9 Bewegungen\r\nlevel3_time_tip = Beenden Sie diese Stufe in 45 Sekunden\r\n\r\n[level4_tips]\r\nlevel4_0 = Jemend muss das Boot fahren\r\nlevel4_1 = Die erste Person kann nicht mit der zweiten Person auf dem Boot sein\r\nlevel4_2 = Die erste Person kann nicht mit der zweiten Person auf der Seite des Flusses sein\r\nlevel4_3 = Die zweite Person kann nicht mit der dritten Person auf dem Boot sein\r\nlevel4_4 = Die zweite Person kann nicht mit der dritten Person auf der Seite des Flusses sein\r\nlevel4_5 = Die dritte Person kann nicht mit der vierten Person auf dem Boot sein\r\nlevel4_6 = Die dritte Person kann nicht mit der vierten Person auf der Seite des Flusses sein\r\nlevel4_7 = Die vierte Person kann nicht mit der fünften Person auf dem Boot sein\r\nlevel4_8 = Die vierte Person kann nicht mit der fünften Person auf der Seite des Flusses sein\r\nlevel4_9 = Die fünfte Person kann nicht mit der ersten Person auf dem Boot sein\r\nlevel4_10 = Die fünfte Person kann nicht mit der ersten Person auf der Seite des Flusses sein\r\nlevel4_moves_tip = Beenden Sie diese Stufe in 7 Bewegungen\r\nlevel4_time_tip = Beenden Sie diese Stufe in 35 Sekunden\r\n\r\n[level5_tips]\r\nlevel5_0 = Jemend muss das Boot fahren\r\nlevel5_1 = Das Boot kann maximal 100kg tragen\r\nlevel5_moves_tip = Beenden Sie diese Stufe in 9 Bewegungen\r\nlevel5_time_tip = Beenden Sie diese Stufe in 45 Sekunden\r\n\r\n[level6_tips]\r\nlevel6_0 = Eine Person muss das Boot fahren\r\nlevel6_1 = Die erste Person ist allein mit den Taschen anderer Personen\r\nlevel6_2 = Die zweite Person ist allein mit den Taschen anderer Personen\r\nlevel6_3 = Die dritte Person ist allein mit den Taschen anderer Personen\r\nlevel6_moves_tip = Beenden Sie diese Stufe in 9 Bewegungen\r\nlevel6_time_tip = Beenden Sie diese Stufe in 45 Sekunden\r\n\r\n[level7_tips]\r\nlevel7_0 = Die verbleibenden Minuten\r\nlevel7_1 = Die Zeit ist auf. Sie haben den Zug vermisst\r\nlevel7_2 = Sie müssen den Level neu starten\r\nlevel7_moves_tip = Beenden Sie diese Stufe in 7 Bewegungen\r\nlevel7_time_tip = Beenden Sie diese Stufe in 35 Sekunden\r\n\r\n[level8_tips]\r\nlevel8_0 = Jemend muss das Boot fahren\r\nlevel8_1 = Anzahl der Diebe ist mehr als die Polizisten auf der gleichen Seite des Flusses\r\nlevel8_moves_tip = Beenden Sie diese Stufe in 11 Bewegungen\r\nlevel8_time_tip = Beenden Sie diese Stufe in 55 Sekunden\r\n\r\n[level9_tips]\r\nlevel9_0 = Nur ein Kaufmann oder ein Dieb, der grüne Kleidung trägt, kann das Boot fahren\r\nlevel9_1 = Anzahl der Diebe ist mehr als Anzahl der kaufleute auf der gleichen Seite des Flusses\r\nlevel9_moves_tip = Beenden Sie diese Stufe in 7 Bewegungen\r\nlevel9_time_tip = Beenden Sie diese Stufe in 35 Sekunden\r\n\r\n[level10_tips]\r\nlevel10_0 = Jemend muss das Boot fahren\r\nlevel10_1 = Der erste Athlet ist allein mit einem anderen Trainer\r\nlevel10_2 = Der zweite Athlet ist allein mit einem anderen Trainer\r\nlevel10_3 = Der dritte Athlet ist allein mit einem anderen Trainer\r\nlevel10_moves_tip = Beenden Sie diese Stufe in 11 Bewegungen\r\nlevel10_time_tip = Beenden Sie diese Stufe in 55 Sekunden\r\n\r\n[level11_tips]\r\nlevel11_0 = Nur die erste Mutter und ihr Sohn können das Boot fahren \r\nlevel11_1 = Der erste Sohn ist allein mit der anderen Mutter\r\nlevel11_2 = Der erste sohn ist allein mit der anderen Mutter\r\nlevel11_3 = Die erste Tochter ist allein mit der anderen Mutter\r\nlevel11_4 = Der zweite Sohn ist allein mit der anderen Mutter\r\nlevel11_5 = Die zweite Tochter ist allein mit der anderen Mutter\r\nlevel11_moves_tip = Beenden Sie diese Stufe in 9 Bewegungen\r\nlevel11_time_tip = Beenden Sie diese Stufe in 45 Sekunden\r\n\r\n[level12_tips]\r\nlevel12_0 = Nur die Väter können das Boot fahren\r\nlevel12_1 = Das Kind kann nicht allein mit anderen Eltern bleiben\r\nlevel12_2 = Das Kind kann nicht allein mit anderen Eltern bleiben\r\nlevel12_3 = Das Kind kann nicht allein mit anderen Eltern bleiben\r\nlevel12_4 = Das Kind kann nicht allein mit anderen Eltern bleiben\r\nlevel12_5 = Jedes Kind kann nicht allein auf einer Seite des Flusses gelassen werden\r\nlevel12_moves_tip = Beenden Sie diese Stufe in 9 Bewegungen\r\nlevel12_time_tip = Beenden Sie diese Stufe in 45 Sekunden\r\n\r\n[level13_tips]\r\nlevel13_0 = Nur der Bauer, der Sohn oder die Tochter können das Boot fahren\r\nlevel13_1 = Die Tochter wird die Hasen ärgern\r\nlevel13_2 = Der Sohn wird die Hamster ärgern\r\nlevel13_3 = Der Hund wird alle Leute beißen\r\nlevel13_moves_tip = Beenden Sie diese Stufe in 17 Bewegungen\r\nlevel13_time_tip = Beenden Sie diese Stufe in 1 Minute und 25 Sekunden\r\n\r\n[level14_tips]\r\nlevel14_0 = Ein Dieb muss das Boot fahren - A robber should steer the raft\r\nlevel14_1 = Der erste Dieb hat mehr Geld als das, was er gestohlen hat\r\nlevel14_2 = Der zweite Dieb hat mehr Geld als das, was er gestohlen hat\r\nlevel14_3 = Der dritte Dieb hat mehr Geld als das, was er gestohlen hat\r\nlevel14_4 = Diebe hat mehr Geld als das, was sie gestohlen haben\r\nlevel14_moves_tip = Beenden Sie diese Stufe in 13 Bewegungen\r\nlevel14_time_tip = Beenden Sie diese Stufe in 1 Minute und 5 Sekunden\r\n\r\n[level15_tips]\r\nlevel15_0 = Das Boot ist leer!\r\nlevel15_1 = Die mittelgroße Katze ist allein auf dem Boot mit einer anderen Katze\r\nlevel15_2 = Der mittelgroße Hund ist allein auf dem Boot mit einem anderen Hund\r\nlevel15_3 = Die mittelgroße Katze ist allein mit einer anderen Katze\r\nlevel15_4 = Der mittelgroße Hund ist mit einem anderen Hund\r\nlevel15_5 = Die Anzahl der Hunde wird mehr als die Anzahl der Katzen sein\r\nlevel15_moves_tip = Beenden Sie diese Stufe in 13 Bewegungen\r\nlevel15_time_tip = Beenden Sie diese Stufe in 1 Minute und 5 Sekunden\r\n\r\n[level16_tips]\r\nlevel16_0 = Das Boot ist leer!\r\nlevel16_1 = jede Königin muss allein ohne andere Personen auf dem Boot sein\r\nlevel16_2 = Jeder König muss nicht allein auf dem Boot sein\r\nlevel16_3 = Jeder König muss nicht allein auf einer Seite des Flusses sein\r\nlevel16_moves_tip = Beenden Sie diese Stufe in 13 Bewegungen\r\nlevel16_time_tip = Beenden Sie diese Stufe in 1 Minute und 5 Sekunden\r\n\r\n[level17_tips]\r\nlevel17_0 = Nur der Bauer kann das Boot fahren\r\nlevel17_1 = Der Wolf wird die Ziege essen\r\nlevel17_2 = Zwei Wölfe werden die Kuh essen\r\nlevel17_moves_tip =  Beenden Sie diese Stufe in 17 Bewegungen\r\nlevel17_time_tip = Beenden Sie diese Stufe in 1 Minute und 25 Sekunden\r\n\r\n[level18_tips]\r\nlevel18_0 = Das Boot ist leer!\r\nlevel18_1 = Das Boot kann die beide kleine Tiere zusammen oder nur ein groß Tier tragen\r\nlevel18_2 = Die Maus kann nicht auf einer Seite des Flusses allein bleiben\r\nlevel18_3 = Das Huhn muss nicht allein mit den Gorillas gelassen werden\r\nlevel18_moves_tip = Beenden Sie diese Stufe in 15 Bewegungen\r\nlevel18_time_tip = Beenden Sie diese Stufe in 1 Minute und 15 Sekunden\r\n\r\n[level19_tips]\r\nlevel19_0 = Das Boot ist leer!\r\nlevel19_1 = Nur der Vater, die Mutter und der alter Mann können das Boot fahren\r\nlevel19_2 = Der alter Mann möchte allein ohne andere Personen auf dem Boot sein\r\nlevel19_3 = Der Sohn muss mit seinem Vater auf dem Boot sein\r\nlevel19_4 = Die Tochter muss mit ihrer Mutter auf dem Boot sein\r\nlevel19_5 = Die Kinder können nicht ohne mindestens ein von ihren Eltern mit anderen Personen gelassen werden\r\nlevel19_moves_tip = Beenden Sie diese Stufe in 15 Bewegungen\r\nlevel19_time_tip = Beenden Sie diese Stufe in 1 Minute und 15 Sekunden\r\n\r\n[level20_tips]\r\nlevel20_0 = Das Boot ist leer!\r\nlevel20_1 = Jedes Tier kann auf dem Boot nur mit einem anderen Tier von seiner Art sein\r\nlevel20_2 = Die Hamster können nur Während der Tageslichtstunden das Boot fahren\r\nlevel20_3 = Die Waschbären können nur in der Nacht das Boot fahren\r\nlevel20_moves_tip = Beenden Sie diese Stufe in 11 Bewegungen\r\nlevel20_time_tip = Beenden Sie diese Stufe in 55 Sekunden\r\n\r\n[level21_tips]\r\nlevel21_0 = Das Boot ist leer!\r\nlevel21_1 = vorher übertragenes Gewicht =\r\nlevel21_2 = Vorheriges Gewicht\r\nlevel21_3 = Aktuelles Gewicht\r\nlevel21_moves_tip = Beenden Sie diese Stufe in 13 Zügen\r\nlevel21_time_tip = Beenden Sie diese Stufe in 1 Minute und 5 Sekunden"
+  }
+}
