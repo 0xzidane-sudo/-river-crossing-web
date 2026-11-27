@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#102a35"><meta name="description" content="River Crossing — web edition based on the Android game resources">
+<title>River Crossing · Web Edition</title>
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{--ink:#102a35;--deep:#0b2029;--panel:#183b45;--gold:#f4c96b;--mint:#9ad6b2;--paper:#f4f0e4;--muted:#b8c9c6;--danger:#ff8b78}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#2a5960,#102a35 58%,#091820);color:var(--paper);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+button,select{font:inherit}button{cursor:pointer;border:0}.shell{max-width:1180px;margin:auto;padding:18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(145deg,#f5d27c,#b87836);display:grid;place-items:center;font-size:26px;box-shadow:0 7px 24px #0005}.brand h1{font-size:clamp(18px,3vw,26px);margin:0;letter-spacing:.3px}.brand p{margin:2px 0 0;color:var(--muted);font-size:12px}.top-actions{display:flex;gap:8px;align-items:center}.select,.ghost{background:#214650;color:var(--paper);border:1px solid #45636a;border-radius:12px;padding:10px 12px}.primary{background:linear-gradient(135deg,#f5d27c,#dfa84e);color:#382a13;padding:12px 18px;border-radius:13px;font-weight:800;box-shadow:0 5px 16px #0003}.ghost:hover,.primary:hover{filter:brightness(1.08)}.view{display:none}.view.active{display:block}.hero{background:linear-gradient(120deg,#1d4852,#102b36);border:1px solid #44636a;border-radius:24px;padding:24px;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:center;box-shadow:0 18px 50px #0003}.hero h2{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:0 0 10px}.hero p{color:#c5d4cd;line-height:1.7;margin:0 0 18px}.hero-art{border-radius:18px;overflow:hidden;border:1px solid #78918a55}.hero-art img{width:100%;display:block}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.stat{background:#ffffff0d;border:1px solid #ffffff18;padding:10px 14px;border-radius:12px;min-width:105px}.stat b{display:block;color:var(--gold);font-size:19px}.stat small{color:var(--muted)}.section-head{display:flex;align-items:end;justify-content:space-between;margin:24px 2px 12px}.section-head h3{margin:0;font-size:20px}.section-head span{font-size:12px;color:var(--muted)}.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.level-card{background:#173943;border:1px solid #42616a;border-radius:16px;overflow:hidden;text-align:start;color:var(--paper);padding:0;transition:.18s;position:relative}.level-card:hover{transform:translateY(-3px);border-color:var(--gold)}.level-card img{width:100%;aspect-ratio:4/2.7;object-fit:cover;display:block}.level-meta{padding:11px}.level-meta b{display:block;font-size:14px}.level-meta small{color:var(--muted)}.num{position:absolute;top:9px;inset-inline-start:9px;background:#102a35dd;border:1px solid #ffffff44;border-radius:9px;padding:4px 9px;font-weight:800}.game-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.game-title h2{margin:0;font-size:22px}.game-title small{color:var(--muted)}.metrics{display:flex;gap:8px}.metric{background:#183d47;border:1px solid #45636a;border-radius:12px;padding:8px 12px;text-align:center;min-width:78px}.metric b{display:block;color:var(--gold);font-size:19px}.metric small{font-size:10px;color:var(--muted)}.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px}.board{position:relative;min-height:430px;border:1px solid #557078;border-radius:22px;overflow:hidden;background:linear-gradient(#8bc5d2 0 31%,#b9d7b3 31% 37%,#4d9ab0 37% 73%,#9ec77b 73% 100%);box-shadow:0 15px 35px #0004}.sky{position:absolute;top:0;left:0;right:0;height:35%;background:linear-gradient(#80c3d5,#d4e7d5);opacity:.8}.sun{position:absolute;top:22px;inset-inline-end:40px;width:48px;height:48px;border-radius:50%;background:#ffe7a0;box-shadow:0 0 35px #fff6}.hills{position:absolute;top:25%;left:-5%;width:110%;height:17%;background:#80a96c;border-radius:50% 50% 0 0}.river{position:absolute;top:36%;height:38%;left:0;right:0;background:repeating-linear-gradient(170deg,#2d7895 0 22px,#398eaa 22px 44px,#4a9eb5 44px 67px);border-block:7px solid #b3d18b;box-shadow:inset 0 10px 25px #17485a55}.river:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 24px,#ffffff14 25px 26px)}.bank{position:absolute;top:0;bottom:0;width:33%;display:flex;align-items:flex-end;justify-content:center;padding:18px 8px 30px;z-index:2}.bank.left{left:0}.bank.right{right:0}.bank-label{position:absolute;top:45%;font-size:11px;letter-spacing:1px;color:#f7f3d8;background:#153b3f99;padding:5px 10px;border-radius:99px}.actors{position:absolute;bottom:28px;left:4px;right:4px;display:flex;flex-wrap:wrap;align-content:end;justify-content:center;gap:7px}.actor{width:54px;min-height:70px;border-radius:13px;background:#fff1;border:1px solid #ffffff55;color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-shadow:0 2px 3px #000;box-shadow:0 3px 10px #0002;backdrop-filter:blur(3px);padding:5px 3px}.actor .emoji{font-size:27px;line-height:1.15}.actor small{font-size:9px;max-width:52px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.actor.selected{outline:3px solid var(--gold);background:#f5c96b55;transform:translateY(-5px)}.actor:disabled{opacity:.4;cursor:not-allowed}.raft{position:absolute;z-index:4;top:48%;left:50%;transform:translate(-50%,-50%);width:150px;min-height:85px;background:linear-gradient(180deg,#bd8a50,#80552f);border:5px solid #5c3b25;border-radius:45% 45% 35% 35%;box-shadow:0 9px 14px #163b4d99;display:flex;justify-content:center;align-items:center;gap:3px;padding:8px;cursor:pointer}.raft:before{content:"";position:absolute;inset:8px 0;border-block:3px solid #e4b87566;pointer-events:none}.raft .actor{width:43px;min-height:58px;background:#173b42dd;border-color:#f7d88a}.actor{transition:transform .32s cubic-bezier(.2,.8,.2,1),opacity .25s,background .2s}
+.actor .emoji{display:inline-block;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.board.crossing .raft{animation:raftTravel .85s cubic-bezier(.22,.7,.25,1)}
+@keyframes raftTravel{0%{left:var(--from,50%);transform:translate(-50%,-50%) rotate(0)}45%{transform:translate(-50%,-58%) rotate(-2deg)}100%{left:var(--to,50%);transform:translate(-50%,-50%) rotate(0)}}
+.board.won{animation:winGlow 1.2s ease}
+@keyframes winGlow{0%,100%{filter:none}50%{filter:brightness(1.25) saturate(1.2)}}
+.actor.entering{animation:boardIn .35s ease both}
+@keyframes boardIn{from{opacity:0;transform:translateY(15px) scale(.8)}to{opacity:1;transform:translateY(0) scale(1)}}
+.raft{transition:left .72s cubic-bezier(.2,.8,.2,1)}
+.raft-hint{position:absolute;z-index:3;top:65%;left:50%;transform:translateX(-50%);font-size:10px;color:#e6f4e9;background:#17465acc;border-radius:99px;padding:5px 9px;white-space:nowrap}.controls{background:#183b45;border:1px solid #45636a;border-radius:20px;padding:16px;display:flex;flex-direction:column;gap:12px}.controls h3{margin:0;font-size:17px}.controls p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}.control-row{display:flex;gap:8px}.control-row>*{flex:1}.status{border-radius:12px;padding:10px;font-size:12px;line-height:1.5;background:#ffffff0c;border:1px solid #ffffff1a;min-height:52px}.status.error{background:#ff8b7816;border-color:#ff8b7866;color:#ffd0c7}.status.good{background:#9ad6b21a;border-color:#9ad6b266;color:#c5f0d4}.instructions{background:#102a35;border:1px solid #45636a;border-radius:14px;padding:12px;max-height:210px;overflow:auto;white-space:pre-wrap;font-size:12px;line-height:1.7;color:#d8e2d8}.instructions h4{margin:0 0 8px;color:var(--gold)}.modal{position:fixed;inset:0;background:#06151dcc;display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.show{display:flex}.dialog{max-width:620px;width:100%;max-height:85vh;overflow:auto;background:#173943;border:1px solid #648087;border-radius:20px;padding:20px;box-shadow:0 25px 80px #0008}.dialog h3{margin:0 0 12px;color:var(--gold)}.dialog pre{white-space:pre-wrap;font:inherit;line-height:1.75;color:#e6e9dd}.dialog-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}.footer{color:#829b9d;text-align:center;font-size:11px;padding:24px 0 10px}.progress{height:6px;background:#ffffff18;border-radius:20px;overflow:hidden;margin-top:8px}.progress span{display:block;height:100%;background:var(--gold);width:0;transition:.2s}
+@media(max-width:850px){.levels{grid-template-columns:repeat(3,1fr)}.game-layout{grid-template-columns:1fr}.board{min-height:390px}.controls{display:grid;grid-template-columns:1fr 1fr}.controls h3,.controls .instructions{grid-column:1/-1}}
+@media(max-width:560px){.shell{padding:12px}.hero{grid-template-columns:1fr;padding:18px}.hero-art{max-height:190px}.hero-art img{height:190px;object-fit:cover}.levels{grid-template-columns:repeat(2,1fr);gap:9px}.level-meta{padding:9px}.level-meta b{font-size:12px}.game-head{align-items:flex-start;flex-direction:column}.metrics{width:100%}.metric{flex:1}.board{min-height:390px}.bank{width:34%}.actor{width:45px;min-height:62px}.actor .emoji{font-size:23px}.raft{width:125px}.controls{display:flex}.top{align-items:flex-start}.top-actions{flex-direction:column;align-items:stretch}.brand p{display:none}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="top">
+ <div class="brand"><div class="logo">⛵</div><div><h1>River Crossing</h1><p>Classic logic puzzles · Web Edition</p></div></div>
+ <div class="top-actions"><select id="language" class="select" aria-label="Language"><option value="ar">العربية</option><option value="en">English</option><option value="fr">Français</option><option value="es">Español</option><option value="de">Deutsch</option></select><button class="ghost" id="soundBtn">♫ <span id="soundLabel">الصوت</span></button></div>
+</header>
+<main>
+<section id="home" class="view active">
+ <div class="hero">
+  <div><div style="color:var(--gold);font-weight:800;margin-bottom:8px">21 CHALLENGES · 5 LANGUAGES</div><h2 id="heroTitle">اعبر النهر…<br>بالتفكير لا بالحظ</h2><p id="heroDesc">مجموعة ألغاز عبور النهر الكلاسيكية. انقل جميع الشخصيات إلى الضفة الأخرى مع احترام قواعد كل مرحلة.</p><button class="primary" id="continueBtn">ابدأ اللعب ←</button><div class="stats"><div class="stat"><b>21</b><small id="statLevels">مرحلة</small></div><div class="stat"><b>5</b><small id="statLangs">لغات</small></div><div class="stat"><b id="completedCount">0</b><small id="statDone">مراحل مكتملة</small></div></div></div>
+  <div class="hero-art"><img src="assets/images/level1.png" alt="River crossing puzzle scene"></div>
+ </div>
+ <div class="section-head"><h3 id="levelsTitle">اختر المرحلة</h3><span id="levelsSub">تدرّج في التحدي</span></div>
+ <div id="levelsGrid" class="levels"></div>
+</section>
+<section id="game" class="view">
+ <div class="game-head"><div class="game-title"><h2 id="levelName">Level 1</h2><small id="levelSubtitle">Select people, load the raft, then cross.</small></div><div class="metrics"><div class="metric"><b id="moves">0</b><small id="movesLabel">MOVES</small></div><div class="metric"><b id="timer">00:00</b><small id="timeLabel">TIME</small></div><div class="metric"><b id="progressText">0/4</b><small id="progressLabel">SAFE</small></div></div></div>
+ <div class="game-layout">
+  <div class="board" id="board"><div class="sky"></div><div class="sun"></div><div class="hills"></div><div class="river"></div>
+   <div class="bank left"><span class="bank-label" id="leftLabel">LEFT BANK</span><div class="actors" id="leftActors"></div></div>
+   <div class="bank right"><span class="bank-label" id="rightLabel">RIGHT BANK</span><div class="actors" id="rightActors"></div></div>
+   <button class="raft" id="raft" aria-label="Raft"><span style="font-size:22px">🛶</span></button><div class="raft-hint" id="raftHint">Tap people to load the raft</div>
+  </div>
+  <aside class="controls">
+   <h3 id="actionsTitle">التحكم</h3><p id="actionsDesc">اختر شخصاً من الضفة التي توجد بها القارب لإضافته إلى القارب. اضغط على القارب لعبور النهر.</p>
+   <div class="control-row"><button class="primary" id="crossBtn">اعبر النهر ⟵</button><button class="ghost" id="resetBtn">↻ إعادة</button></div>
+   <div class="control-row"><button class="ghost" id="hintBtn">💡 الحل</button><button class="ghost" id="backBtn">⌂ المراحل</button></div>
+   <div id="status" class="status">ابدأ باختيار أحد الأشخاص.</div>
+   <div class="instructions"><h4 id="rulesHeading">قواعد المرحلة</h4><div id="instructionsText"></div></div>
+  </aside>
+ </div>
+</section>
+</main>
+<div class="footer">River Crossing Web Edition · Original level instructions, solutions and visual references from the supplied Android package.</div>
+</div>
+<div class="modal" id="modal"><div class="dialog"><h3 id="modalTitle"></h3><pre id="modalText"></pre><div class="dialog-actions"><button class="ghost" id="modalClose">إغلاق</button><button class="primary" id="nextBtn">متابعة</button></div></div></div>
+<script>
+const DATA_URL='assets/game-data.json';
+let DB,lang='ar',level=1,state=null,soundOn=false,audioMenu=null,timerHandle=null,startAt=0,elapsed=0,completed=JSON.parse(localStorage.getItem('rc-completed')||'[]');
+const $=id=>document.getElementById(id);
+const ui={
+ ar:{heroTitle:'اعبر النهر…<br>بالتفكير لا بالحظ',heroDesc:'مجموعة ألغاز عبور النهر الكلاسيكية. انقل جميع الشخصيات إلى الضفة الأخرى مع احترام قواعد كل مرحلة.',start:'ابدأ اللعب ←',levels:'مرحلة',langs:'لغات',done:'مراحل مكتملة',choose:'اختر المرحلة',sub:'تدرّج في التحدي',moves:'الحركات',time:'الوقت',safe:'وصلوا',left:'الضفة اليسرى',right:'الضفة اليمنى',actions:'التحكم',desc:'اختر شخصاً من الضفة التي يوجد بها القارب لإضافته إلى القارب. اضغط على القارب لعبور النهر.',cross:'اعبر النهر ⟵',reset:'↻ إعادة',hint:'💡 الحل',back:'⌂ المراحل',rules:'قواعد المرحلة',close:'إغلاق',next:'متابعة',loaded:'على القارب',empty:'القارب فارغ. اختر شخصاً أولاً.',full:'القارب ممتلئ.',notHere:'يمكنك اختيار الموجودين على ضفة القارب فقط.',noRow:'لا يوجد شخص قادر على قيادة القارب ضمن الركاب.',unsafe:'هذه الحركة تخالف قواعد المرحلة: ',crossed:'تم العبور بنجاح.',win:'أحسنت! أكملت المرحلة.',solution:'الحل المقترح للمرحلة',notYet:'لم يصل الجميع إلى الضفة الأخرى بعد.',genius:'هذه المرحلة مخصصة للعباقرة ولا تتضمن تلميح حل.',startStatus:'اختر شخصاً لتحميله على القارب.',timeUp:'انتهى الوقت المحدد.',night:'ليلاً',day:'نهاراً'},
+ en:{heroTitle:'Cross the river…<br>with logic, not luck',heroDesc:'Classic river-crossing logic puzzles. Move everyone to the opposite bank while respecting each level’s rules.',start:'Start playing →',levels:'levels',langs:'languages',done:'levels completed',choose:'Choose a level',sub:'Progress through the challenges',moves:'MOVES',time:'TIME',safe:'SAFE',left:'LEFT BANK',right:'RIGHT BANK',actions:'Controls',desc:'Select people on the raft’s bank to board. Press the raft or Cross to travel.',cross:'Cross river →',reset:'↻ Restart',hint:'💡 Solution',back:'⌂ Levels',rules:'Level rules',close:'Close',next:'Continue',loaded:'On raft',empty:'The raft is empty. Select a passenger first.',full:'The raft is full.',notHere:'You can only select people on the raft’s current bank.',noRow:'No passenger on the raft can steer it.',unsafe:'This move breaks a level rule: ',crossed:'Crossing completed.',win:'Well done! Level completed.',solution:'Suggested solution',notYet:'Not everyone has reached the opposite bank.',genius:'This is a Genius Only level; no solution tip is available.',startStatus:'Select a person to board the raft.',timeUp:'Time is up.',night:'Night',day:'Day'},
+ fr:{heroTitle:'Traversez la rivière…<br>avec logique',heroDesc:'Des énigmes classiques de traversée. Faites passer tout le monde en respectant les règles de chaque niveau.',start:'Commencer →',levels:'niveaux',langs:'langues',done:'niveaux terminés',choose:'Choisir un niveau',sub:'Progressez dans les défis',moves:'COUPS',time:'TEMPS',safe:'ARRIVÉS',left:'RIVE GAUCHE',right:'RIVE DROITE',actions:'Commandes',desc:'Sélectionnez les personnes sur la rive du radeau, puis traversez.',cross:'Traverser →',reset:'↻ Recommencer',hint:'💡 Solution',back:'⌂ Niveaux',rules:'Règles du niveau',close:'Fermer',next:'Continuer',loaded:'Sur le radeau',empty:'Le radeau est vide.',full:'Le radeau est plein.',notHere:'Sélectionnez uniquement les personnes sur la rive du radeau.',noRow:'Personne ne peut ramer.',unsafe:'Cette action enfreint une règle : ',crossed:'Traversée effectuée.',win:'Bravo ! Niveau terminé.',solution:'Solution proposée',notYet:'Tout le monde n’a pas encore traversé.',genius:'Niveau Genius Only : aucune solution disponible.',startStatus:'Sélectionnez une personne.',timeUp:'Temps écoulé.',night:'Nuit',day:'Jour'},
+ es:{heroTitle:'Cruza el río…<br>con lógica',heroDesc:'Acertijos clásicos de cruce de ríos. Lleva a todos a la otra orilla respetando las reglas.',start:'Comenzar →',levels:'niveles',langs:'idiomas',done:'niveles completados',choose:'Elige un nivel',sub:'Avanza en los desafíos',moves:'MOVIMIENTOS',time:'TIEMPO',safe:'SEGUROS',left:'ORILLA IZQUIERDA',right:'ORILLA DERECHA',actions:'Controles',desc:'Selecciona personas en la orilla de la balsa y cruza.',cross:'Cruzar →',reset:'↻ Reiniciar',hint:'💡 Solución',back:'⌂ Niveles',rules:'Reglas del nivel',close:'Cerrar',next:'Continuar',loaded:'En la balsa',empty:'La balsa está vacía.',full:'La balsa está llena.',notHere:'Solo puedes seleccionar personas en la orilla de la balsa.',noRow:'Nadie puede remar.',unsafe:'Este movimiento incumple una regla: ',crossed:'Cruce completado.',win:'¡Bien hecho! Nivel completado.',solution:'Solución sugerida',notYet:'No todos han llegado a la otra orilla.',genius:'Nivel Genius Only: no hay solución.',startStatus:'Selecciona una persona.',timeUp:'Se acabó el tiempo.',night:'Noche',day:'Día'},
+ de:{heroTitle:'Überquere den Fluss…<br>mit Logik',heroDesc:'Klassische Flussüberquerungsrätsel. Bringe alle unter Beachtung der Regeln ans andere Ufer.',start:'Spielen →',levels:'Level',langs:'Sprachen',done:'abgeschlossene Level',choose:'Level auswählen',sub:'Meistere die Herausforderungen',moves:'ZÜGE',time:'ZEIT',safe:'DRÜBEN',left:'LINKES UFER',right:'RECHTES UFER',actions:'Steuerung',desc:'Wähle Personen am Ufer des Floßes und fahre über den Fluss.',cross:'Überqueren →',reset:'↻ Neustart',hint:'💡 Lösung',back:'⌂ Level',rules:'Levelregeln',close:'Schließen',next:'Weiter',loaded:'Auf dem Floß',empty:'Das Floß ist leer.',full:'Das Floß ist voll.',notHere:'Wähle nur Personen am aktuellen Ufer.',noRow:'Niemand kann rudern.',unsafe:'Dieser Zug verletzt eine Regel: ',crossed:'Überquerung abgeschlossen.',win:'Gut gemacht! Level abgeschlossen.',solution:'Vorgeschlagene Lösung',notYet:'Noch nicht alle sind am anderen Ufer.',genius:'Genius-Only-Level: keine Lösung verfügbar.',startStatus:'Wähle eine Person.',timeUp:'Die Zeit ist abgelaufen.',night:'Nacht',day:'Tag'}
+};
+function T(k){return ui[lang][k]||ui.en[k]||k}
+function playFx(file,volume=.55){if(!soundOn)return;try{const a=new Audio('assets/audio/'+file);a.volume=volume;a.play().catch(()=>{})}catch(e){}}
+function animateCross(from,to){const b=$('board'),r=$('raft');r.style.setProperty('--from',from?'82%':'18%');r.style.setProperty('--to',to?'82%':'18%');b.classList.remove('crossing');void b.offsetWidth;b.classList.add('crossing');setTimeout(()=>b.classList.remove('crossing'),900)}
+
+function parseIni(s){let o={},sec='';for(let line of s.split(/\r?\n/)){line=line.trim();if(!line||line.startsWith(';'))continue;if(line.startsWith('[')){sec=line.slice(1,-1);o[sec]={};continue}let i=line.indexOf('=');if(i>0)o[sec][line.slice(0,i).trim()]=line.slice(i+1).trim().replace(/^"|"$/g,'')}return o}
+function currentLevel(){return DB.levels[level-1]}
+function renderHome(){
+ $('heroTitle').innerHTML=T('heroTitle');$('heroDesc').textContent=T('heroDesc');$('continueBtn').textContent=T('start');$('statLevels').textContent=T('levels');$('statLangs').textContent=T('langs');$('statDone').textContent=T('done');$('completedCount').textContent=completed.length;$('levelsTitle').textContent=T('choose');$('levelsSub').textContent=T('sub');
+ $('levelsGrid').innerHTML=DB.levels.map(l=>`<button class="level-card" data-level="${l.id}"><span class="num">${l.id}</span><img src="assets/images/level${l.id}.png" alt="Level ${l.id}"><div class="level-meta"><b>${l.title}</b><small>${completed.includes(l.id)?'✓ ':''}${l.id===21?'Genius Only':'River puzzle'}</small></div></button>`).join('');
+ document.querySelectorAll('.level-card').forEach(b=>b.onclick=()=>openLevel(+b.dataset.level));
+}
+function showView(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));$(v).classList.add('active')}
+function openLevel(id){level=id;resetState();showView('game');renderGame()}
+function resetState(){let l=currentLevel();state={pos:l.actors.map(()=>0),raftSide:0,load:[],moves:0,started:Date.now(),elapsed:0,phase:'day',lastWeight:null,won:false};clearInterval(timerHandle);timerHandle=setInterval(updateTimer,500);$('status').className='status';$('status').textContent=T('startStatus')}
+function updateTimer(){if(!state)return;let s=Math.floor((Date.now()-state.started)/1000);$('timer').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function actorButton(a,i,loaded=false){return `<button class="actor ${state.load.includes(i)?'selected':''}" data-actor="${i}" ${loaded?'data-loaded="1"':''}><span class="emoji">${a.icon}</span><small>${a.name}</small></button>`}
+function renderGame(){
+ let l=currentLevel();$('levelName').textContent=(lang==='ar'?'المرحلة ':'Level ')+level+' · '+l.title;$('levelSubtitle').textContent=lang==='ar'?'انقل جميع العناصر إلى الضفة المقابلة.':'Move all pieces to the opposite bank.';
+ $('movesLabel').textContent=T('moves');$('timeLabel').textContent=T('time');$('progressLabel').textContent=T('safe');$('leftLabel').textContent=T('left');$('rightLabel').textContent=T('right');$('actionsTitle').textContent=T('actions');$('actionsDesc').textContent=T('desc');$('crossBtn').textContent=T('cross');$('resetBtn').textContent=T('reset');$('hintBtn').textContent=T('hint');$('backBtn').textContent=T('back');$('rulesHeading').textContent=T('rules');$('instructionsText').textContent=l.instructions[lang]||l.instructions.en;
+ $('moves').textContent=state.moves;$('progressText').textContent=state.pos.filter(x=>x===1).length+'/'+state.pos.length;
+ $('leftActors').innerHTML=l.actors.map((a,i)=>state.pos[i]===0&&!state.load.includes(i)?actorButton(a,i):'').join('');
+ $('rightActors').innerHTML=l.actors.map((a,i)=>state.pos[i]===1&&!state.load.includes(i)?actorButton(a,i):'').join('');
+ $('raft').style.left=state.raftSide?'82%':'18%';$('raft').innerHTML=state.load.length?state.load.map(i=>actorButton(l.actors[i],i,true)).join(''):'<span style="font-size:22px">🛶</span>';
+ $('raftHint').textContent=T('loaded')+': '+state.load.length+' / '+l.capacity;
+ document.querySelectorAll('.actor').forEach((b,i)=>{b.classList.add('entering');setTimeout(()=>b.classList.remove('entering'),380)});document.querySelectorAll('.actor').forEach(b=>b.onclick=()=>{let i=+b.dataset.actor;if(b.dataset.loaded){state.load=state.load.filter(x=>x!==i)}else if(state.pos[i]!==state.raftSide){setStatus(T('notHere'),'error');return}else if(state.load.includes(i)){state.load=state.load.filter(x=>x!==i)}else if(state.load.length>=l.capacity){setStatus(T('full'),'error');return}else state.load.push(i);renderGame()});
+ $('raft').onclick=travel;
+ $('crossBtn').onclick=travel;$('resetBtn').onclick=()=>{resetState();renderGame()};$('hintBtn').onclick=showSolution;$('backBtn').onclick=()=>{clearInterval(timerHandle);renderHome();showView('home')};
+}
+function setStatus(s,type=''){ $('status').className='status '+type;$('status').textContent=s}
+function canRow(ids){
+ const rowers={
+  1:[0], 2:[0,1,2,3], 3:[0,1,2,3], 4:[0,1,2,3,4], 5:[0,1,2,3,4],
+  6:[0,3,5], 7:[0,1,2,3,4], 8:[0,1,2,3,4,5], 9:[0,3], 10:[0,1,2,3,4,5],
+  11:[0,1], 12:[0,3], 13:[0,1,2], 14:[0,2,4], 15:[0,1,2,3,4,5],
+  16:[1,2,4,5], 17:[0], 18:[0,1,2,3,4], 19:[0,1,4], 20:[0,1,2,3,4,5], 21:[0,1,2,3]
+ };
+ return ids.some(i=>(rowers[level]||[]).includes(i));
+}
+function boatRule(ids){
+ const id=level;
+ if(!ids.length)return 'The raft needs a passenger.';
+ if(!canRow(ids))return T('noRow');
+ if(id===1 && (ids.length>2||!ids.includes(0)))return 'The farmer must travel with at most one passenger.';
+ if(id===2){if(ids.length>2)return 'The raft holds at most two soldiers.';if(ids.includes(0)&&ids.length>1)return 'The arrogant soldier must be alone.';if(ids.includes(1)&&ids.length===1)return 'The lazy soldier refuses to be alone on the raft.'}
+ if(id===3){let w=ids.filter(i=>i<2).length,c=ids.filter(i=>i>=2).length;if(ids.length>2||w>1||w+c>2||w===1&&c>0)return 'The raft carries one worker or up to two children.'}
+ if([4,6,8,9,10,11,12,15,16,19,20,21].includes(id)&&ids.length>2)return 'The raft holds a maximum of two passengers.';
+ if(id===4){const dislikes=[[0,1],[0,4],[1,2],[2,3],[3,4]];if(dislikes.some(([a,b])=>ids.includes(a)&&ids.includes(b)))return 'These two people dislike each other.'}
+ if(id===5){let w=ids.reduce((s,i)=>s+[90,80,60,40,20][i],0);if(w>100)return 'Maximum raft load is 100 kg.'}
+ if(id===6){let travelers=ids.filter(i=>[0,3,5].includes(i)).length,bags=ids.length-travelers;if(!((travelers===2&&bags===0)||(travelers===1&&bags===1)))return 'Choose two travelers, or one traveler with one bag.'}
+ if(id===7){const times=[1,3,6,8,12];const cost=Math.max(...ids.map(i=>times[i]));if(state.elapsedTime+cost>1800)return 'The family would miss the train.'}
+ if(id===9&&!ids.some(i=>i===0||i===3))return 'Only the green robber or green merchant can row.';
+ if(id===11&&!ids.some(i=>i===0||i===1))return 'Only the first mother or her red-clothed son can row.';
+ if(id===12&&!ids.some(i=>i===0||i===3))return 'Only the fathers can row.';
+ if(id===13){let humans=ids.filter(i=>i<=2).length,animals=ids.length-humans;if(!((humans===2&&animals===0)||(humans===1&&animals===1)))return 'The raft carries two people or one person with one animal.'}
+ if(id===14){let rob=ids.filter(i=>[0,2,4].includes(i)).length,bags=ids.length-rob;if(!((rob===2&&bags===0)||(rob===1&&bags===1)))return 'Choose two robbers or one robber with one bag.'}
+ if(id===16){if(ids.some(i=>[0,3].includes(i))&&ids.length===1)return 'A king needs one of his followers.';if(ids.some(i=>[1,4].includes(i))&&ids.length!==1)return 'A queen must be alone on the raft.'}
+ if(id===17&&(ids.length>2||!ids.includes(0)))return 'The farmer must travel with at most one animal.';
+ if(id===18){let small=ids.every(i=>i<=1),big=ids.length===1&&ids.some(i=>i>=2);if(!(small&&ids.length<=2||big))return 'Two small animals or one big animal only.'}
+ if(id===19){if(ids.includes(4)&&ids.length>1)return 'The old man refuses to be accompanied on the raft.';if(ids.includes(2)&&!ids.includes(0))return 'The son can only row with his father.';if(ids.includes(3)&&!ids.includes(1))return 'The daughter can only row with her mother.'}
+ if(id===20){let types=ids.map(i=>i<2?'lion':i<4?'raccoon':'squirrel');if(ids.length>2||new Set(types).size>1)return 'An animal can travel alone or with one of its kind.';if(state.phase==='day'&&types.includes('raccoon'))return 'Raccoons can row only at night.';if(state.phase==='night'&&types.includes('squirrel'))return 'Squirrels can row only during the day.'}
+ if(id===21){if(ids.length>2)return 'The raft carries at most two weights.';let w=ids.reduce((s,i)=>s+i+1,0);if(state.lastWeight!==null&&Math.abs(w-state.lastWeight)>1)return 'Successive load totals may differ by no more than 1 kg.'}
+ return '';
+}
+function unsafeSide(side){
+ let p=state.pos.map((x,i)=>x===side?i:-1).filter(i=>i>=0), has=i=>p.includes(i), id=level;
+ if(id===1){if(!has(0)&&((has(1)&&has(2))||(has(2)&&has(3))))return 'Without the farmer, wolf/goat or goat/cabbage cannot be left together.'}
+ if(id===2){if(has(1)&&p.length===1)return 'The lazy soldier cannot be alone on a bank.'}
+ if(id===4&&p.length===2){const pairs=[[0,1],[0,4],[1,2],[2,3],[3,4]];if(pairs.some(([a,b])=>has(a)&&has(b)))return 'Disliked neighbors cannot be alone together on a bank.'}
+ if(id===15){if((has(1)&&(has(0)||has(2))&&p.length===2)||(has(4)&&(has(3)||has(5))&&p.length===2))return 'A medium animal cannot be left alone with another of its kind.';let dogs=p.filter(i=>i<3).length,cats=p.filter(i=>i>=3).length;if(cats>0&&dogs>cats)return 'Dogs outnumber cats on this bank.'}
+ if(id===16){if(has(0)&&!has(1)&&!has(2))return 'The white king cannot be left without a follower.';if(has(3)&&!has(4)&&!has(5))return 'The black king cannot be left without a follower.'}
+ if(id===6){for(let t of [0,3,5])for(let b of [1,2,4])if(has(t)&&has(b)&&b!==1&&t!==0)return 'A traveler cannot be left alone with another traveler’s bag.'}
+ if(id===8){let c=p.filter(i=>i<3).length,r=p.filter(i=>i>=3).length;if(c>0&&r>c)return 'Robbers cannot outnumber cops on either bank.'}
+ if(id===9){let r=p.filter(i=>i<3).length,m=p.filter(i=>i>=3).length;if(m>0&&r>m)return 'Robbers cannot outnumber merchants on either bank.'}
+ if(id===11){for(let child of [1,2,4,5]){let own=child<3?0:3;if(ids.includes(child)&&ids.some(i=>(i===0||i===3)&&i!==own)&&!ids.includes(own))return 'A child cannot be with another mother on the raft without their own mother.'}}
+ if(id===15){if(ids.length===2&&((ids.includes(1)&&(ids.includes(0)||ids.includes(2)))||(ids.includes(4)&&(ids.includes(3)||ids.includes(5)))))return 'A medium animal cannot be paired with another animal of its kind.'}
+ if(id===16){if(ids.includes(0)&&!ids.includes(1)&&!ids.includes(2))return 'The white king needs one of his followers.';if(ids.includes(3)&&!ids.includes(4)&&!ids.includes(5))return 'The black king needs one of his followers.'}
+ if(id===10){for(let c=0;c<3;c++){let athlete=c*2,coach=c*2+1;if(has(coach)&&p.some(i=>i%2===0&&i!==athlete)&&!has(athlete))return 'A coach cannot be with another athlete without their own athlete.';if(has(athlete)&&p.some(i=>i%2===1&&i!==coach)&&!has(coach))return 'An athlete cannot be alone with another coach.'}}
+ if(id===11){for(let child of [1,2,4,5]){let own=child<3?0:3;if(has(child)&&p.some(i=>i===0||i===3)&&!has(own))return 'A child cannot be with another mother without their own mother.'}}
+ if(id===12){for(let child of [2,5]){let own=child===2?[0,1]:[3,4];if(has(child)&&p.some(i=>[0,1,3,4].includes(i))&&!own.some(has))return 'A child needs one of their own parents.';if(has(child)&&p.length===1)return 'A child cannot be left alone.'}}
+ if(id===13){if(!has(0)&&has(3)&&p.length>1)return 'The dog is dangerous when the farmer is absent.';if(!has(1)&&has(2)&&(has(4)||has(5)))return 'The girl teases rabbits when the boy is absent.';if(!has(2)&&has(1)&&(has(6)||has(7)))return 'The boy teases squirrels when the girl is absent.'}
+ if(id===17){if(has(1)&&((has(2)||has(3))&&!has(0)))return 'A wolf cannot be left with the goat without the farmer.';if(has(4)&&has(5)&&has(2)&&has(3)&&!has(0))return 'The cows cannot be left with both wolves.'}
+ if(id===14){
+   const robbers=[0,2,4].filter(has), bags=[1,3,5].filter(has), values={0:3000,2:5000,4:8000,1:3000,3:5000,5:8000};
+   if(robbers.length===1&&bags.some(b=>values[b]>values[robbers[0]]))return 'A robber cannot be left alone with a bag worth more than his own loot.';
+   if(robbers.length===2&&bags.reduce((sum,b)=>sum+values[b],0)>robbers.reduce((sum,r)=>sum+values[r],0))return 'The bags exceed the combined value stolen by the two robbers.';
+ }
+ if(id===15){
+   const dogs=p.filter(i=>i<3).length,cats=p.filter(i=>i>=3).length;
+   if(dogs>cats&&cats>0)return 'There cannot be more dogs than cats on this bank.';
+   if(has(1)&&(has(0)||has(2)))return 'The medium dog cannot be left with another dog.';
+   if(has(4)&&(has(3)||has(5)))return 'The medium cat cannot be left with another cat.';
+ }
+ if(id===16){
+   if(has(0)&&!has(1)&&!has(2))return 'The white king cannot be left without his queen or pawn.';
+   if(has(3)&&!has(4)&&!has(5))return 'The black king cannot be left without his queen or pawn.';
+ }
+ if(id===17){
+   if(!has(0)&&has(1)&&(has(2)||has(3)))return 'A wolf cannot be left with the goat without the farmer.';
+   if(!has(0)&&(has(4)||has(5))&&has(2)&&has(3))return 'A cow cannot be left with both wolves without the farmer.';
+ }
+ if(id===18){if(has(0)&&p.length===1)return 'The mouse cannot be left alone.';if(has(1)&&(has(3)||has(4)))return 'The chicken cannot be left with a gorilla.'}
+ if(id===19){
+   if(has(2)&&p.some(i=>![0,2].includes(i))&&!has(0))return 'The son cannot stay with others without his father.';
+   if(has(3)&&p.some(i=>![1,3].includes(i))&&!has(1))return 'The daughter cannot stay with others without her mother.';
+ }
+ return '';
+}
+function travel(){
+ if(!state.load.length){setStatus(T('empty'),'error');return}
+ let problem=boatRule(state.load);if(problem){setStatus(problem,'error');return}
+ let newSide=1-state.raftSide;
+ // Apply crossing, validate both banks after passengers move.
+ state.load.forEach(i=>state.pos[i]=newSide);
+ let bad=unsafeSide(0)||unsafeSide(1);
+ if(bad){state.load.forEach(i=>state.pos[i]=state.raftSide);setStatus(T('unsafe')+bad,'error');playFx('snd_notif_close.ogg',.45);return}
+ if(level===21){let w=state.load.reduce((s,i)=>s+i+1,0);state.lastWeight=w}
+ animateCross(oldSide,newSide);if(level===7){const times=[1,3,6,8,12];state.elapsedTime+=Math.max(...state.load.map(i=>times[i]))*60}state.raftSide=newSide;state.load=[];state.moves++;playFx('snd_notif_open.ogg',.5);if(level===20)state.phase=state.phase==='day'?'night':'day';
+ renderGame();setStatus(T('crossed'),'good');
+ if(state.pos.every(x=>x===1)){state.won=true;$('board').classList.add('won');playFx('snd_cheer.ogg',.7);clearInterval(timerHandle);if(!completed.includes(level)){completed.push(level);localStorage.setItem('rc-completed',JSON.stringify(completed))}setTimeout(()=>showModal(T('win'),`${T('moves')}: ${state.moves}\n${T('time')}: ${$('timer').textContent}`,true),350)}
+}
+function showSolution(){let l=currentLevel();if(l.geniusOnly){showModal(T('solution'),T('genius'),false);return}showModal(T('solution'),l.solutions[lang]||l.solutions.en||'No solution text available.',false)}
+function showModal(title,txt,next){$('modalTitle').textContent=title;$('modalText').textContent=txt;$('nextBtn').style.display=next?'inline-block':'none';$('modal').classList.add('show')}
+$('modalClose').onclick=()=>$('modal').classList.remove('show');$('nextBtn').onclick=()=>{$('modal').classList.remove('show');if(level<21)openLevel(level+1);else{renderHome();showView('home')}};
+$('continueBtn').onclick=()=>openLevel(Math.min(21,Math.max(1,completed.length+1)));
+$('language').onchange=e=>{lang=e.target.value;document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';renderHome();if($('game').classList.contains('active'))renderGame()};
+$('soundBtn').onclick=()=>{soundOn=!soundOn;$('soundLabel').textContent=soundOn?(lang==='ar'?'إيقاف':'On'):(lang==='ar'?'الصوت':'Off');if(soundOn){try{audioMenu=new Audio('assets/audio/snd_menu_music.ogg');audioMenu.loop=true;audioMenu.volume=.22;audioMenu.play().catch(()=>{})}catch(e){}}else if(audioMenu){audioMenu.pause()}};
+async function init(){DB=await fetch(DATA_URL).then(r=>r.json());renderHome();$('soundLabel').textContent=lang==='ar'?'الصوت':'Off';}
+init().catch(e=>{document.body.innerHTML='<p style="padding:30px">Unable to load game data. Run this project from a local web server or GitHub Pages.</p>'});
+</script>
+</body></html>

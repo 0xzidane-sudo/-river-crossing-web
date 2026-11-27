@@ -1,0 +1,10 @@
+{
+  "name": "River Crossing",
+  "short_name": "River Crossing",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#102a35",
+  "theme_color": "#102a35",
+  "description": "Classic river crossing logic puzzles",
+  "icons": []
+}
